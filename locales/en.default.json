@@ -275,5 +275,8 @@
       "sold_out": "Sold out",
       "unavailable": "Unavailable"
     }
+  },
+  "names": {
+    "social_links": "Social Links"
   }
 }
