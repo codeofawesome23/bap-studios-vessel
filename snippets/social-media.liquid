@@ -1,0 +1,30 @@
+<ul class="social-icons">
+  {% if settings.social_instagram %}
+    <li>
+      <a href="{{ settings.social_instagram }}" target="_blank" rel="noopener">
+        <svg><!-- instagram svg --></svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if settings.social_facebook %}
+    <li>
+      <a href="{{ settings.social_facebook }}" target="_blank" rel="noopener">
+        <svg><!-- facebook svg --></svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if settings.social_tiktok %}
+    <li>
+      <a href="{{ settings.social_tiktok }}" target="_blank" rel="noopener">
+        <svg><!-- tiktok svg --></svg>
+      </a>
+    </li>
+  {% endif %}
+  {% if settings.social_youtube %}
+    <li>
+      <a href="{{ settings.social_youtube }}" target="_blank" rel="noopener">
+        <svg><!-- youtube svg --></svg>
+      </a>
+    </li>
+  {% endif %}
+</ul>
