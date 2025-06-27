@@ -2256,39 +2256,31 @@
         ],
         "default": "equal-width-buttons"
       }
-    },
-    {
-      "name": "t:names.variant_pickers",
-      "settings": [
-    ...
-      ]
-    },
-    {
-      "name": "t:names.social_links",
-      "settings": [
-        {
-          "type": "url",
-          "id": "social_instagram",
-          "label": "Instagram URL"
-        },
-        {
-          "type": "url",
-          "id": "social_facebook",
-          "label": "Facebook URL"
-        },
-        {
-          "type": "url",
-          "id": "social_tiktok",
-          "label": "TikTok URL"
-        },
-        {
-          "type": "url",
-          "id": "social_youtube",
-          "label": "YouTube URL"
-        }
-      ]
-    }
-  ]
-]
-}
+    ]
+  },
+  {
+    "name": "t:names.social_links",
+    "settings": [
+      {
+        "type": "url",
+        "id": "social_instagram",
+        "label": "Instagram URL"
+      },
+      {
+        "type": "url",
+        "id": "social_facebook",
+        "label": "Facebook URL"
+      },
+      {
+        "type": "url",
+        "id": "social_tiktok",
+        "label": "TikTok URL"
+      },
+      {
+        "type": "url",
+        "id": "social_youtube",
+        "label": "YouTube URL"
+      }
+    ]
+  }
 ]
