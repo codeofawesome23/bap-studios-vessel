@@ -6,29 +6,20 @@
 <header-actions
   {{- block.shopify_attributes -}}
 >
+
   {% if shop.customer_accounts_enabled %}
     {% render 'account-popover' %}
     {% render 'account-drawer' %}
   {% endif %}
 
+  <!-- Always show social icons -->
+  <div class="header-social-icons">
+    {% render 'social-media' %}
+  </div>
+
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
     {% render 'cart-drawer' %}
   {% else %}
-    <div class="header-social-icons">
-      {% render 'social-media' %}
-    </div>
-
-    {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
-      {% render 'cart-drawer' %}
-    {% else %}
-      <a
-        href="{{ routes.cart_url }}"
-        class="header-actions__action action__cart"
-        aria-label="{{ 'accessibility.cart' | t }} {{ 'accessibility.cart_count' | t }}: {{ cart.item_count }}"
-      >
-        {% render 'cart-icon-component' %}
-      </a>
-    {% endif %}
     <a
       href="{{ routes.cart_url }}"
       class="header-actions__action action__cart"
@@ -37,6 +28,7 @@
       {% render 'cart-icon-component' %}
     </a>
   {% endif %}
+
 </header-actions>
 
 {% stylesheet %}
