@@ -2259,7 +2259,7 @@
     ]
   },
   {
-    "name": "t:names.social_links",
+    "name": "Social Links",
     "settings": [
       {
         "type": "url",
