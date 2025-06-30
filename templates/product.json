@@ -920,7 +920,7 @@
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 3,
-        "columns": 1,
+        "columns": 3,
         "mobile_columns": "1",
         "columns_gap": 12,
         "rows_gap": 36,
