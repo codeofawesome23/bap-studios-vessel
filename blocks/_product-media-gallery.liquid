@@ -1,5 +1,3 @@
-
-
 {%- if block.settings.zoom -%}
   <script
     src="{{ 'zoom-dialog.js' | asset_url }}"
@@ -794,5 +792,27 @@
       }
     }
   ]
+{
+  "type": "select",
+  "id": "icons_horizontal_position",
+  "label": "Icon horizontal position",
+  "options": [
+    { "value": "left", "label": "Left" },
+    { "value": "center", "label": "Center" },
+    { "value": "right", "label": "Right" }
+  ],
+  "default": "center"
+},
+{
+  "type": "select",
+  "id": "icons_vertical_position",
+  "label": "Icon vertical position",
+  "options": [
+    { "value": "top", "label": "Top" },
+    { "value": "middle", "label": "Middle" },
+    { "value": "bottom", "label": "Bottom" }
+  ],
+  "default": "middle"
+}
 }
 {% endschema %}
