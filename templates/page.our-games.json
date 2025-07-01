@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>{{ closest.page.title }}</h2>",
+            "text": "<h2>Our Games</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -78,7 +78,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</p>",
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -119,7 +119,7 @@
         "text_nmaJFW": {
           "type": "text",
           "settings": {
-            "text": "<h1>New arrivals</h1>",
+            "text": "<h1>Booze & Pets</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -144,7 +144,7 @@
         "text_QRPLgq": {
           "type": "text",
           "settings": {
-            "text": "<p>Made with care and unconditionally loved by our customers.</p>",
+            "text": "<p>Pet Driven Chaos. One Sip at a Time. </p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -171,7 +171,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Shop Now",
-            "link": "shopify://collections/all",
+            "link": "shopify://pages/custom",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
