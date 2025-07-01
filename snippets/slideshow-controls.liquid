@@ -41,8 +41,10 @@
 
   if pagination_position == 'left' or pagination_position == 'right'
     assign scroll_mode = 'vertical'
-  else
+  elsif pagination_position == 'top' or pagination_position == 'bottom'
     assign scroll_mode = 'horizontal'
+  elsif pagination_position == 'center'
+    assign scroll_mode = 'vertical'
   endif
 -%}
 
@@ -52,6 +54,7 @@
   {% endunless %}
   pagination-position="{{ pagination_position }}"
   scroll-mode="{{ scroll_mode }}"
+  data-thumbnail-position="{{ pagination_position }}"
   {% if controls_on_media %}
     controls-on-media
   {% endif %}
