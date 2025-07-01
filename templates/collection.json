@@ -55,7 +55,7 @@
         "text_tqQTNE",
         "divider_hxzt8A"
       ],
-      "name": "Collection Header",
+      "name": "Page Header",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
