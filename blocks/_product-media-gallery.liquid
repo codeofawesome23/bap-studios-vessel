@@ -65,7 +65,7 @@
     assign pagination_position = 'center'
   endif
 
-  assign icons_position = 'center'
+  assign icons_position = block.settings.icons_horizontal_position
 
   # Put the icons on the opposite side of the pagination controls
   if block.settings.slideshow_controls_position == 'on_media'
@@ -127,6 +127,7 @@
     {% if block.settings.extend_media %}
       media-gallery--extend
     {% endif %}
+    media-gallery--icons-vertical-{{ block.settings.icons_vertical_position }}
   "
   style="{% render 'spacing-style', settings: block.settings %} --thumbnail-width: {{ block.settings.thumbnail_width }}px; --media-radius: {{ block.settings.media_radius }}px;{% if block.settings.icons_style contains 'large' %} --slideshow-icon-padding: 0;{% endif %}--image-gap: {{ block.settings.image_gap }}px;"
   data-presentation="{{ block.settings.media_presentation }}"
@@ -782,6 +783,30 @@
       "step": 1,
       "unit": "px",
       "default": 0
+    },
+    {
+      "type": "select",
+      "id": "icons_horizontal_position",
+      "label": "Icon horizontal position",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center",
+      "visible_if": "{{ block.settings.media_presentation == 'carousel' }}"
+    },
+    {
+      "type": "select",
+      "id": "icons_vertical_position",
+      "label": "Icon vertical position",
+      "options": [
+        { "value": "top", "label": "Top" },
+        { "value": "middle", "label": "Middle" },
+        { "value": "bottom", "label": "Bottom" }
+      ],
+      "default": "middle",
+      "visible_if": "{{ block.settings.media_presentation == 'carousel' }}"
     }
   ],
   "presets": [
@@ -792,27 +817,14 @@
       }
     }
   ]
-{
-  "type": "select",
-  "id": "icons_horizontal_position",
-  "label": "Icon horizontal position",
-  "options": [
-    { "value": "left", "label": "Left" },
-    { "value": "center", "label": "Center" },
-    { "value": "right", "label": "Right" }
-  ],
-  "default": "center"
-},
-{
-  "type": "select",
-  "id": "icons_vertical_position",
-  "label": "Icon vertical position",
-  "options": [
-    { "value": "top", "label": "Top" },
-    { "value": "middle", "label": "Middle" },
-    { "value": "bottom", "label": "Bottom" }
-  ],
-  "default": "middle"
-}
 }
 {% endschema %}
+
+{%- comment -%}
+To style the vertical position of the icons, add the following CSS to your theme:
+-------------------------------------------------
+.media-gallery--icons-vertical-top .slideshow-controls { align-items: flex-start; }
+.media-gallery--icons-vertical-middle .slideshow-controls { align-items: center; }
+.media-gallery--icons-vertical-bottom .slideshow-controls { align-items: flex-end; }
+-------------------------------------------------
+{%- endcomment -%}
