@@ -18,6 +18,12 @@
     assign product_grid_class = product_grid_class | append: ' product-information--media-none'
   elsif section.settings.desktop_media_position == 'right'
     assign product_grid_class = product_grid_class | append: ' product-information--media-right'
+  elsif section.settings.desktop_media_position == 'top'
+    assign product_grid_class = product_grid_class | append: ' product-information--media-top'
+  elsif section.settings.desktop_media_position == 'center'
+    assign product_grid_class = product_grid_class | append: ' product-information--media-center'
+  elsif section.settings.desktop_media_position == 'bottom'
+    assign product_grid_class = product_grid_class | append: ' product-information--media-bottom'
   else
     assign product_grid_class = product_grid_class | append: ' product-information--media-left'
   endif
@@ -304,6 +310,18 @@
         {
           "value": "right",
           "label": "t:options.right"
+        },
+        {
+          "value": "top",
+          "label": "t:options.top"
+        },
+        {
+          "value": "center",
+          "label": "t:options.center"
+        },
+        {
+          "value": "bottom",
+          "label": "t:options.bottom"
         }
       ],
       "default": "left"
