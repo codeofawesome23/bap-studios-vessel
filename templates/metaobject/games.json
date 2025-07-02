@@ -9,66 +9,62 @@
  */
 {
   "sections": {
-    "hero_keDcwj": {
+    "hero_kgL7J8": {
       "type": "hero",
       "blocks": {
-        "spacer_kJwa9c": {
-          "type": "spacer",
+        "text_gzK8Qw": {
+          "type": "text",
           "settings": {
-            "size": "pixel",
-            "percent_size": 100,
-            "pixel_size": 24,
-            "custom_mobile_size": false,
-            "size_mobile": "percent",
-            "percent_size_mobile": 100,
-            "pixel_size_mobile": 120
+            "text": "<h1>{{ closest.metaobject.games.game_title.value }}</h1>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         },
-        "marquee_3a8FNx": {
-          "type": "_marquee",
+        "text_77VzQU": {
+          "type": "text",
           "settings": {
-            "movement_direction": "normal",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "transparent_background": true,
-            "padding-block-start": 24,
-            "padding-block-end": 24,
-            "gap_between_elements": 24
+            "text": "<p>{{ closest.metaobject.games.tagline.value }}</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "blocks": {
-            "text_hJPETE": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Explore our latest products.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h1",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_hJPETE"
-          ]
+          "blocks": {}
         },
-        "button_TyNdV9": {
+        "button_cNnAaC": {
           "type": "button",
+          "name": "t:names.button",
           "settings": {
             "label": "Shop Now",
             "link": "shopify://collections/all",
@@ -83,11 +79,11 @@
         }
       },
       "block_order": [
-        "spacer_kJwa9c",
-        "marquee_3a8FNx",
-        "button_TyNdV9"
+        "text_gzK8Qw",
+        "text_77VzQU",
+        "button_cNnAaC"
       ],
-      "name": "t:names.hero_marquee",
+      "name": "t:names.hero",
       "settings": {
         "link": "",
         "open_in_new_tab": false,
@@ -99,8 +95,8 @@
         "vertical_alignment": "center",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "space-between",
-        "gap": 32,
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
         "section_width": "page-width",
         "section_height": "large",
         "section_height_custom": 50,
@@ -111,12 +107,12 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 0,
+        "padding-block-start": 40,
         "padding-block-end": 40
       }
     }
   },
   "order": [
-    "hero_keDcwj"
+    "hero_kgL7J8"
   ]
 }
