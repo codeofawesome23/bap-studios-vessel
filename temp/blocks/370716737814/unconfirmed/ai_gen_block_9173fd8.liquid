@@ -1,6 +1,286 @@
+{% doc %}
+  @prompt
+    Create a block that displays a vertical scroll-based image gallery. The images should come from the product_photos field of a Games metaobject. Each image should appear with a smooth fade-up animation as the user scrolls down the page. The images should be displayed at 100% width, stacked vertically, and should load responsively with lazy loading. Use the Intersection Observer API to reveal each image when it enters the viewport. Add reasonable spacing between the images. Allow for any number of images in the product_photos metafield list, and handle gracefully if the list is empty., The game metaobject field should be "games.product_photos", I need it to use a dynamic source that comes from the games metaobject, Update the block to correctly access the product_photos metafield from a dynamically assigned Games metaobject in the block settings. Use the metaobject variable provided by Shopify, for example block.settings.metaobject, then assign photos_field from metaobject.fields.product_photos, and loop through photos_field.value. Make sure the block gracefully handles missing or empty images, and includes fade-up Intersection Observer effects for each image. Display them stacked vertically, 100% width, lazy loaded, with spacing between images.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-scroll-gallery-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.image_spacing }}px;
+    padding: {{ block.settings.padding }}px;
+    max-width: 100%;
+  }
+
+  .ai-scroll-gallery-item-{{ ai_gen_id }} {
+    opacity: 0;
+    transform: translateY({{ block.settings.animation_distance }}px);
+    transition: opacity {{ block.settings.animation_duration }}ms ease, 
+                transform {{ block.settings.animation_duration }}ms ease;
+    width: 100%;
+  }
+
+  .ai-scroll-gallery-item-{{ ai_gen_id }}.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ai-scroll-gallery-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-scroll-gallery-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: {{ block.settings.placeholder_aspect_ratio }};
+    background-color: {{ block.settings.placeholder_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-scroll-gallery-placeholder-{{ ai_gen_id }} svg {
+    width: 50%;
+    height: 50%;
+    opacity: 0.5;
+  }
+
+  .ai-scroll-gallery-empty-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 40px 20px;
+    color: {{ block.settings.text_color }};
+    background-color: {{ block.settings.placeholder_color }};
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+{% endstyle %}
+
+<scroll-gallery-{{ ai_gen_id }} class="ai-scroll-gallery-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.metaobject != blank %}
+    {% assign photos_field = block.settings.metaobject.fields.product_photos %}
+    
+    {% if photos_field.value != blank %}
+      {% for photo in photos_field.value %}
+        <div class="ai-scroll-gallery-item-{{ ai_gen_id }}">
+          {% if photo.src != blank %}
+            <img 
+              src="{{ photo.src | image_url: width: 1800 }}" 
+              alt="{{ photo.alt | escape }}"
+              width="{{ photo.width }}"
+              height="{{ photo.height }}"
+              loading="lazy"
+              class="ai-scroll-gallery-image-{{ ai_gen_id }}"
+            >
+          {% else %}
+            <div class="ai-scroll-gallery-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    {% else %}
+      <div class="ai-scroll-gallery-empty-{{ ai_gen_id }}">
+        <h3>{{ block.settings.empty_gallery_text }}</h3>
+      </div>
+    {% endif %}
+  {% else %}
+    <div class="ai-scroll-gallery-empty-{{ ai_gen_id }}">
+      <h3>{{ block.settings.no_metaobject_text }}</h3>
+    </div>
+  {% endif %}
+</scroll-gallery-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ScrollGallery{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.items = this.querySelectorAll('.ai-scroll-gallery-item-{{ ai_gen_id }}');
+      }
+
+      connectedCallback() {
+        if ('IntersectionObserver' in window) {
+          this.setupIntersectionObserver();
+        } else {
+          this.items.forEach(item => {
+            item.classList.add('visible');
+          });
+        }
+      }
+
+      setupIntersectionObserver() {
+        const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: {{ block.settings.animation_threshold }}
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+
+        this.items.forEach(item => {
+          observer.observe(item);
+        });
+      }
+    }
+
+    customElements.define('scroll-gallery-{{ ai_gen_id }}', ScrollGallery{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Game Images Gallery",
+  "tag": null,
+  "settings": [
+    {
+      "type": "metaobject",
+      "id": "metaobject",
+      "label": "Game metaobject",
+      "metaobject_type": "games"
+    },
+    {
+      "type": "header",
+      "content": "Gallery Settings"
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Space between images",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Gallery padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Animation Settings"
+    },
+    {
+      "type": "range",
+      "id": "animation_duration",
+      "min": 200,
+      "max": 1000,
+      "step": 50,
+      "unit": "ms",
+      "label": "Animation duration",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "animation_distance",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Animation distance",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "animation_threshold",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "label": "Animation threshold",
+      "default": 0.2
+    },
+    {
+      "type": "header",
+      "content": "Placeholder Settings"
+    },
+    {
+      "type": "color",
+      "id": "placeholder_color",
+      "label": "Placeholder background color",
+      "default": "#f4f4f4"
+    },
+    {
+      "type": "select",
+      "id": "placeholder_aspect_ratio",
+      "label": "Placeholder aspect ratio",
+      "options": [
+        {
+          "value": "1/1",
+          "label": "1:1 (Square)"
+        },
+        {
+          "value": "4/3",
+          "label": "4:3"
+        },
+        {
+          "value": "16/9",
+          "label": "16:9"
+        },
+        {
+          "value": "3/4",
+          "label": "3:4"
+        },
+        {
+          "value": "9/16",
+          "label": "9:16"
+        }
+      ],
+      "default": "4/3"
+    },
+    {
+      "type": "header",
+      "content": "Text Settings"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#333333"
+    },
+    {
+      "type": "text",
+      "id": "empty_gallery_text",
+      "label": "Empty gallery message",
+      "default": "No images available"
+    },
+    {
+      "type": "text",
+      "id": "no_metaobject_text",
+      "label": "No metaobject message",
+      "default": "Please select a Games metaobject"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Game Images Gallery"
+    }
+  ]
+}
 {% endschema %}
