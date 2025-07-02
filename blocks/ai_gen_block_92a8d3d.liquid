@@ -23,6 +23,8 @@
           <img
             src="{{ image | image_url: width: 2000 }}"
             alt="{{ image.alt | escape }}"
+            width="{{ image.width }}"
+            height="{{ image.height }}"
             loading="lazy"
             style="width: 100%; height: auto;"
           >
