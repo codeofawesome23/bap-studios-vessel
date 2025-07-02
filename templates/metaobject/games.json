@@ -180,7 +180,7 @@
         "ai_gen_block_9173fd8_FBctb7": {
           "type": "ai_gen_block_9173fd8",
           "settings": {
-            "metaobject": "{{ closest.metaobject.games }}",
+            "metaobject": "",
             "image_spacing": 40,
             "padding": 20,
             "image_border_radius": 8,
