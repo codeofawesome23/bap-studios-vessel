@@ -38,7 +38,7 @@
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
-{% unless template == 'metaobject.games' %}
+{% unless template contains 'metaobject' and template contains 'games' %}
       {% sections 'header-group' %}
 {% endunless %}    
     </div>
@@ -53,7 +53,7 @@
     >
       {{ content_for_layout }}
     </main>
-{% unless template == 'metaobject.games' %}
+{% unless template contains 'metaobject' and template contains 'games' %}
     {% sections 'footer-group' %}
 {% endunless %}    
     {% render 'search-modal' %}
