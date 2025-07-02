@@ -8,6 +8,9 @@
  * ------------------------------------------------------------
  */
 {
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
   "sections": {
     "hero_kgL7J8": {
       "type": "hero",
@@ -172,7 +175,8 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
-    },
+    
+        },
     "section_xpE6Nz": {
       "type": "section",
       "blocks": {
@@ -223,12 +227,10 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
-    }
+      }}
   },
   "order": [
     "hero_kgL7J8",
-    "section_cJMfLw",
-    "section_xpE6Nz"
+    "section_cJMfLw"
   ]
 }
