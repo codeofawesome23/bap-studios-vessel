@@ -66,12 +66,20 @@
     {% if photos_field.value != blank %}
       {% for photo in photos_field.value %}
         <div class="ai-scroll-gallery-item-{{ ai_gen_id }}">
-          <img 
-            src="{{ photo | image_url: width: 1800 }}" 
-            alt="{{ photo.alt | escape }}"
-            loading="lazy"
-            class="ai-scroll-gallery-image-{{ ai_gen_id }}"
-          >
+          {% if photo.src != blank %}
+            <img 
+              src="{{ photo.src | image_url: width: 1800 }}" 
+              alt="{{ photo.alt | escape }}"
+              width="{{ photo.width }}"
+              height="{{ photo.height }}"
+              loading="lazy"
+              class="ai-scroll-gallery-image-{{ ai_gen_id }}"
+            >
+          {% else %}
+            <div class="ai-scroll-gallery-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
     {% else %}
