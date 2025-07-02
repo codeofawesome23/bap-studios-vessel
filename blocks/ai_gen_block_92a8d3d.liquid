@@ -1,56 +1,35 @@
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
-{% style %}
-  .scroll-reveal-gallery-{{ ai_gen_id }} .scroll-reveal-image {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-    margin-bottom: 20px;
-  }
-  .scroll-reveal-gallery-{{ ai_gen_id }} .scroll-reveal-image.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-{% endstyle %}
-
 <div class="scroll-reveal-gallery-{{ ai_gen_id }}">
-  {% if block.settings.metaobject != blank %}
-    {% assign metaobject = block.settings.metaobject %}
-    {% assign photos_field = metaobject.fields.product_photos %}
-    {% if photos_field.type == 'file_reference_list' and photos_field.value != blank %}
-      {% for image in photos_field.value %}
-        <div class="scroll-reveal-image">
-          <img
-            src="{{ image | image_url: width: 2000 }}"
-            alt="{{ image.alt | escape }}"
-            width="{{ image.width }}"
-            height="{{ image.height }}"
-            loading="lazy"
-            style="width: 100%; height: auto;"
-          >
+  <div class="relative">
+    {% if block.settings.metaobject != blank %}
+      {% assign metaobject = block.settings.metaobject %}
+      {% assign photos_field = metaobject.fields.product_photos %}
+      {% if photos_field.type == 'file_reference_list' and photos_field.value != blank %}
+        {% for image in photos_field.value %}
+          <div class="sticky top-0 h-screen flex flex-col items-center justify-center bg-black text-white">
+            <img
+              src="{{ image | image_url: width: 2000 }}"
+              alt="{{ image.alt | escape }}"
+              width="{{ image.width }}"
+              height="{{ image.height }}"
+              loading="lazy"
+              class="w-full h-full object-contain"
+            >
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="h-screen flex items-center justify-center">
+          No product photos found in Games metaobject.
         </div>
-      {% endfor %}
+      {% endif %}
     {% else %}
-      <div>No product photos found in Games metaobject.</div>
+      <div class="h-screen flex items-center justify-center">
+        No Games metaobject assigned.
+      </div>
     {% endif %}
-  {% else %}
-    <div>No Games metaobject assigned.</div>
-  {% endif %}
+  </div>
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.scroll-reveal-gallery-{{ ai_gen_id }} .scroll-reveal-image');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-    images.forEach(img => observer.observe(img));
-  });
-</script>
 
 {% schema %}
 {
