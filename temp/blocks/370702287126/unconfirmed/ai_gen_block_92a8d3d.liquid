@@ -1,6 +1,390 @@
+{% doc %}
+  @prompt
+    An image that fills the whole screen and scrolls through all the images in the meta-object in the meta-item "Product Photos"
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-fullscreen-slideshow-{{ ai_gen_id }} {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .ai-fullscreen-slideshow__slides-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .ai-fullscreen-slideshow__slide-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity {{ block.settings.transition_speed }}s ease;
+    z-index: 1;
+  }
+
+  .ai-fullscreen-slideshow__slide-{{ ai_gen_id }}.active {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .ai-fullscreen-slideshow__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: {{ block.settings.image_fit }};
+    object-position: center;
+  }
+
+  .ai-fullscreen-slideshow__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .ai-fullscreen-slideshow__placeholder-{{ ai_gen_id }} svg {
+    width: 50%;
+    height: 50%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-fullscreen-slideshow__controls-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 3;
+  }
+
+  .ai-fullscreen-slideshow__dot-{{ ai_gen_id }} {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: {{ block.settings.dot_color }};
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-fullscreen-slideshow__dot-{{ ai_gen_id }}.active {
+    opacity: 1;
+  }
+
+  .ai-fullscreen-slideshow__nav-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: {{ block.settings.nav_background_color }};
+    color: {{ block.settings.nav_color }};
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-fullscreen-slideshow__nav-{{ ai_gen_id }}:hover {
+    opacity: 1;
+  }
+
+  .ai-fullscreen-slideshow__prev-{{ ai_gen_id }} {
+    left: 20px;
+  }
+
+  .ai-fullscreen-slideshow__next-{{ ai_gen_id }} {
+    right: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-fullscreen-slideshow__nav-{{ ai_gen_id }} {
+      width: 36px;
+      height: 36px;
+    }
+  }
+{% endstyle %}
+
+<fullscreen-slideshow-{{ ai_gen_id }} 
+  class="ai-fullscreen-slideshow-{{ ai_gen_id }}"
+  data-autoplay="{{ block.settings.autoplay }}"
+  data-autoplay-speed="{{ block.settings.autoplay_speed }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-fullscreen-slideshow__slides-{{ ai_gen_id }}">
+    {% if block.settings.metaobject != blank %}
+      {% assign metaobject = block.settings.metaobject %}
+      {% assign photos_field = metaobject.fields.product_photos %}
+      
+      {% if photos_field.type == 'file_reference_list' and photos_field.value != blank %}
+        {% for image in photos_field.value %}
+          <div class="ai-fullscreen-slideshow__slide-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}" data-index="{{ forloop.index0 }}">
+            <img 
+              src="{{ image | image_url: width: 2000 }}"
+              alt="{{ image.alt | escape }}"
+              loading="{{ forloop.first | ternary: 'eager', 'lazy' }}"
+              class="ai-fullscreen-slideshow__image-{{ ai_gen_id }}"
+            >
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="ai-fullscreen-slideshow__slide-{{ ai_gen_id }} active">
+          <div class="ai-fullscreen-slideshow__placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="ai-fullscreen-slideshow__slide-{{ ai_gen_id }} active">
+        <div class="ai-fullscreen-slideshow__placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  {% if block.settings.show_navigation %}
+    <button class="ai-fullscreen-slideshow__nav-{{ ai_gen_id }} ai-fullscreen-slideshow__prev-{{ ai_gen_id }}" aria-label="Previous slide">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+    <button class="ai-fullscreen-slideshow__nav-{{ ai_gen_id }} ai-fullscreen-slideshow__next-{{ ai_gen_id }}" aria-label="Next slide">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+  {% endif %}
+
+  {% if block.settings.show_dots %}
+    <div class="ai-fullscreen-slideshow__controls-{{ ai_gen_id }}">
+      {% if block.settings.metaobject != blank %}
+        {% assign metaobject = block.settings.metaobject %}
+        {% assign photos_field = metaobject.fields.product_photos %}
+        
+        {% if photos_field.type == 'file_reference_list' and photos_field.value != blank %}
+          {% for image in photos_field.value %}
+            <div class="ai-fullscreen-slideshow__dot-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}" data-index="{{ forloop.index0 }}"></div>
+          {% endfor %}
+        {% else %}
+          <div class="ai-fullscreen-slideshow__dot-{{ ai_gen_id }} active" data-index="0"></div>
+        {% endif %}
+      {% else %}
+        <div class="ai-fullscreen-slideshow__dot-{{ ai_gen_id }} active" data-index="0"></div>
+      {% endif %}
+    </div>
+  {% endif %}
+</fullscreen-slideshow-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FullscreenSlideshow extends HTMLElement {
+      constructor() {
+        super();
+        this.slides = this.querySelectorAll(`.ai-fullscreen-slideshow__slide-{{ ai_gen_id }}`);
+        this.dots = this.querySelectorAll(`.ai-fullscreen-slideshow__dot-{{ ai_gen_id }}`);
+        this.prevButton = this.querySelector(`.ai-fullscreen-slideshow__prev-{{ ai_gen_id }}`);
+        this.nextButton = this.querySelector(`.ai-fullscreen-slideshow__next-{{ ai_gen_id }}`);
+        this.currentIndex = 0;
+        this.autoplay = this.dataset.autoplay === 'true';
+        this.autoplaySpeed = parseInt(this.dataset.autoplaySpeed) * 1000;
+        this.autoplayInterval = null;
+      }
+
+      connectedCallback() {
+        if (this.slides.length <= 1) return;
+        
+        this.setupEventListeners();
+        
+        if (this.autoplay) {
+          this.startAutoplay();
+        }
+      }
+
+      disconnectedCallback() {
+        this.stopAutoplay();
+      }
+
+      setupEventListeners() {
+        if (this.prevButton) {
+          this.prevButton.addEventListener('click', () => this.goToPrevSlide());
+        }
+        
+        if (this.nextButton) {
+          this.nextButton.addEventListener('click', () => this.goToNextSlide());
+        }
+        
+        this.dots.forEach(dot => {
+          dot.addEventListener('click', () => {
+            const index = parseInt(dot.dataset.index);
+            this.goToSlide(index);
+          });
+        });
+      }
+
+      startAutoplay() {
+        this.autoplayInterval = setInterval(() => {
+          this.goToNextSlide();
+        }, this.autoplaySpeed);
+      }
+
+      stopAutoplay() {
+        if (this.autoplayInterval) {
+          clearInterval(this.autoplayInterval);
+          this.autoplayInterval = null;
+        }
+      }
+
+      goToSlide(index) {
+        if (index === this.currentIndex) return;
+        
+        this.slides[this.currentIndex].classList.remove('active');
+        this.slides[index].classList.add('active');
+        
+        if (this.dots.length > 0) {
+          this.dots[this.currentIndex].classList.remove('active');
+          this.dots[index].classList.add('active');
+        }
+        
+        this.currentIndex = index;
+        
+        if (this.autoplay) {
+          this.stopAutoplay();
+          this.startAutoplay();
+        }
+      }
+
+      goToNextSlide() {
+        const nextIndex = (this.currentIndex + 1) % this.slides.length;
+        this.goToSlide(nextIndex);
+      }
+
+      goToPrevSlide() {
+        const prevIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+        this.goToSlide(prevIndex);
+      }
+    }
+
+    customElements.define('fullscreen-slideshow-{{ ai_gen_id }}', FullscreenSlideshow);
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Fullscreen Slideshow",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Metaobject"
+    },
+    {
+      "type": "metaobject",
+      "id": "metaobject",
+      "label": "Metaobject",
+      "metaobject_type": "product_photos"
+    },
+    {
+      "type": "header",
+      "content": "Slideshow Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Autoplay speed",
+      "default": 5
+    },
+    {
+      "type": "range",
+      "id": "transition_speed",
+      "min": 0.3,
+      "max": 2,
+      "step": 0.1,
+      "unit": "s",
+      "label": "Transition speed",
+      "default": 0.5
+    },
+    {
+      "type": "select",
+      "id": "image_fit",
+      "label": "Image fit",
+      "options": [
+        {
+          "value": "cover",
+          "label": "Cover"
+        },
+        {
+          "value": "contain",
+          "label": "Contain"
+        }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation",
+      "label": "Show navigation arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Show navigation dots",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "nav_color",
+      "label": "Navigation color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "nav_background_color",
+      "label": "Navigation background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "dot_color",
+      "label": "Dot color",
+      "default": "#FFFFFF"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Fullscreen Slideshow"
+    }
+  ]
+}
 {% endschema %}
