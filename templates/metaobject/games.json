@@ -8,9 +8,6 @@
  * ------------------------------------------------------------
  */
 {
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
   "sections": {
     "hero_kgL7J8": {
       "type": "hero",
@@ -91,6 +88,7 @@
         "link": "",
         "open_in_new_tab": false,
         "media_type_1": "image",
+        "image_1": "{{ metaobject.header_image.value }}",
         "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -175,8 +173,7 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
-    
-        },
+    },
     "section_xpE6Nz": {
       "type": "section",
       "blocks": {
@@ -190,9 +187,9 @@
             "image_fit": "cover",
             "show_navigation": true,
             "show_dots": true,
-            "nav_color": "#FFFFFF",
+            "nav_color": "#ffffff",
             "nav_background_color": "#000000",
-            "dot_color": "#FFFFFF"
+            "dot_color": "#ffffff"
           },
           "blocks": {}
         }
@@ -227,7 +224,8 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }}
+      }
+    }
   },
   "order": [
     "hero_kgL7J8",
