@@ -67,7 +67,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "{{ closest.metaobject.games.buy_or_support | metafield_text }}",
-            "link": "shopify://metaobjects/games/booze-pets",
+            "link": "{{ closest.metaobject.games.buy_support_url.value }}",
             "open_in_new_tab": true,
             "style_class": "button",
             "width": "fit-content",
@@ -1323,7 +1323,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "{{ closest.metaobject.games.buy_or_support | metafield_text }}",
-                "link": "{{ closest.metaobject.games.system.url }}",
+                "link": "{{ closest.metaobject.games.buy_support_url.value }}",
                 "open_in_new_tab": true,
                 "style_class": "button",
                 "width": "fit-content",
