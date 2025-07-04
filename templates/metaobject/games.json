@@ -1155,7 +1155,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
+                    "text": "<p>No.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1396,7 +1396,7 @@
         "border_width": 1,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": false,
+        "toggle_overlay": true,
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
