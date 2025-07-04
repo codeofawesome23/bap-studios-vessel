@@ -170,7 +170,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Shop Now",
+            "label": "Learn More",
             "link": "{{ metaobjects.games[\"booze-pets\"].system.url }}",
             "open_in_new_tab": false,
             "style_class": "button",
