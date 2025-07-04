@@ -179,7 +179,7 @@
       "blocks": {
         "group_qjqLfW": {
           "type": "group",
-          "name": "Image 1",
+          "name": "Product Photo 1",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -201,7 +201,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/1.jpg",
+            "background_image": "{{ closest.metaobject.games.product_photo_1.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -220,7 +220,7 @@
         },
         "group_tfWT4D": {
           "type": "group",
-          "name": "Image 2",
+          "name": "Product Photo 2",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -242,7 +242,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/2.jpg",
+            "background_image": "{{ closest.metaobject.games.product_photo_2.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -264,7 +264,7 @@
         "group_qjqLfW",
         "group_tfWT4D"
       ],
-      "name": "Top Image Row",
+      "name": "Product Photo Row",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -298,7 +298,7 @@
       "blocks": {
         "group_MnwGRX": {
           "type": "group",
-          "name": "Image 3",
+          "name": "Product Photo 3",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -320,7 +320,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/3.jpg",
+            "background_image": "{{ closest.metaobject.games.product_photo_3.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -339,7 +339,7 @@
         },
         "group_BBPpjJ": {
           "type": "group",
-          "name": "Image 4",
+          "name": "Product Photo 4",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -361,7 +361,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/4.jpg",
+            "background_image": "{{ closest.metaobject.games.product_photo_4.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -383,7 +383,7 @@
         "group_MnwGRX",
         "group_BBPpjJ"
       ],
-      "name": "Bottom Image Row",
+      "name": "Product Photo Row",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -479,7 +479,7 @@
       "blocks": {
         "group_mCmHyQ": {
           "type": "group",
-          "name": "Image 1",
+          "name": "Action Photo 1",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -501,7 +501,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/1.jpg",
+            "background_image": "{{ closest.metaobject.games.action_photo_1.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -538,7 +538,7 @@
         },
         "group_FQMYTT": {
           "type": "group",
-          "name": "Image 2",
+          "name": "Action Photo 2",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -560,7 +560,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/2.jpg",
+            "background_image": "{{ closest.metaobject.games.action_photo_2.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -597,7 +597,7 @@
         },
         "group_7zcrQt": {
           "type": "group",
-          "name": "Image 3",
+          "name": "Action Photo 3",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -619,7 +619,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/3.jpg",
+            "background_image": "{{ closest.metaobject.games.action_photo_3.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -660,7 +660,7 @@
         "group_FQMYTT",
         "group_7zcrQt"
       ],
-      "name": "Top Action Images",
+      "name": "Action Image Row",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
@@ -694,7 +694,7 @@
       "blocks": {
         "group_crJTPt": {
           "type": "group",
-          "name": "Image 1",
+          "name": "Action Photo 4",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -716,7 +716,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/4.jpg",
+            "background_image": "{{ closest.metaobject.games.action_photo_4.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -753,7 +753,7 @@
         },
         "group_DbD6WA": {
           "type": "group",
-          "name": "Image 2",
+          "name": "Action Photo 5",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -775,7 +775,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/5.jpg",
+            "background_image": "{{ closest.metaobject.games.action_photo_5.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -812,7 +812,7 @@
         },
         "group_7RytF7": {
           "type": "group",
-          "name": "Image 3",
+          "name": "Action Photo 6",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -834,7 +834,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/6.jpg",
+            "background_image": "{{ closest.metaobject.games.action_photo_6.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -875,7 +875,7 @@
         "group_DbD6WA",
         "group_7RytF7"
       ],
-      "name": "Bottom Action Images",
+      "name": "Action Image Row",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
