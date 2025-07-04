@@ -171,7 +171,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Shop Now",
-            "link": "shopify://pages/custom",
+            "link": "{{ metaobjects.games[\"booze-pets\"].system.url }}",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
