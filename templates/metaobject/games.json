@@ -67,7 +67,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "{{ closest.metaobject.games.buy_or_support | metafield_text }}",
-            "link": "{{ closest.metaobject.games.system.url }}",
+            "link": "shopify://metaobjects/games/booze-pets",
             "open_in_new_tab": true,
             "style_class": "button",
             "width": "fit-content",
@@ -955,14 +955,14 @@
             "accordion_row_MfkGEy": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "{{ closest.metaobject.games.faq_question_1.value }}",
                 "open_by_default": false
               },
               "blocks": {
                 "text_if3YTh": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
+                    "text": "<p>{{ closest.metaobject.games.faq_answer_1 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -992,14 +992,14 @@
             "accordion_row_JUJCFD": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "{{ closest.metaobject.games.faq_question_2.value }}",
                 "open_by_default": false
               },
               "blocks": {
                 "text_FmQ8YH": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
+                    "text": "<p>{{ closest.metaobject.games.faq_answer_2 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1030,7 +1030,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "{{ closest.metaobject.games.faq_question_3.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1038,7 +1038,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>{{ closest.metaobject.games.faq_answer_3 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1069,7 +1069,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "{{ closest.metaobject.games.faq_question_4.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1077,7 +1077,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>{{ closest.metaobject.games.faq_answer_4 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1108,7 +1108,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "How much does shipping cost?",
+                "heading": "{{ closest.metaobject.games.faq_question_5.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1116,7 +1116,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
+                    "text": "<p>{{ closest.metaobject.games.faq_answer_5 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1147,7 +1147,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "Does jet fuel melt steel beams?",
+                "heading": "{{ closest.metaobject.games.faq_question_6.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1155,7 +1155,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>No.</p>",
+                    "text": "<p>{{ closest.metaobject.games.faq_answer_6 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
