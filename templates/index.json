@@ -155,7 +155,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].slide_image.value }}",
+            "image_1": "{{ metaobjects.homepage_slide[\"slide-2\"].slide_image.value }}",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -294,7 +294,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].slide_image.value }}",
+            "image_1": "{{ metaobjects.homepage_slide[\"slide-3\"].slide_image.value }}",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
