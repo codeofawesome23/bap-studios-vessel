@@ -57,7 +57,7 @@
               "type": "menu",
               "name": "t:names.menu",
               "settings": {
-                "menu": "footer",
+                "menu": "shop-footer",
                 "heading": "Shop",
                 "menu_spacing": 12,
                 "show_as_accordion": false,
@@ -78,7 +78,7 @@
               "type": "menu",
               "name": "t:names.menu",
               "settings": {
-                "menu": "",
+                "menu": "info-footer",
                 "heading": "Info",
                 "menu_spacing": 12,
                 "show_as_accordion": false,
@@ -99,7 +99,7 @@
               "type": "menu",
               "name": "t:names.menu",
               "settings": {
-                "menu": "",
+                "menu": "contact-footer",
                 "heading": "Contact",
                 "menu_spacing": 12,
                 "show_as_accordion": false,
