@@ -1167,7 +1167,8 @@
           "type": "icon",
           "settings": {
             "icon": "eye",
-            "width": 32,
+            "image_upload": "shopify://shop_images/Cards_Against_Humanity.png",
+            "width": 128,
             "link": "",
             "open_in_new_tab": false
           },
@@ -1177,7 +1178,8 @@
           "type": "icon",
           "settings": {
             "icon": "heart",
-            "width": 32,
+            "image_upload": "shopify://shop_images/Relatable.png",
+            "width": 128,
             "link": "",
             "open_in_new_tab": false
           },
@@ -1187,7 +1189,8 @@
           "type": "icon",
           "settings": {
             "icon": "silhouette",
-            "width": 32,
+            "image_upload": "shopify://shop_images/Dyce.png",
+            "width": 128,
             "link": "",
             "open_in_new_tab": false
           },
@@ -1197,7 +1200,8 @@
           "type": "icon",
           "settings": {
             "icon": "bottle",
-            "width": 32,
+            "image_upload": "shopify://shop_images/Zombie_Ghost.png",
+            "width": 128,
             "link": "",
             "open_in_new_tab": false
           },
@@ -1207,7 +1211,8 @@
           "type": "icon",
           "settings": {
             "icon": "lightning_bolt",
-            "width": 32,
+            "image_upload": "shopify://shop_images/Whisker.png",
+            "width": 128,
             "link": "",
             "open_in_new_tab": false
           },
@@ -1217,7 +1222,8 @@
           "type": "icon",
           "settings": {
             "icon": "fire",
-            "width": 32,
+            "image_upload": "shopify://shop_images/Catalyst.png",
+            "width": 128,
             "link": "",
             "open_in_new_tab": false
           },
