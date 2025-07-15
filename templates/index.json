@@ -1166,66 +1166,66 @@
         "icon_TNk383": {
           "type": "icon",
           "settings": {
-            "icon": "eye",
+            "icon": "none",
             "image_upload": "shopify://shop_images/Cards_Against_Humanity.png",
             "width": 128,
-            "link": "",
-            "open_in_new_tab": false
+            "link": "https://www.cardsagainsthumanity.com/",
+            "open_in_new_tab": true
           },
           "blocks": {}
         },
         "icon_XRtxnL": {
           "type": "icon",
           "settings": {
-            "icon": "heart",
+            "icon": "none",
             "image_upload": "shopify://shop_images/Relatable.png",
             "width": 128,
-            "link": "",
-            "open_in_new_tab": false
+            "link": "https://relatable.com/",
+            "open_in_new_tab": true
           },
           "blocks": {}
         },
         "icon_VY6Lxh": {
           "type": "icon",
           "settings": {
-            "icon": "silhouette",
+            "icon": "none",
             "image_upload": "shopify://shop_images/Dyce.png",
             "width": 128,
-            "link": "",
-            "open_in_new_tab": false
+            "link": "https://dycegames.com/",
+            "open_in_new_tab": true
           },
           "blocks": {}
         },
         "icon_KVtV8W": {
           "type": "icon",
           "settings": {
-            "icon": "bottle",
+            "icon": "none",
             "image_upload": "shopify://shop_images/Zombie_Ghost.png",
             "width": 128,
-            "link": "",
-            "open_in_new_tab": false
+            "link": "https://zombieghostgames.com/",
+            "open_in_new_tab": true
           },
           "blocks": {}
         },
         "icon_rcLiHK": {
           "type": "icon",
           "settings": {
-            "icon": "lightning_bolt",
+            "icon": "none",
             "image_upload": "shopify://shop_images/Whisker.png",
             "width": 128,
-            "link": "",
-            "open_in_new_tab": false
+            "link": "https://www.whisker.com/",
+            "open_in_new_tab": true
           },
           "blocks": {}
         },
         "icon_BzhMxU": {
           "type": "icon",
           "settings": {
-            "icon": "fire",
+            "icon": "none",
             "image_upload": "shopify://shop_images/Catalyst.png",
             "width": 128,
-            "link": "",
-            "open_in_new_tab": false
+            "link": "https://catalystpet.com/",
+            "open_in_new_tab": true
           },
           "blocks": {}
         }
