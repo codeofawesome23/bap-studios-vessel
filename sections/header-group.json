@@ -50,7 +50,7 @@
             "type_case_tertiary_link": "none",
             "navigation_bar": false,
             "color_scheme_navigation_bar": "",
-            "drawer_accordion": false,
+            "drawer_accordion": true,
             "drawer_accordion_expand_first": false,
             "drawer_dividers": false
           },
