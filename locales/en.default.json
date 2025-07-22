@@ -185,7 +185,7 @@
     "pickup_available_in": "Pickup available, {{ pickup_time }}",
     "pickup_not_available": "Pickup currently not available",
     "pickup_ready_in": "{{ pickup_time }}",
-    "powered_by": "This shop will be powered by",
+    "powered_by": "We're working hard to bring you this amazing site",
     "price": "Price",
     "price_compare_at": "Compare at price",
     "price_from": "From {{ price }}",
@@ -284,13 +284,8 @@
     }
   },
   "shopify": {
-    "checkout": {
-      "general": {
-        "autocomplete_powered_by_google": "Made with Love in Chicago, IL"
-      }
-    },
     "links": {
-      "powered_by_shopify": "https://taylrdmedia.com"
+      "powered_by_shopify": "Made with Love in Chicago, IL"
     }
   }
 }
