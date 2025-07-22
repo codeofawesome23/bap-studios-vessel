@@ -16,10 +16,10 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<h1>{{ closest.collection.title }}</h1>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
+            "text": "<h2>{{ closest.collection.title }}</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
             "type_preset": "h2",
             "font": "var(--font-tertiary--family)",
             "font_size": "var(--font-size--heading-lg)",
@@ -27,33 +27,20 @@
             "letter_spacing": "normal",
             "case": "none",
             "wrap": "pretty",
-            "color": "",
+            "color": "var(--color-foreground)",
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-start": 40,
+            "padding-block-end": 40,
             "padding-inline-start": 0,
             "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "divider_hxzt8A": {
-          "type": "_divider",
-          "name": "t:names.divider",
-          "settings": {
-            "thickness": 1,
-            "corner_radius": "square",
-            "width_percent": 100,
-            "padding-block-start": 0,
-            "padding-block-end": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "text_tqQTNE",
-        "divider_hxzt8A"
+        "text_tqQTNE"
       ],
       "name": "Page Header",
       "settings": {
@@ -65,7 +52,7 @@
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 80,
-        "section_width": "page-width",
+        "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "scheme-1",
@@ -82,7 +69,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 50,
-        "padding-block-end": 0
+        "padding-block-end": 50
       }
     },
     "main": {
