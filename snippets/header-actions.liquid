@@ -11,9 +11,6 @@
     {% render 'account-drawer' %}
   {% endif %}
 
-  <div class="social-icons__wrapper" style="display: block !important; opacity: 1 !important;">
-  {% render 'header-social-icons' %}
-  </div>
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
     {% render 'cart-drawer' %}
   {% else %}
