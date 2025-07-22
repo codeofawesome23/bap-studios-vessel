@@ -11,6 +11,7 @@
     {% render 'account-drawer' %}
   {% endif %}
 
+  {% render 'header-social-icons' %}
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
     {% render 'cart-drawer' %}
   {% else %}
