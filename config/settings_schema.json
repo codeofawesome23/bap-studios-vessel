@@ -2258,4 +2258,30 @@
       }
     ]
   }
+,
+{
+  "name": "Social media",
+  "settings": [
+    {
+      "type": "url",
+      "id": "social_facebook_link",
+      "label": "Facebook URL"
+    },
+    {
+      "type": "url",
+      "id": "social_tiktok_link",
+      "label": "TikTok URL"
+    },
+    {
+      "type": "url",
+      "id": "social_instagram_link",
+      "label": "Instagram URL"
+    },
+    {
+      "type": "url",
+      "id": "social_youtube_link",
+      "label": "YouTube URL"
+    }
+  ]
+}
 ]
