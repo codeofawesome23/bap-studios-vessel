@@ -55,47 +55,6 @@
             "drawer_dividers": false
           },
           "blocks": {}
-        },
-        "header-social-icons": {
-          "type": "_footer-social-icons",
-          "static": true,
-          "settings": {},
-          "blocks": {
-            "social_link_fb": {
-              "type": "_social-link",
-              "name": "Facebook",
-              "settings": {
-                "link": "https://www.facebook.com/people/bapkat/100086774774126/"
-              }
-            },
-            "social_link_ig": {
-              "type": "_social-link",
-              "name": "Instagram",
-              "settings": {
-                "link": "https://instagram.com/bap.kat"
-              }
-            },
-            "social_link_tt": {
-              "type": "_social-link",
-              "name": "TikTok",
-              "settings": {
-                "link": "https://tiktok.com/@bap.kat"
-              }
-            },
-            "social_link_yt": {
-              "type": "_social-link",
-              "name": "YouTube",
-              "settings": {
-                "link": "https://youtube.com/@bapkat"
-              }
-            }
-          },
-          "block_order": [
-            "social_link_fb",
-            "social_link_ig",
-            "social_link_tt",
-            "social_link_yt"
-          ]
         }
       },
       "custom_css": [],
@@ -117,9 +76,9 @@
         "divider_width": 0,
         "divider_size": "page-width",
         "border_width": 0,
-        "color_scheme_top": "",
+        "color_scheme_top": "scheme-1",
         "color_scheme_bottom": "",
-        "color_scheme_transparent": "scheme-6",
+        "color_scheme_transparent": "scheme-3",
         "enable_transparent_header_home": true,
         "home_color_scheme": "inverse",
         "enable_transparent_header_product": false,
