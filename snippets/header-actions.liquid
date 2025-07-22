@@ -12,9 +12,8 @@
     {% render 'account-drawer' %}
   {% endif %}
 
-  <!-- Always show social icons -->
-  <div class="header-social-icons">
-    {% render 'social-media' %}
+  <div class="footer-utilities__group footer-utilities__group--right">
+    {% content_for 'block', type: '_footer-social-icons', id: 'social_icons' %}
   </div>
 
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
