@@ -11,7 +11,6 @@
     {% render 'account-drawer' %}
   {% endif %}
 
-  {% content_for 'block', type: '_header-social-icons', id: 'header_social_icons' %}
   {% if settings.cart_type == 'drawer' and template.name != 'cart' %}
     {% render 'cart-drawer' %}
   {% else %}
