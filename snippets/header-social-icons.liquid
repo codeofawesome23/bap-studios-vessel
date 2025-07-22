@@ -1,34 +1,17 @@
-
-
-<div
-  class="social-icons__wrapper"
-  {{ block.shopify_attributes }}
->
-  {% content_for 'blocks' %}
+<div class="social-icons__wrapper">
+  {% if settings.social_twitter_link %}
+    <a href="{{ settings.social_twitter_link }}" target="_blank" aria-label="Twitter">
+      {% render 'icon-twitter' %}
+    </a>
+  {% endif %}
+  {% if settings.social_instagram_link %}
+    <a href="{{ settings.social_instagram_link }}" target="_blank" aria-label="Instagram">
+      {% render 'icon-instagram' %}
+    </a>
+  {% endif %}
+  {% if settings.social_facebook_link %}
+    <a href="{{ settings.social_facebook_link }}" target="_blank" aria-label="Facebook">
+      {% render 'icon-facebook' %}
+    </a>
+  {% endif %}
 </div>
-
-{% stylesheet %}
-  .social-icons__wrapper {
-    display: flex;
-    gap: var(--gap-sm);
-    flex-wrap: wrap;
-    justify-content: center;
-
-    @media screen and (width >= 750px) {
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-    }
-  }
-{% endstylesheet %}
-
-{% schema %}
-{
-  "name": "t:names.social_media_links",
-  "tag": null,
-  "blocks": [
-    {
-      "type": "_social-link"
-    }
-  ]
-}
-{% endschema %}
