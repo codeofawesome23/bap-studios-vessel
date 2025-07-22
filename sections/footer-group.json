@@ -320,7 +320,7 @@
             },
             "social_icons": {
               "type": "_footer-social-icons",
-              "name": "ur mom",
+              "name": "Social Icons",
               "static": true,
               "settings": {},
               "blocks": {
