@@ -61,7 +61,6 @@
     "clear": "Clear",
     "clear_all": "Clear all",
     "close": "Close",
-    // Continue shopping link on the cart page which takes the user back to a collection page
     "continue_shopping": "Continue shopping",
     "enter_password": "Enter password",
     "log_in_html": "Have an account? <a href=\"{{ link }}\">Log in</a> to check out faster.",
@@ -282,6 +281,16 @@
   "t": {
     "names": {
       "social_links": "Social Links"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "general": {
+        "autocomplete_powered_by_google": "Made with Love in Chicago, IL"
+      }
+    },
+    "links": {
+      "powered_by_shopify": "https://taylrdmedia.com"
     }
   }
 }
