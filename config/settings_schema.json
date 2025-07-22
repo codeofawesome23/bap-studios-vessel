@@ -2257,30 +2257,5 @@
         "default": "equal-width-buttons"
       }
     ]
-  },
-  {
-    "name": "Social Links",
-    "settings": [
-      {
-        "type": "url",
-        "id": "social_instagram",
-        "label": "Instagram URL"
-      },
-      {
-        "type": "url",
-        "id": "social_facebook",
-        "label": "Facebook URL"
-      },
-      {
-        "type": "url",
-        "id": "social_tiktok",
-        "label": "TikTok URL"
-      },
-      {
-        "type": "url",
-        "id": "social_youtube",
-        "label": "YouTube URL"
-      }
-    ]
   }
 ]

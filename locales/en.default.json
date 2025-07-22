@@ -61,6 +61,7 @@
     "clear": "Clear",
     "clear_all": "Clear all",
     "close": "Close",
+    // Continue shopping link on the cart page which takes the user back to a collection page
     "continue_shopping": "Continue shopping",
     "enter_password": "Enter password",
     "log_in_html": "Have an account? <a href=\"{{ link }}\">Log in</a> to check out faster.",
@@ -185,7 +186,7 @@
     "pickup_available_in": "Pickup available, {{ pickup_time }}",
     "pickup_not_available": "Pickup currently not available",
     "pickup_ready_in": "{{ pickup_time }}",
-    "powered_by": "We're working hard to bring you this amazing site",
+    "powered_by": "This shop will be powered by",
     "price": "Price",
     "price_compare_at": "Compare at price",
     "price_from": "From {{ price }}",
@@ -273,19 +274,6 @@
       "add_to_cart_error": "Error adding to cart",
       "sold_out": "Sold out",
       "unavailable": "Unavailable"
-    }
-  },
-  "names": {
-    "social_links": "Social Links"
-  },
-  "t": {
-    "names": {
-      "social_links": "Social Links"
-    }
-  },
-  "shopify": {
-    "links": {
-      "powered_by_shopify": "Made with Love in Chicago, IL"
     }
   }
 }
