@@ -439,7 +439,7 @@
       "settings": {
         "icons_style": "arrows_large",
         "slideshow_controls_style": "dots",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "autoplay": true,
         "autoplay_speed": 5,
         "section_width": "full-width",
