@@ -175,6 +175,7 @@
       "blocks": {
         "contact_form_UwiCkQ": {
           "type": "contact-form",
+          "name": "Returns + Exchanges Form",
           "settings": {
             "width": "custom",
             "custom_width": 50,
