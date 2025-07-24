@@ -32,8 +32,8 @@
           "type": "_header-menu",
           "static": true,
           "settings": {
-            "menu": "main-menu",
-            "menu_style": "featured_products",
+            "menu": "main-menu-header",
+            "menu_style": "text",
             "featured_products_aspect_ratio": "4 / 5",
             "featured_collections_aspect_ratio": "16 / 9",
             "image_border_radius": 0,
