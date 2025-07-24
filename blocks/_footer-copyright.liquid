@@ -9,11 +9,11 @@
   style="{% render 'typography-style', preset: 'custom', settings: block.settings %}"
   {{ block.shopify_attributes }}
 >
-  <span class="footer-utilities__text">
-    &copy; {{ 'now' | date: '%Y' }}
-    {{ shop.name | link_to: routes.root_url -}}
-      •  <a href="https://taylrdmedia.com/" target="_blank" rel="noopener">Made with Love in Chicago, IL</a>
-  </span>
+<span class="footer-utilities__text">
+  &copy; {{ 'now' | date: '%Y' }}
+  {{ shop.name | link_to: routes.root_url }}
+  • <a href="https://taylrdmedia.com/" target="_blank" rel="noopener">Made with Love in Chicago, IL</a>
+</span>
 </div>
 
 {% schema %}
