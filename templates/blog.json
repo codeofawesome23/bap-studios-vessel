@@ -9,17 +9,18 @@
  */
 {
   "sections": {
-    "hero_wmC4fX": {
-      "type": "hero",
+    "section_MfiAdk": {
+      "type": "section",
       "blocks": {
-        "text_6rzrPq": {
+        "text_Xgf3wU": {
           "type": "text",
+          "name": "t:names.heading",
           "settings": {
-            "text": "<h1>The Baply</h1>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "h1",
+            "text": "<h2>The Baply</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -37,14 +38,14 @@
           },
           "blocks": {}
         },
-        "text_NCgPma": {
+        "text_cpcG6P": {
           "type": "text",
           "settings": {
             "text": "<p>Sign Up for our Newsletter</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -56,7 +57,30 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 32,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "email_signup_XGPXVN": {
+          "type": "email-signup",
+          "settings": {
+            "width": "custom",
+            "custom_width": 50,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border_style": "all",
+            "border_width": 1,
+            "border_radius": 0,
+            "input_type_preset": "paragraph",
+            "style_class": "button-unstyled",
+            "display_type": "arrow",
+            "label": "Sign Up",
+            "integrated_button": true,
+            "button_type_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -64,15 +88,12 @@
         }
       },
       "block_order": [
-        "text_6rzrPq",
-        "text_NCgPma"
+        "text_Xgf3wU",
+        "text_cpcG6P",
+        "email_signup_XGPXVN"
       ],
-      "name": "t:names.hero",
+      "name": "t:names.email_signup",
       "settings": {
-        "link": "",
-        "open_in_new_tab": false,
-        "media_type_1": "image",
-        "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -80,17 +101,23 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
+        "gap": 15,
+        "section_width": "full-width",
         "section_height": "large",
         "section_height_custom": 50,
-        "color_scheme": "scheme-5",
-        "toggle_overlay": true,
+        "color_scheme": "scheme-2",
+        "background_media": "image",
+        "video_position": "cover",
+        "background_image": "shopify://shop_images/Blank_Placeholder_Dark.jpg",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
         "overlay_color": "#00000026",
-        "overlay_style": "gradient",
+        "overlay_style": "solid",
         "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
         "padding-block-start": 40,
         "padding-block-end": 40
       }
@@ -197,7 +224,7 @@
     }
   },
   "order": [
-    "hero_wmC4fX",
+    "section_MfiAdk",
     "main"
   ]
 }
