@@ -1,5 +1,110 @@
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
+{% style %}
+  .ai-contact-form-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_right }}px {{ block.settings.padding_bottom }}px {{ block.settings.padding_left }}px;
+  }
+
+  .ai-contact-form__container-{{ ai_gen_id }} {
+    margin: 0 auto;
+    {% if block.settings.width == 'custom' %}
+      width: {{ block.settings.custom_width }}%;
+    {% else %}
+      width: 100%;
+      max-width: fit-content;
+    {% endif %}
+  }
+
+  .ai-contact-form__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .ai-contact-form__row-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .ai-contact-form__row-{{ ai_gen_id }}--single {
+    flex-direction: column;
+  }
+
+  .ai-contact-form__field-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-contact-form__input-{{ ai_gen_id }},
+  .ai-contact-form__select-{{ ai_gen_id }},
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    padding: 16px;
+    background-color: #f1ecdf;
+    color: rgb(var(--color-input-text));
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .ai-contact-form__button-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    {% if block.settings.button_width_desktop == 'fit' %}
+      justify-content: flex-start;
+    {% else %}
+      justify-content: stretch;
+    {% endif %}
+  }
+
+  .ai-contact-form__button-wrapper-{{ ai_gen_id }} .button {
+    {% if block.settings.button_width_desktop == 'fit' %}
+      width: auto;
+    {% else %}
+      width: {{ block.settings.button_custom_width_desktop }}%;
+    {% endif %}
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-contact-form__container-{{ ai_gen_id }} {
+      {% if block.settings.width_mobile == 'custom' %}
+        width: {{ block.settings.custom_width_mobile }}%;
+      {% else %}
+        width: 100%;
+        max-width: fit-content;
+      {% endif %}
+    }
+
+    .ai-contact-form__row-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-contact-form__button-wrapper-{{ ai_gen_id }} {
+      {% if block.settings.button_width_mobile == 'fit' %}
+        justify-content: flex-start;
+      {% else %}
+        justify-content: stretch;
+      {% endif %}
+    }
+
+    .ai-contact-form__button-wrapper-{{ ai_gen_id }} .button {
+      {% if block.settings.button_width_mobile == 'fit' %}
+        width: auto;
+      {% else %}
+        width: {{ block.settings.button_custom_width_mobile }}%;
+      {% endif %}
+    }
+  }
+{% endstyle %}
+
 <div
   class="ai-contact-form-{{ ai_gen_id }}{% unless block.settings.inherit_color_scheme %} color-scheme-{{ block.settings.color_scheme }}{% endunless %}"
   {{ block.shopify_attributes }}
@@ -47,13 +152,9 @@
         </div>
       </div>
     {% endform %}
-    {% if form.posted_successfully? %}
-      <script>
-        window.location.href = "https://bapstudios.com/form/post-submit/success";
-      </script>
-    {% endif %}
   </div>
 </div>
+
 {% schema %}
 {
   "name": "Return/Exchange Form",
