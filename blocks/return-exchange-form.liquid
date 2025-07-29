@@ -103,7 +103,21 @@
   {{ block.shopify_attributes }}
 >
   <div class="ai-contact-form__container-{{ ai_gen_id }}">
-    {% form 'contact' %}
+    {% form 'contact', id: 'ReturnExchangeForm', class: 'return-exchange-form__form' %}
+      {% if form.posted_successfully? %}
+        <div class="return-exchange-form__success" tabindex="-1" autofocus>
+          {{ 'icon-checkmark.svg' | inline_asset_content }}
+          {{ 'blocks.contact_form.post_success' | t }}
+        </div>
+      {% endif %}
+
+      {% if form.errors %}
+        <div class="return-exchange-form__error" tabindex="-1" autofocus>
+          {{ 'icon-error.svg' | inline_asset_content }}
+          {{ form.errors.translated_fields.email | capitalize }}
+          {{ form.errors.messages.email }}
+        </div>
+      {% endif %}
       <input type="hidden" name="contact[tags]" value="Return/Exchange Request">
 
       <div class="ai-contact-form__wrapper-{{ ai_gen_id }}">
@@ -196,3 +210,12 @@
   ]
 }
 {% endschema %}
+{% style %}
+  .return-exchange-form__success,
+  .return-exchange-form__error {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-xs);
+    margin-bottom: 1em;
+  }
+{% endstyle %}
