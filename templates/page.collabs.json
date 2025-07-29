@@ -77,7 +77,33 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>New arrivals</h2>",
+            "text": "<h2>Bap Studios + <span style=\"text-decoration:underline\">You</span></h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_T7iiMr": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -101,7 +127,8 @@
         }
       },
       "block_order": [
-        "text_9CkKrU"
+        "text_9CkKrU",
+        "text_T7iiMr"
       ],
       "settings": {
         "content_direction": "column",
