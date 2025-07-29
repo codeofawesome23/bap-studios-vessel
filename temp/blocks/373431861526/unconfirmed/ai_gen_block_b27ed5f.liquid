@@ -1,6 +1,533 @@
+{% doc %}
+  @prompt
+    A contact form that has 3 rows
+    
+    First Row has the fields "First Name" and "Last Name". Both are single line text fields and required. On mobile, the fields are stacked on top of each-other into new rows. 
+    
+    Second Row has the field "Email" which is a single line text field and is a required field.
+    
+    Third Row has the field "Return/Exchange" which is a single select field with the options "Return" and "Exchange". This field is required and the default option is "Select an option"
+    
+    Fourth Row has the field "Reason for Return/Exchange" which is a multi-line text box. This field is required.
+    
+    The styling should mimic the styling for the Contact Form and for the post submit option should send an email of the results to "admin@bapstudios.com"., This is what shows on the website
+    
+    Liquid error (temp/ai_gen_block_6bc773c line 155): Invalid form type "aek9qu084amm1zxzecaigenblock6bc773crdzhgk", must be one of ["product", "storefront_password", "contact", "customer_login", "create_customer", "recover_customer_password", "reset_customer_password", "guest_login", "currency", "activate_customer_password", "customer_address", "new_comment", "customer", "localization", "cart"], I want the ability to format the width of the form to span the width of the site, The form width should follow the same parameters as the contact form.
+    
+    Desktop width
+    with the options Fit and Custom and when custom is selected a slider that allows you to choose the percentage.
+    
+    Mobile width
+    with the options Fit and Custom and when custom is selected a slider that allows you to choose the percentage.
+    
+    Then below that, an option to inherit the color scheme of the form.
+    
+    Below that, a section that allows you to adjust the padding for the Top, Bottom, Left, and Right measured in pixels., I've compiled a final prompt to hopefully get you to understand exactly what I'm looking for
+    
+    Prompt:
+    
+    Build a contact form with the following structure and styles:
+    	•	Form type: contact (must be valid and functional in Shopify)
+    	•	Submit behavior: Send form submissions to the store’s default email as a contact form
+    
+    Fields (all required):
+    	•	First Row:
+    	•	“First Name” (single-line input)
+    	•	“Last Name” (single-line input)
+    	•	Second Row:
+    	•	“Email” (single-line input)
+    	•	Third Row:
+    	•	“Return/Exchange” (dropdown/select with “Return” and “Exchange” options — default is “Select an option”)
+    	•	Fourth Row:
+    	•	“Reason for Return/Exchange” (multiline textarea)
+    
+    Style Requirements:
+    	•	Match the default Shopify Contact Form styl
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-contact-form-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_right }}px {{ block.settings.padding_bottom }}px {{ block.settings.padding_left }}px;
+    {% if block.settings.inherit_color_scheme %}
+      color: rgb(var(--color-foreground));
+      background-color: rgb(var(--color-background));
+    {% endif %}
+  }
+
+  .ai-contact-form__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .ai-contact-form__row-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .ai-contact-form__row-{{ ai_gen_id }}--single {
+    flex-direction: column;
+  }
+
+  .ai-contact-form__field-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+  }
+
+  .ai-contact-form__input-{{ ai_gen_id }},
+  .ai-contact-form__select-{{ ai_gen_id }},
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    padding: 16px;
+    border: none;
+    background-color: #f3eee3;
+    color: #000000;
+    font-size: 14px;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-contact-form__input-{{ ai_gen_id }}::placeholder,
+  .ai-contact-form__textarea-{{ ai_gen_id }}::placeholder {
+    color: #666666;
+  }
+
+  .ai-contact-form__input-{{ ai_gen_id }}:focus,
+  .ai-contact-form__select-{{ ai_gen_id }}:focus,
+  .ai-contact-form__textarea-{{ ai_gen_id }}:focus {
+    outline: none;
+    background-color: #ede7da;
+  }
+
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .ai-contact-form__select-{{ ai_gen_id }} {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 48px;
+  }
+
+  .ai-contact-form__select-{{ ai_gen_id }} option[value=""] {
+    color: #666666;
+  }
+
+  .ai-contact-form__button-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    {% if block.settings.button_desktop_width == 'fit' %}
+      justify-content: flex-start;
+    {% else %}
+      justify-content: stretch;
+    {% endif %}
+  }
+
+  .ai-contact-form__button-{{ ai_gen_id }} {
+    {% if block.settings.button_desktop_width == 'fit' %}
+      width: auto;
+    {% else %}
+      width: {{ block.settings.button_desktop_width_custom }}%;
+    {% endif %}
+    
+    {% if block.settings.button_style == 'primary' %}
+      background-color: rgb(var(--color-button));
+      color: rgb(var(--color-button-text));
+      border: {{ settings.primary_button_border_width }}px solid rgb(var(--color-button));
+      border-radius: {{ settings.button_border_radius_primary }}px;
+    {% else %}
+      background-color: rgb(var(--color-button-secondary));
+      color: rgb(var(--color-button-secondary-text));
+      border: {{ settings.secondary_button_border_width }}px solid rgb(var(--color-button-secondary-border));
+      border-radius: {{ settings.button_border_radius_secondary }}px;
+    {% endif %}
+    
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: {{ settings.type_font_button_primary.family }}, {{ settings.type_font_button_primary.fallback_families }};
+    font-weight: {% if settings.button_font_weight_primary != 'default' %}{{ settings.button_font_weight_primary }}{% else %}500{% endif %};
+    {% if settings.button_text_case_primary == 'uppercase' %}
+      text-transform: uppercase;
+    {% else %}
+      text-transform: none;
+    {% endif %}
+  }
+
+  .ai-contact-form__button-{{ ai_gen_id }}:hover {
+    {% if block.settings.button_style == 'primary' %}
+      background-color: rgb(var(--color-button-hover));
+      color: rgb(var(--color-button-hover-text));
+      border-color: rgb(var(--color-button-hover));
+    {% else %}
+      background-color: rgb(var(--color-button-secondary-hover));
+      color: rgb(var(--color-button-secondary-hover-text));
+      border-color: rgb(var(--color-button-secondary-hover-border));
+    {% endif %}
+  }
+
+  .ai-contact-form__success-{{ ai_gen_id }} {
+    color: #008060;
+    background-color: #d4edda;
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .ai-contact-form__error-{{ ai_gen_id }} {
+    color: #d82c0d;
+    background-color: #f8d7da;
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .ai-contact-form__field-error-{{ ai_gen_id }} {
+    color: #d82c0d;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-contact-form__row-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .ai-contact-form__button-wrapper-{{ ai_gen_id }} {
+      {% if block.settings.button_mobile_width == 'fit' %}
+        justify-content: flex-start;
+      {% else %}
+        justify-content: stretch;
+      {% endif %}
+    }
+
+    .ai-contact-form__button-{{ ai_gen_id }} {
+      {% if block.settings.button_mobile_width == 'fit' %}
+        width: auto;
+      {% else %}
+        width: {{ block.settings.button_mobile_width_custom }}%;
+      {% endif %}
+    }
+  }
+{% endstyle %}
+
+<div class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {%- form 'contact' -%}
+    <input type="hidden" name="contact[tags]" value="Return/Exchange Request">
+
+    <div class="ai-contact-form__wrapper-{{ ai_gen_id }}">
+      <div class="ai-contact-form__row-{{ ai_gen_id }}">
+        <div class="ai-contact-form__field-{{ ai_gen_id }}">
+          <input
+            type="text"
+            id="ai-first-name-{{ ai_gen_id }}"
+            name="contact[first_name]"
+            class="ai-contact-form__input-{{ ai_gen_id }}"
+            value="{{ form.first_name }}"
+            placeholder="First Name *"
+            required
+            {% if form.errors contains 'first_name' %}
+              aria-invalid="true"
+              aria-describedby="ai-first-name-error-{{ ai_gen_id }}"
+            {% endif %}
+          >
+          {%- if form.errors contains 'first_name' -%}
+            <div id="ai-first-name-error-{{ ai_gen_id }}" class="ai-contact-form__field-error-{{ ai_gen_id }}">
+              First name is required
+            </div>
+          {%- endif -%}
+        </div>
+
+        <div class="ai-contact-form__field-{{ ai_gen_id }}">
+          <input
+            type="text"
+            id="ai-last-name-{{ ai_gen_id }}"
+            name="contact[last_name]"
+            class="ai-contact-form__input-{{ ai_gen_id }}"
+            value="{{ form.last_name }}"
+            placeholder="Last Name *"
+            required
+            {% if form.errors contains 'last_name' %}
+              aria-invalid="true"
+              aria-describedby="ai-last-name-error-{{ ai_gen_id }}"
+            {% endif %}
+          >
+          {%- if form.errors contains 'last_name' -%}
+            <div id="ai-last-name-error-{{ ai_gen_id }}" class="ai-contact-form__field-error-{{ ai_gen_id }}">
+              Last name is required
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="ai-contact-form__row-{{ ai_gen_id }} ai-contact-form__row-{{ ai_gen_id }}--single">
+        <div class="ai-contact-form__field-{{ ai_gen_id }}">
+          <input
+            type="email"
+            id="ai-email-{{ ai_gen_id }}"
+            name="contact[email]"
+            class="ai-contact-form__input-{{ ai_gen_id }}"
+            value="{{ form.email }}"
+            placeholder="Email *"
+            required
+            autocomplete="email"
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+              aria-describedby="ai-email-error-{{ ai_gen_id }}"
+            {% endif %}
+          >
+          {%- if form.errors contains 'email' -%}
+            <div id="ai-email-error-{{ ai_gen_id }}" class="ai-contact-form__field-error-{{ ai_gen_id }}">
+              {{ form.errors.messages.email }}
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="ai-contact-form__row-{{ ai_gen_id }} ai-contact-form__row-{{ ai_gen_id }}--single">
+        <div class="ai-contact-form__field-{{ ai_gen_id }}">
+          <select
+            id="ai-return-exchange-{{ ai_gen_id }}"
+            name="contact[return_exchange_type]"
+            class="ai-contact-form__select-{{ ai_gen_id }}"
+            required
+            {% if form.errors contains 'return_exchange_type' %}
+              aria-invalid="true"
+              aria-describedby="ai-return-exchange-error-{{ ai_gen_id }}"
+            {% endif %}
+          >
+            <option value="" disabled {% unless form.return_exchange_type %}selected{% endunless %}>
+              Select an option
+            </option>
+            <option value="Return" {% if form.return_exchange_type == 'Return' %}selected{% endif %}>
+              Return
+            </option>
+            <option value="Exchange" {% if form.return_exchange_type == 'Exchange' %}selected{% endif %}>
+              Exchange
+            </option>
+          </select>
+          {%- if form.errors contains 'return_exchange_type' -%}
+            <div id="ai-return-exchange-error-{{ ai_gen_id }}" class="ai-contact-form__field-error-{{ ai_gen_id }}">
+              Please select return or exchange
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="ai-contact-form__row-{{ ai_gen_id }} ai-contact-form__row-{{ ai_gen_id }}--single">
+        <div class="ai-contact-form__field-{{ ai_gen_id }}">
+          <textarea
+            id="ai-reason-{{ ai_gen_id }}"
+            name="contact[body]"
+            class="ai-contact-form__textarea-{{ ai_gen_id }}"
+            required
+            placeholder="Reason for Return/Exchange *"
+            {% if form.errors contains 'body' %}
+              aria-invalid="true"
+              aria-describedby="ai-reason-error-{{ ai_gen_id }}"
+            {% endif %}
+          >{{ form.body }}</textarea>
+          {%- if form.errors contains 'body' -%}
+            <div id="ai-reason-error-{{ ai_gen_id }}" class="ai-contact-form__field-error-{{ ai_gen_id }}">
+              Reason is required
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+
+      <div class="ai-contact-form__button-wrapper-{{ ai_gen_id }}">
+        <button type="submit" class="ai-contact-form__button-{{ ai_gen_id }}">
+          {{ block.settings.button_text }}
+        </button>
+      </div>
+
+      {%- if form.posted_successfully? -%}
+        <div class="ai-contact-form__success-{{ ai_gen_id }}">
+          {{ block.settings.success_message }}
+        </div>
+      {%- endif -%}
+
+      {%- if form.errors -%}
+        <div class="ai-contact-form__error-{{ ai_gen_id }}">
+          {{ block.settings.error_message }}
+        </div>
+      {%- endif -%}
+    </div>
+  {%- endform -%}
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Return/Exchange Form",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Color Scheme"
+    },
+    {
+      "type": "checkbox",
+      "id": "inherit_color_scheme",
+      "label": "Inherit color scheme",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Left padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Right padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Submit Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Submit"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "radio",
+      "id": "button_desktop_width",
+      "label": "Desktop width",
+      "options": [
+        {
+          "value": "fit",
+          "label": "Fit"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ],
+      "default": "fit"
+    },
+    {
+      "type": "range",
+      "id": "button_desktop_width_custom",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Desktop width percentage",
+      "default": 50
+    },
+    {
+      "type": "radio",
+      "id": "button_mobile_width",
+      "label": "Mobile width",
+      "options": [
+        {
+          "value": "fit",
+          "label": "Fit"
+        },
+        {
+          "value": "custom",
+          "label": "Custom"
+        }
+      ],
+      "default": "custom"
+    },
+    {
+      "type": "range",
+      "id": "button_mobile_width_custom",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Mobile width percentage",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Messages"
+    },
+    {
+      "type": "text",
+      "id": "success_message",
+      "label": "Success message",
+      "default": "Thank you! Your return/exchange request has been submitted successfully."
+    },
+    {
+      "type": "text",
+      "id": "error_message",
+      "label": "Error message",
+      "default": "Please correct the errors above and try again."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Return/Exchange Form"
+    }
+  ]
+}
 {% endschema %}
