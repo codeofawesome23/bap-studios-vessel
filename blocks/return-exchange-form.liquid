@@ -6,6 +6,12 @@
     padding: {{ block.settings.padding_top }}px {{ block.settings.padding_right }}px {{ block.settings.padding_bottom }}px {{ block.settings.padding_left }}px;
   }
 
+  {% unless block.settings.inherit_color_scheme %}
+  .ai-contact-form-{{ ai_gen_id }} {
+    color-scheme: {{ block.settings.color_scheme }};
+  }
+  {% endunless %}
+
   .ai-contact-form__container-{{ ai_gen_id }} {
     margin: 0 auto;
     {% if block.settings.width == 'custom' %}
@@ -103,14 +109,20 @@
       {% endif %}
     }
   }
+
+  .form-success-message {
+    margin-bottom: 1rem;
+    color: #000;
+    font-size: 16px;
+  }
 {% endstyle %}
 
 <div
-  class="ai-contact-form-{{ ai_gen_id }}{% unless block.settings.inherit_color_scheme %} color-scheme-{{ block.settings.color_scheme }}{% endunless %}"
+  class="ai-contact-form-{{ ai_gen_id }} {% unless block.settings.inherit_color_scheme %}color-scheme-{{ block.settings.color_scheme }}{% endunless %}"
   {{ block.shopify_attributes }}
 >
   <div class="ai-contact-form__container-{{ ai_gen_id }}">
-    {% form 'contact' %}
+    {% form 'contact', onsubmit: "event.preventDefault(); this.reset();" %}
       <input type="hidden" name="contact[tags]" value="Return/Exchange Request">
 
       <div class="ai-contact-form__wrapper-{{ ai_gen_id }}">
@@ -150,6 +162,10 @@
             {{ block.settings.button_text }}
           </button>
         </div>
+
+        {% if form.posted_successfully? %}
+          <p class="form-success-message">Thanks for contacting us. We'll get back to you as soon as possible.</p>
+        {% endif %}
       </div>
     {% endform %}
   </div>
