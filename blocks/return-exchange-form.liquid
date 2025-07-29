@@ -21,6 +21,7 @@
 
   .ai-contact-form__row-{{ ai_gen_id }} {
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     width: 100%;
   }
@@ -76,10 +77,6 @@
     }
 
     .ai-contact-form__row-{{ ai_gen_id }} {
-      flex-direction: column;
-    }
-
-    .ai-contact-form__row-{{ ai_gen_id }}:first-of-type {
       flex-direction: column;
     }
 
