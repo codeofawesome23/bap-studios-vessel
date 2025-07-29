@@ -9,10 +9,10 @@
   .ai-contact-form__container-{{ ai_gen_id }} {
     margin: 0 auto;
     {% if block.settings.width == 'custom' %}
-      width: {{ block.settings.custom_width }}%;
+      max-width: {{ block.settings.custom_width }}%;
+      width: 100%;
     {% else %}
       width: 100%;
-      max-width: fit-content;
     {% endif %}
   }
 
@@ -76,10 +76,10 @@
   @media screen and (max-width: 768px) {
     .ai-contact-form__container-{{ ai_gen_id }} {
       {% if block.settings.width_mobile == 'custom' %}
-        width: {{ block.settings.custom_width_mobile }}%;
+        max-width: {{ block.settings.custom_width_mobile }}%;
+        width: 100%;
       {% else %}
         width: 100%;
-        max-width: fit-content;
       {% endif %}
     }
 
