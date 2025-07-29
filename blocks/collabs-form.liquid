@@ -1,0 +1,217 @@
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-contact-form-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_right }}px {{ block.settings.padding_bottom }}px {{ block.settings.padding_left }}px;
+  }
+
+  .ai-contact-form__container-{{ ai_gen_id }} {
+    margin: 0 auto;
+    width: 100%;
+    max-width: {% if block.settings.width == 'custom' %}{{ block.settings.custom_width }}%{% else %}100%{% endif %};
+  }
+
+  .ai-contact-form__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .ai-contact-form__row-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .ai-contact-form__row-{{ ai_gen_id }}--single {
+    flex-direction: column;
+  }
+
+  .ai-contact-form__field-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-contact-form__input-{{ ai_gen_id }},
+  .ai-contact-form__select-{{ ai_gen_id }},
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    padding: 16px;
+    background-color: #f1ecdf;
+    color: rgb(var(--color-input-text));
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .ai-contact-form__button-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    {% if block.settings.button_width_desktop == 'fit' %}
+      justify-content: flex-start;
+    {% else %}
+      justify-content: stretch;
+    {% endif %}
+  }
+
+  .ai-contact-form__button-wrapper-{{ ai_gen_id }} .button {
+    {% if block.settings.button_width_desktop == 'fit' %}
+      width: auto;
+    {% else %}
+      width: {{ block.settings.button_custom_width_desktop }}%;
+    {% endif %}
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-contact-form__container-{{ ai_gen_id }} {
+      width: 100%;
+      max-width: {% if block.settings.width_mobile == 'custom' %}{{ block.settings.custom_width_mobile }}%{% else %}100%{% endif %};
+    }
+
+    .ai-contact-form__row-{{ ai_gen_id }} {
+      flex-direction: column;
+    }
+
+    .ai-contact-form__button-wrapper-{{ ai_gen_id }} {
+      {% if block.settings.button_width_mobile == 'fit' %}
+        justify-content: flex-start;
+      {% else %}
+        justify-content: stretch;
+      {% endif %}
+    }
+
+    .ai-contact-form__button-wrapper-{{ ai_gen_id }} .button {
+      {% if block.settings.button_width_mobile == 'fit' %}
+        width: auto;
+      {% else %}
+        width: {{ block.settings.button_custom_width_mobile }}%;
+      {% endif %}
+    }
+  }
+{% endstyle %}
+
+<div
+  class="ai-contact-form-{{ ai_gen_id }}{% unless block.settings.inherit_color_scheme %} color-scheme-{{ block.settings.color_scheme }}{% endunless %}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-contact-form__container-{{ ai_gen_id }}">
+    {% form 'contact', id: 'ReturnExchangeForm', class: 'return-exchange-form__form' %}
+      {% if form.posted_successfully? %}
+        <div class="return-exchange-form__success" tabindex="-1" autofocus>
+          {{ 'icon-checkmark.svg' | inline_asset_content }}
+          {{ 'blocks.contact_form.post_success' | t }}
+        </div>
+      {% endif %}
+
+      {% if form.errors %}
+        <div class="return-exchange-form__error" tabindex="-1" autofocus>
+          {{ 'icon-error.svg' | inline_asset_content }}
+          {{ form.errors.translated_fields.email | capitalize }}
+          {{ form.errors.messages.email }}
+        </div>
+      {% endif %}
+      <input type="hidden" name="contact[tags]" value="Return/Exchange Request">
+
+      <div class="ai-contact-form__wrapper-{{ ai_gen_id }}">
+        <div class="ai-contact-form__row-{{ ai_gen_id }}">
+          <div class="ai-contact-form__field-{{ ai_gen_id }}">
+            <input type="text" name="contact[first_name]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="First Name *" required>
+          </div>
+          <div class="ai-contact-form__field-{{ ai_gen_id }}">
+            <input type="text" name="contact[last_name]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="Last Name *" required>
+          </div>
+        </div>
+
+        <div class="ai-contact-form__row-{{ ai_gen_id }} ai-contact-form__row-{{ ai_gen_id }}--single">
+          <div class="ai-contact-form__field-{{ ai_gen_id }}">
+            <input type="email" name="contact[email]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="Email *" required>
+          </div>
+        </div>
+
+        <div class="ai-contact-form__row-{{ ai_gen_id }} ai-contact-form__row-{{ ai_gen_id }}--single">
+          <div class="ai-contact-form__field-{{ ai_gen_id }}">
+            <input type="text" name="contact[company]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="Company Name (if applicable)">
+          </div>
+        </div>
+
+        <div class="ai-contact-form__row-{{ ai_gen_id }} ai-contact-form__row-{{ ai_gen_id }}--single">
+          <div class="ai-contact-form__field-{{ ai_gen_id }}">
+            <textarea name="contact[body]" class="ai-contact-form__textarea-{{ ai_gen_id }}" placeholder="Message *" required></textarea>
+          </div>
+        </div>
+
+        <div class="ai-contact-form__button-wrapper-{{ ai_gen_id }}">
+          <button type="submit" class="button{% if block.settings.button_style %} button--{{ block.settings.button_style }}{% endif %}">
+            {{ block.settings.button_text }}
+          </button>
+        </div>
+      </div>
+    {% endform %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Return/Exchange Form",
+  "settings": [
+    { "type": "header", "content": "Form Width" },
+    { "type": "select", "id": "width", "label": "Desktop width", "options": [
+      { "value": "fit-content", "label": "Fit content" },
+      { "value": "custom", "label": "Custom" }
+    ], "default": "custom" },
+    { "type": "range", "id": "custom_width", "min": 10, "max": 100, "step": 5, "unit": "%", "label": "Custom width", "default": 100 },
+    { "type": "select", "id": "width_mobile", "label": "Mobile width", "options": [
+      { "value": "fit-content", "label": "Fit content" },
+      { "value": "custom", "label": "Custom" }
+    ], "default": "custom" },
+    { "type": "range", "id": "custom_width_mobile", "min": 10, "max": 100, "step": 5, "unit": "%", "label": "Custom mobile width", "default": 100 },
+
+    { "type": "header", "content": "Color Scheme" },
+    { "type": "checkbox", "id": "inherit_color_scheme", "label": "Inherit color scheme", "default": true },
+    { "type": "color_scheme", "id": "color_scheme", "label": "Color scheme", "default": "scheme-1" },
+
+    { "type": "header", "content": "Padding" },
+    { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Top padding", "default": 40 },
+    { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Bottom padding", "default": 40 },
+    { "type": "range", "id": "padding_left", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Left padding", "default": 20 },
+    { "type": "range", "id": "padding_right", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Right padding", "default": 20 },
+
+    { "type": "header", "content": "Submit Button" },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "Submit" },
+    { "type": "select", "id": "button_style", "label": "Button style", "options": [
+      { "value": "primary", "label": "Primary" },
+      { "value": "secondary", "label": "Secondary" }
+    ], "default": "primary" },
+    { "type": "select", "id": "button_width_desktop", "label": "Desktop button width", "options": [
+      { "value": "fit", "label": "Fit" },
+      { "value": "custom", "label": "Custom" }
+    ], "default": "fit" },
+    { "type": "range", "id": "button_custom_width_desktop", "min": 10, "max": 100, "step": 5, "unit": "%", "label": "Desktop button width", "default": 50 },
+    { "type": "select", "id": "button_width_mobile", "label": "Mobile button width", "options": [
+      { "value": "fit", "label": "Fit" },
+      { "value": "custom", "label": "Custom" }
+    ], "default": "custom" },
+    { "type": "range", "id": "button_custom_width_mobile", "min": 10, "max": 100, "step": 5, "unit": "%", "label": "Mobile button width", "default": 100 }
+  ],
+  "presets": [
+    { "name": "Return/Exchange Form" }
+  ]
+}
+{% endschema %}
+{% style %}
+  .return-exchange-form__success,
+  .return-exchange-form__error {
+    display: flex;
+    align-items: center;
+    gap: var(--gap-xs);
+    margin-bottom: 1em;
+  }
+{% endstyle %}
