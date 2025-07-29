@@ -173,41 +173,32 @@
     "form": {
       "type": "section",
       "blocks": {
-        "contact_form_UwiCkQ": {
-          "type": "contact-form",
-          "name": "Returns + Exchanges Form",
+        "return_exchange_form_aPkrHh": {
+          "type": "return-exchange-form",
+          "name": "Return/Exchange Form",
           "settings": {
             "width": "custom",
-            "custom_width": 50,
+            "custom_width": 100,
             "width_mobile": "custom",
             "custom_width_mobile": 100,
             "inherit_color_scheme": true,
             "color_scheme": "",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_left": 0,
+            "padding_right": 0,
+            "button_text": "Submit",
+            "button_style": "primary",
+            "button_width_desktop": "fit",
+            "button_custom_width_desktop": 100,
+            "button_width_mobile": "fit",
+            "button_custom_width_mobile": 100
           },
-          "blocks": {
-            "submit-button": {
-              "type": "contact-form-submit-button",
-              "static": true,
-              "settings": {
-                "label": "Submit",
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": []
+          "blocks": {}
         }
       },
       "block_order": [
-        "contact_form_UwiCkQ"
+        "return_exchange_form_aPkrHh"
       ],
       "name": "t:names.contact_form",
       "settings": {
@@ -219,7 +210,7 @@
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 32,
-        "section_width": "page-width",
+        "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "scheme-1",
