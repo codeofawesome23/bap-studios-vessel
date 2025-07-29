@@ -22,7 +22,7 @@
 >
   {% assign form_id = block.id | default: section.id | prepend: 'ContactForm-' %}
 
-  {%- form 'contact', id: form_id, class: 'contact-form__form' -%}
+{%- form 'contact', id: form_id, class: 'contact-form__form', success: '/form/post-submit/success' -%}
     {%- if form.errors -%}
       <div
         class="contact-form__error"
