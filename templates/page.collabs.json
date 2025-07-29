@@ -88,7 +88,7 @@
           "type": "jumbo-text",
           "name": "t:names.jumbo_text",
           "settings": {
-            "text": "Solo",
+            "text": "Solo\nPush\nPartner",
             "font": "heading",
             "alignment": "left",
             "line_height": "0.8",
