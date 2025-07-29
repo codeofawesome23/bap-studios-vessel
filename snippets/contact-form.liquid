@@ -56,8 +56,9 @@
         class="contact-form__input"
         autocomplete="given-name"
         name="contact[first_name]"
-        placeholder="First Name"
+        placeholder="First Name *"
         value="{% if form.first_name %}{{ form.first_name }}{% endif %}"
+        required
       >
 
       <label class="visually-hidden" for="ContactForm-last-name">
@@ -69,8 +70,9 @@
         class="contact-form__input"
         autocomplete="family-name"
         name="contact[last_name]"
-        placeholder="Last Name"
+        placeholder="Last Name *"
         value="{% if form.last_name %}{{ form.last_name }}{% endif %}"
+        required
       >
     </div>
 
@@ -89,11 +91,12 @@
         autocapitalize="off"
         value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
         aria-required="true"
+        required
         {% if form.errors contains 'email' %}
           aria-invalid="true"
           aria-describedby="ContactForm-email-error"
         {% endif %}
-        placeholder="{{ 'blocks.contact_form.email' | t }}"
+        placeholder="{{ 'blocks.contact_form.email' | t }} *"
       >
     </div>
 
@@ -125,7 +128,8 @@
       id="ContactForm-body"
       class="contact-form__input contact-form__input--textarea"
       name="contact[body]"
-      placeholder="{{ 'blocks.contact_form.comment' | t }}"
+      placeholder="{{ 'blocks.contact_form.comment' | t }} *"
+      required
     >
       {{- form.body -}}
     </textarea>
