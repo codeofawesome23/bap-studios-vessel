@@ -1710,7 +1710,7 @@
           "type": "text",
           "name": "t:names.content",
           "settings": {
-            "text": "<p>Thanks for taking the time to reach out to us! If you have any general questions you’d like answered, feel free to reach out and we’ll get in touch as soon as possible!</p>",
+            "text": "<p>If you think your brand might be the right fit for ours, feel free to reach out below and let us know how you think we can work together!</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
