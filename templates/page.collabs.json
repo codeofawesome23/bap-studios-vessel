@@ -655,7 +655,7 @@
       "type": "divider",
       "name": "t:names.divider_section",
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "section_width": "full-width",
         "thickness": 5,
         "corner_radius": "rounded",
@@ -861,7 +861,7 @@
       "settings": {
         "color_scheme": "scheme-1",
         "section_width": "full-width",
-        "thickness": 2,
+        "thickness": 5,
         "corner_radius": "rounded",
         "width_percent": 50,
         "alignment_horizontal": "center",
@@ -1059,6 +1059,20 @@
         "padding-block-end": 0
       }
     },
+    "divider_XAkWmU": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "section_width": "full-width",
+        "thickness": 5,
+        "corner_radius": "rounded",
+        "width_percent": 50,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
     "section_LTxUJX": {
       "type": "section",
       "blocks": {
@@ -1101,28 +1115,96 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "image_z9CQLg": {
-              "type": "image",
-              "name": "t:names.image",
+            "group_KPTQWh": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "image": "shopify://shop_images/Noelle_Walk_1_9599d455-09ac-43a7-8bfe-533c08b6c8e5.png",
                 "link": "",
-                "image_ratio": "square",
-                "width": "custom",
-                "custom_width": 47,
-                "width_mobile": "fit-content",
+                "open_in_new_tab": false,
+                "content_direction": "row",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "flex-end",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
                 "custom_width_mobile": 100,
                 "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "image_Bwf7NA": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/Noelle_Walk_1_9599d455-09ac-43a7-8bfe-533c08b6c8e5.png",
+                    "link": "",
+                    "image_ratio": "square",
+                    "width": "custom",
+                    "custom_width": 47,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "image_fPpr4B": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/favicon_star_black_png-01_4ae6d941-5b72-4db3-b251-2c5a17b6ccca.png",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_Bwf7NA",
+                "image_fPpr4B"
+              ]
             },
             "jumbo_text_xV8bbE": {
               "type": "jumbo-text",
@@ -1141,7 +1223,7 @@
             }
           },
           "block_order": [
-            "image_z9CQLg",
+            "group_KPTQWh",
             "jumbo_text_xV8bbE"
           ]
         }
@@ -1824,6 +1906,7 @@
     "section_QPxk9J",
     "divider_8EybDe",
     "section_8fGPnT",
+    "divider_XAkWmU",
     "section_LTxUJX",
     "scroll_gallery_Ew6pPU",
     "section_CRBph4",
