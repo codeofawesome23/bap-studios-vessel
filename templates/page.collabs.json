@@ -1193,7 +1193,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
+            "gap": 0,
             "inherit_color_scheme": true,
             "color_scheme": "",
             "toggle_overlay": true,
@@ -1333,8 +1333,8 @@
         "autoplay_speed": 4,
         "section_width": "full-width",
         "slide_height": "large",
-        "padding-block-start": 55,
-        "padding-block-end": 55
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "section_CRBph4": {
