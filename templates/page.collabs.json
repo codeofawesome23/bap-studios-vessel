@@ -1332,9 +1332,9 @@
         "autoplay": false,
         "autoplay_speed": 4,
         "section_width": "full-width",
-        "slide_height": "medium",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "slide_height": "large",
+        "padding-block-start": 55,
+        "padding-block-end": 55
       }
     },
     "section_CRBph4": {
