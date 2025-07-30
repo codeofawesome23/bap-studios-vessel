@@ -1128,7 +1128,7 @@
               "type": "jumbo-text",
               "name": "t:names.jumbo_text",
               "settings": {
-                "text": "our clients",
+                "text": "Past clients",
                 "font": "heading",
                 "alignment": "left",
                 "line_height": "0.8",
