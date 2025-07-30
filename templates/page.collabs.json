@@ -1105,11 +1105,11 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
-                "image": "shopify://shop_images/Noelle_196bf987-5c71-4f7f-8ac0-470ad5c9fbb5.png",
+                "image": "shopify://shop_images/Noelle_Walk_1_9599d455-09ac-43a7-8bfe-533c08b6c8e5.png",
                 "link": "",
                 "image_ratio": "square",
                 "width": "custom",
-                "custom_width": 35,
+                "custom_width": 55,
                 "width_mobile": "fit-content",
                 "custom_width_mobile": 100,
                 "height": "fit",
