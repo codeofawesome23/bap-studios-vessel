@@ -139,14 +139,14 @@
         "padding-block-end": 40
       }
     },
-    "section_tmgp4J": {
+    "section_V4Qn8E": {
       "type": "section",
       "blocks": {
-        "jumbo_text_wdGFp9": {
+        "jumbo_text_8TzEkE": {
           "type": "jumbo-text",
           "name": "t:names.jumbo_text",
           "settings": {
-            "text": "Work with us\nAt any level",
+            "text": "How we work",
             "font": "heading",
             "alignment": "left",
             "line_height": "0.8",
@@ -159,7 +159,7 @@
         }
       },
       "block_order": [
-        "jumbo_text_wdGFp9"
+        "jumbo_text_8TzEkE"
       ],
       "name": "Services Overview",
       "settings": {
@@ -171,7 +171,7 @@
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
-        "section_width": "page-width",
+        "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "",
@@ -1652,7 +1652,7 @@
   "order": [
     "hero_URTBea",
     "main",
-    "section_tmgp4J",
+    "section_V4Qn8E",
     "section_FfCPBP",
     "section_38iBm3",
     "section_txzPbF",
