@@ -56,7 +56,7 @@
                 "custom_width_mobile": 85,
                 "height": "fit",
                 "custom_height": 100,
-                "inherit_color_scheme": false,
+                "inherit_color_scheme": true,
                 "color_scheme": "scheme-6",
                 "background_media": "none",
                 "video_position": "cover",
@@ -439,7 +439,7 @@
       "settings": {
         "icons_style": "arrows_large",
         "slideshow_controls_style": "dots",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "autoplay": true,
         "autoplay_speed": 5,
         "section_width": "full-width",
