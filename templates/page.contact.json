@@ -117,7 +117,7 @@
             "text": "<p>Thanks for taking the time to reach out to us! If you have any general questions you’d like answered, feel free to reach out and we’ll get in touch as soon as possible!</p>",
             "width": "100%",
             "max_width": "none",
-            "alignment": "left",
+            "alignment": "center",
             "type_preset": "rte",
             "font": "var(--font-primary--family)",
             "font_size": "",
