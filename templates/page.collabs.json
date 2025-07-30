@@ -1059,6 +1059,57 @@
         "padding-block-end": 0
       }
     },
+    "section_LTxUJX": {
+      "type": "section",
+      "blocks": {
+        "jumbo_text_VnEKyz": {
+          "type": "jumbo-text",
+          "name": "t:names.jumbo_text",
+          "settings": {
+            "text": "our clients",
+            "font": "heading",
+            "alignment": "left",
+            "line_height": "0.8",
+            "letter_spacing": "-0.03em",
+            "case": "none",
+            "text_effect": "none",
+            "animation_repeat": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "jumbo_text_VnEKyz"
+      ],
+      "name": "Our Clients: Header",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": false,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "full-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "scroll_gallery_Ew6pPU": {
       "type": "scroll-gallery",
       "blocks": {
@@ -1705,6 +1756,7 @@
     "section_QPxk9J",
     "divider_8EybDe",
     "section_8fGPnT",
+    "section_LTxUJX",
     "scroll_gallery_Ew6pPU",
     "section_CRBph4",
     "section_TNy4a7",
