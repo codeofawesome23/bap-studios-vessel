@@ -278,7 +278,7 @@
         "settings": {
           "background": "rgba(0,0,0,0)",
           "foreground_heading": "#ffffff",
-          "foreground": "#ffffff",
+          "foreground": "#1c1e1f",
           "primary": "#ffffff",
           "primary_hover": "#acacac",
           "border": "rgba(0,0,0,0)",
