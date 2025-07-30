@@ -243,7 +243,7 @@
                 "letter_spacing": "-0.03em",
                 "case": "none",
                 "text_effect": "reveal",
-                "animation_repeat": false
+                "animation_repeat": true
               },
               "blocks": {}
             },
@@ -353,7 +353,7 @@
                 "letter_spacing": "-0.03em",
                 "case": "none",
                 "text_effect": "reveal",
-                "animation_repeat": false
+                "animation_repeat": true
               },
               "blocks": {}
             },
@@ -424,7 +424,7 @@
             "letter_spacing": "-0.03em",
             "case": "none",
             "text_effect": "reveal",
-            "animation_repeat": false
+            "animation_repeat": true
           },
           "blocks": {}
         }
