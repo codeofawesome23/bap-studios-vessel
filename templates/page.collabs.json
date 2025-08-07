@@ -1446,14 +1446,14 @@
             "accordion_row_P9zeHF": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "{{ closest.page.metafields.custom.faq_1.value }}",
                 "open_by_default": false
               },
               "blocks": {
                 "text_idyeNm": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
+                    "text": "<p>{{ closest.page.metafields.custom.answer_1 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1483,14 +1483,14 @@
             "accordion_row_D9pcKA": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "{{ closest.page.metafields.custom.faq_2.value }}",
                 "open_by_default": false
               },
               "blocks": {
                 "text_xKwmbT": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
+                    "text": "<p>{{ closest.page.metafields.custom.answer_2 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
