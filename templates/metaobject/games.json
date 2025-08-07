@@ -915,7 +915,7 @@
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "rte",
+            "type_preset": "h1",
             "font": "var(--font-body--family)",
             "font_size": "",
             "line_height": "normal",
@@ -939,7 +939,7 @@
           "settings": {
             "icon": "caret",
             "dividers": true,
-            "type_preset": "h5",
+            "type_preset": "h3",
             "inherit_color_scheme": true,
             "color_scheme": "",
             "border": "none",
