@@ -1356,7 +1356,7 @@
                   "type": "button",
                   "settings": {
                     "label": "Learn More",
-                    "link": "",
+                    "link": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].link.value }}",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
