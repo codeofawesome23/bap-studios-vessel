@@ -1278,7 +1278,7 @@
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "custom",
-                "custom_width": 50,
+                "custom_width": 80,
                 "width_mobile": "custom",
                 "custom_width_mobile": 85,
                 "height": "fit",
@@ -1305,10 +1305,10 @@
                 "text_FBeX3L": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Client</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
+                    "text": "<h2>{{ metaobjects.client_case_study[\"cards-against-humanity\"].client.value }}</h2>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "center",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1330,7 +1330,7 @@
                 "text_CQEnPm": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Product/Service</p>",
+                    "text": "<p>{{ metaobjects.client_case_study[\"cards-against-humanity\"].product_service.value }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
