@@ -1356,7 +1356,7 @@
                   "type": "button",
                   "settings": {
                     "label": "Learn More",
-                    "link": "shopify://collections/all",
+                    "link": "",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
