@@ -15,7 +15,7 @@
         "text_gzK8Qw": {
           "type": "text",
           "settings": {
-            "text": "<h1>{{ closest.metaobject.games.game_title.value }}</h1>",
+            "text": "<h1>{{ closest.metaobject.client_case_study.client.value }}</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -40,7 +40,7 @@
         "text_77VzQU": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ closest.metaobject.games.tagline.value }}</p>",
+            "text": "<p>{{ closest.metaobject.client_case_study.product_service.value }}</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -66,8 +66,8 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "{{ closest.metaobject.games.buy_or_support | metafield_text }}",
-            "link": "{{ closest.metaobject.games.buy_support_url.value }}",
+            "label": "Learn More",
+            "link": "{{ closest.metaobject.client_case_study.link.value }}",
             "open_in_new_tab": true,
             "style_class": "button",
             "width": "fit-content",
@@ -119,7 +119,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>{{ closest.metaobject.games.game_description | metafield_tag }}</p>",
+            "text": "<p>{{ closest.metaobject.client_case_study.case_introduction | metafield_tag }}</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -201,7 +201,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.product_photo_1.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -242,7 +242,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.product_photo_2.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -320,7 +320,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.product_photo_3.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -361,7 +361,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.product_photo_4.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -419,7 +419,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>{{ closest.metaobject.games.instructions | metafield_tag }}</p>",
+            "text": "<p>{{ closest.metaobject.client_case_study.case_introduction | metafield_tag }}</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -501,7 +501,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.action_photo_1.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -560,7 +560,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.action_photo_2.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -619,7 +619,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.action_photo_3.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -716,7 +716,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.action_photo_4.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -775,7 +775,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.action_photo_5.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_5.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -834,7 +834,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "{{ closest.metaobject.games.action_photo_6.value }}",
+            "background_image": "{{ closest.metaobject.client_case_study.client_example_6.value }}",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -955,14 +955,14 @@
             "accordion_row_MfkGEy": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "{{ closest.metaobject.games.faq_question_1.value }}",
+                "heading": "{{ closest.metaobject.client_case_study.faq_1.value }}",
                 "open_by_default": false
               },
               "blocks": {
                 "text_if3YTh": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{{ closest.metaobject.games.faq_answer_1 | metafield_tag }}</p>",
+                    "text": "<p>{{ closest.metaobject.client_case_study.answer_1 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -992,14 +992,14 @@
             "accordion_row_JUJCFD": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "{{ closest.metaobject.games.faq_question_2.value }}",
+                "heading": "{{ closest.metaobject.client_case_study.faq_2.value }}",
                 "open_by_default": false
               },
               "blocks": {
                 "text_FmQ8YH": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{{ closest.metaobject.games.faq_answer_2 | metafield_tag }}</p>",
+                    "text": "<p>{{ closest.metaobject.client_case_study.answer_2 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1030,7 +1030,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "{{ closest.metaobject.games.faq_question_3.value }}",
+                "heading": "{{ closest.metaobject.client_case_study.faq_3.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1038,7 +1038,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>{{ closest.metaobject.games.faq_answer_3 | metafield_tag }}</p>",
+                    "text": "<p>{{ closest.metaobject.client_case_study.answer_3 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1069,7 +1069,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "{{ closest.metaobject.games.faq_question_4.value }}",
+                "heading": "{{ closest.metaobject.client_case_study.faq_4.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1077,7 +1077,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>{{ closest.metaobject.games.faq_answer_4 | metafield_tag }}</p>",
+                    "text": "<p>{{ closest.metaobject.client_case_study.answer_4 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1108,7 +1108,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "{{ closest.metaobject.games.faq_question_5.value }}",
+                "heading": "{{ closest.metaobject.client_case_study.faq_5.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1116,7 +1116,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>{{ closest.metaobject.games.faq_answer_5 | metafield_tag }}</p>",
+                    "text": "<p>{{ closest.metaobject.client_case_study.answer_5 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1147,7 +1147,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "{{ closest.metaobject.games.faq_question_6.value }}",
+                "heading": "{{ closest.metaobject.client_case_study.faq_6.value }}",
                 "open_by_default": false
               },
               "blocks": {
@@ -1155,7 +1155,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>{{ closest.metaobject.games.faq_answer_6 | metafield_tag }}</p>",
+                    "text": "<p>{{ closest.metaobject.client_case_study.answer_6 | metafield_tag }}</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1232,7 +1232,7 @@
         "text_E8kCmH": {
           "type": "text",
           "settings": {
-            "text": "<h1>{{ closest.metaobject.games.game_title.value }}</h1>",
+            "text": "<h1>{{ closest.metaobject.client_case_study.client.value }}</h1>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -1257,7 +1257,7 @@
         "text_Cn3QAd": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ closest.metaobject.games.game_price | metafield_tag }}</p>",
+            "text": "<p>{{ closest.metaobject.client_case_study.money | metafield_tag }}</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -1322,8 +1322,8 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "{{ closest.metaobject.games.buy_or_support | metafield_text }}",
-                "link": "{{ closest.metaobject.games.buy_support_url.value }}",
+                "label": "Learn More",
+                "link": "{{ closest.metaobject.client_case_study.link.value }}",
                 "open_in_new_tab": true,
                 "style_class": "button",
                 "width": "fit-content",
