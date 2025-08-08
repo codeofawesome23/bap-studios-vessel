@@ -61,27 +61,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "button_cNnAaC": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Learn More",
-            "link": "{{ closest.metaobject.client_case_study.link.value }}",
-            "open_in_new_tab": true,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
         }
       },
       "block_order": [
         "text_gzK8Qw",
-        "text_77VzQU",
-        "button_cNnAaC"
+        "text_77VzQU"
       ],
       "name": "t:names.hero",
       "settings": {
