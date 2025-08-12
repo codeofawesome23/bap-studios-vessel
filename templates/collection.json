@@ -138,7 +138,7 @@
           "settings": {
             "enable_filtering": true,
             "filter_style": "horizontal",
-            "filter_width": "centered",
+            "filter_width": "full-width",
             "text_label_case": "uppercase",
             "show_swatch_label": false,
             "show_filter_label": false,
@@ -146,10 +146,10 @@
             "enable_grid_density": false,
             "inherit_color_scheme": true,
             "color_scheme": "",
-            "padding-block-start": 8,
-            "padding-block-end": 8,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0,
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 10,
+            "padding-inline-end": 10,
             "facets_margin_bottom": 8,
             "facets_margin_right": 20
           },
