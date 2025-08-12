@@ -71,7 +71,7 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
-                "type_preset": "h2",
+                "type_preset": "h1",
                 "font": "var(--font-tertiary--family)",
                 "font_size": "var(--font-size--heading-lg)",
                 "line_height": "normal",
