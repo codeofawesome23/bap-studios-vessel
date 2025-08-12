@@ -53,7 +53,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 80,
         "section_width": "full-width",
-        "section_height": "",
+        "section_height": "small",
         "section_height_custom": 40,
         "color_scheme": "scheme-1",
         "background_media": "image",
