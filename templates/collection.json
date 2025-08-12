@@ -123,7 +123,7 @@
         "border_radius": 0,
         "toggle_overlay": true,
         "overlay_color": "#ffffff72",
-        "overlay_style": "gradient",
+        "overlay_style": "solid",
         "gradient_direction": "to bottom",
         "padding-block-start": 50,
         "padding-block-end": 50
