@@ -64,10 +64,10 @@
         "border_width": 1,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
+        "toggle_overlay": true,
+        "overlay_color": "#ffffff26",
+        "overlay_style": "gradient",
+        "gradient_direction": "to bottom",
         "padding-block-start": 50,
         "padding-block-end": 50
       }
