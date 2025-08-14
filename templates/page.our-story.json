@@ -342,7 +342,7 @@
             "custom_width": 100,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
-            "height": "fit",
+            "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": true,
             "color_scheme": "",
@@ -368,7 +368,7 @@
               "name": "t:names.heading",
               "settings": {
                 "text": "<h2>{{ closest.page.metafields.custom.header_1.value }}</h2>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
@@ -394,7 +394,7 @@
               "name": "t:names.text",
               "settings": {
                 "text": "<p></p>{{ closest.page.content }}",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
