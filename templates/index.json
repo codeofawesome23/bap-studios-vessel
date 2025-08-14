@@ -454,11 +454,11 @@
         "text_gEMUVq": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Bap Studios is focused on bringing creative endeavors to life that honor everything Noelle stands for. </strong></p><p><strong>Just kidding, that would be hell but we are focused on making anything that allows you to enjoy the things we love most. Cats, Cards, and Craziness. </strong></p>",
+            "text": "<p>Bap Studios is focused on bringing creative endeavors to life that honor everything Noelle stands for. </p><p>Just kidding, that would be hell but we are focused on making anything that allows you to enjoy the things we love most. Cats, Cards, and Craziness. </p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
-            "type_preset": "h2",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
