@@ -295,7 +295,7 @@
           "name": "t:names.collection_card",
           "static": true,
           "settings": {
-            "collection": "bap-approved",
+            "collection": "{{ closest.collection }}",
             "placement": "below_image",
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
@@ -363,7 +363,9 @@
       ],
       "name": "t:names.collections_carousel",
       "settings": {
-        "collection_list": [],
+        "collection_list": [
+          "bap-approved"
+        ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "columns": 3,
