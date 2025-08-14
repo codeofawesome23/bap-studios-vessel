@@ -122,6 +122,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "{{ closest.page.metafields.custom.image_1.value }}",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
