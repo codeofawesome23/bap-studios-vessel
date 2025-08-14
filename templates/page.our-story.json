@@ -122,11 +122,11 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "{{ closest.page.metafields.custom.image_1.value }}",
+            "image": "shopify://shop_images/Our_Story_-_Portrait-2.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
-            "image_position": "contain",
+            "image_position": "cover",
             "video_position": "cover"
           },
           "blocks": {}
