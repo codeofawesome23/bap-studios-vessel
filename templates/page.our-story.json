@@ -300,6 +300,7 @@
               "type": "image",
               "name": "t:names.image",
               "settings": {
+                "image": "{{ closest.page.metafields.custom.image_1.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -356,10 +357,10 @@
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
           },
           "blocks": {
             "text_Wnrpkb": {
