@@ -171,7 +171,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Learn More",
+            "label": "{{ metaobjects.games[\"booze-pets\"].buy_or_support | metafield_text }}",
             "link": "{{ metaobjects.games[\"booze-pets\"].system.url }}",
             "open_in_new_tab": false,
             "style_class": "button",
