@@ -369,7 +369,7 @@
               "settings": {
                 "text": "<h2>{{ closest.page.metafields.custom.header_1.value }}</h2>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
@@ -395,7 +395,7 @@
               "settings": {
                 "text": "<p></p>{{ closest.page.content }}",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
