@@ -58,7 +58,7 @@
         "color_scheme": "",
         "background_media": "image",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/Blank_Placeholder.jpg",
+        "background_image": "{{ page.metafields.custom.header_image.value }}",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
