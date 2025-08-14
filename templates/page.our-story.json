@@ -182,7 +182,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Our signature product</h2>",
+                    "text": "<h2>{{ closest.page.metafields.custom.header_1.value }}</h2>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
