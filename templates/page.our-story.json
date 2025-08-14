@@ -244,8 +244,8 @@
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
-        "media_width": "medium",
-        "media_height": "60svh",
+        "media_width": "wide",
+        "media_height": "50svh",
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-4",
