@@ -79,11 +79,11 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h3>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</h3>",
+            "text": "<p>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
-            "type_preset": "rte",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
