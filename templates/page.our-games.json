@@ -195,6 +195,7 @@
         "media_type_1": "image",
         "image_1": "{{ metaobjects.games[\"booze-pets\"].header_image.value }}",
         "media_type_2": "image",
+        "image_2": "{{ page.metafields.custom.image_1.value }}",
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
