@@ -361,7 +361,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>{{ closest.collection.title }}</h3><p><a href=\"/pages/collabs\" title=\"Collabs\">Learn More</a></p>",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "center",
