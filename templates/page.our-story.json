@@ -122,7 +122,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/Our_Story_-_Portrait-2.jpg",
+            "image": "{{ closest.page.metafields.custom.image_1.value }}",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -244,8 +244,8 @@
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
-        "media_width": "narrow",
-        "media_height": "auto",
+        "media_width": "wide",
+        "media_height": "100svh",
         "section_width": "page-width",
         "extend_media": true,
         "color_scheme": "scheme-4",
