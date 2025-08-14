@@ -295,7 +295,7 @@
           "name": "t:names.collection_card",
           "static": true,
           "settings": {
-            "collection": "{{ closest.collection }}",
+            "collection": "",
             "placement": "below_image",
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
