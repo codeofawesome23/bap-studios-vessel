@@ -79,7 +79,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</p>",
+            "text": "<h3>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</h3>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -126,7 +126,7 @@
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
-            "image_position": "cover",
+            "image_position": "contain",
             "video_position": "cover"
           },
           "blocks": {}
