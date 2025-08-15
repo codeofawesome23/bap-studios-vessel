@@ -221,7 +221,7 @@
               "type": "image",
               "name": "Action Photo 1",
               "settings": {
-                "image": "{{ closest.metaobject.games.action_photo_1.value }}",
+                "image": "{{ closest.metaobject.games.product_photo_1.value }}",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -244,7 +244,7 @@
               "type": "image",
               "name": "Action Photo 2",
               "settings": {
-                "image": "{{ closest.metaobject.games.action_photo_2.value }}",
+                "image": "{{ closest.metaobject.games.product_photo_2.value }}",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -313,7 +313,7 @@
               "type": "image",
               "name": "Action Photo 3",
               "settings": {
-                "image": "{{ closest.metaobject.games.action_photo_3.value }}",
+                "image": "{{ closest.metaobject.games.product_photo_3.value }}",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -336,7 +336,7 @@
               "type": "image",
               "name": "Action Photo 4",
               "settings": {
-                "image": "{{ closest.metaobject.games.action_photo_4.value }}",
+                "image": "{{ closest.metaobject.games.product_photo_4.value }}",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
