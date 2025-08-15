@@ -74,7 +74,27 @@
     },
     "section_PdHifN": {
       "type": "section",
-      "name": "t:names.custom_section",
+      "blocks": {
+        "jumbo_text_Pc7aKp": {
+          "type": "jumbo-text",
+          "name": "t:names.jumbo_text",
+          "settings": {
+            "text": "Be.\nA.\nPerson.",
+            "font": "heading",
+            "alignment": "left",
+            "line_height": "0.8",
+            "letter_spacing": "-0.03em",
+            "case": "none",
+            "text_effect": "reveal",
+            "animation_repeat": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "jumbo_text_Pc7aKp"
+      ],
+      "name": "Be A Person",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
