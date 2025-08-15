@@ -163,54 +163,49 @@
       "blocks": {
         "jumbo_text_YhXdLU": {
           "type": "jumbo-text",
-          "name": "Metric 1",
+          "name": "Intro",
           "settings": {
-            "text": "Be bold.",
+            "text": "What\nwe\ndid.",
             "font": "heading",
             "alignment": "left",
             "line_height": "0.8",
             "letter_spacing": "-0.03em",
-            "case": "none",
+            "case": "uppercase",
             "text_effect": "reveal",
             "animation_repeat": true
           },
           "blocks": {}
         },
-        "jumbo_text_XWrRcX": {
-          "type": "jumbo-text",
-          "name": "Metric 2",
+        "text_MPRnXQ": {
+          "type": "text",
+          "name": "t:names.heading",
           "settings": {
-            "text": "Be bold.",
-            "font": "heading",
+            "text": "",
+            "width": "fit-content",
+            "max_width": "normal",
             "alignment": "left",
-            "line_height": "0.8",
-            "letter_spacing": "-0.03em",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
             "case": "none",
-            "text_effect": "reveal",
-            "animation_repeat": true
-          },
-          "blocks": {}
-        },
-        "jumbo_text_BTR89t": {
-          "type": "jumbo-text",
-          "name": "Metric 3",
-          "settings": {
-            "text": "Be bold.",
-            "font": "heading",
-            "alignment": "left",
-            "line_height": "0.8",
-            "letter_spacing": "-0.03em",
-            "case": "none",
-            "text_effect": "reveal",
-            "animation_repeat": true
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 75,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
         "jumbo_text_YhXdLU",
-        "jumbo_text_XWrRcX",
-        "jumbo_text_BTR89t"
+        "text_MPRnXQ"
       ],
       "name": "What We Did",
       "settings": {
