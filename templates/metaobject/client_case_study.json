@@ -178,13 +178,65 @@
         },
         "text_MPRnXQ": {
           "type": "text",
-          "name": "t:names.heading",
+          "name": "Metric 1",
           "settings": {
-            "text": "",
+            "text": "<p>{{ closest.metaobject.client_case_study.metric_1.value }}</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "rte",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 75,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_9mdC3y": {
+          "type": "text",
+          "name": "Metric 2",
+          "settings": {
+            "text": "<p>{{ closest.metaobject.client_case_study.metric_2.value }}</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 75,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_cDhzcG": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>{{ closest.metaobject.client_case_study.metric_3.value }}</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h1",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -205,7 +257,9 @@
       },
       "block_order": [
         "jumbo_text_YhXdLU",
-        "text_MPRnXQ"
+        "text_MPRnXQ",
+        "text_9mdC3y",
+        "text_cDhzcG"
       ],
       "name": "What We Did",
       "settings": {
