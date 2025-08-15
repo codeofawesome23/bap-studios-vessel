@@ -107,7 +107,7 @@
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
-            "type_preset": "rte",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -480,7 +480,7 @@
         "group_mCmHyQ",
         "group_HjNPLp"
       ],
-      "name": "Action Image Row",
+      "name": "Content Example Row",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": false,
