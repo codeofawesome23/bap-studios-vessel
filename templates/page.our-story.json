@@ -373,7 +373,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</p>",
+            "text": "<p>{{ closest.page.metafields.custom.outro_text | metafield_tag }}</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
