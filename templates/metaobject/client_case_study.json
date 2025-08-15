@@ -293,6 +293,32 @@
     "section_j4GhRi": {
       "type": "section",
       "blocks": {
+        "text_AkU4Px": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Content Pieces</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 30,
+            "padding-block-end": 30,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "group_mCmHyQ": {
           "type": "group",
           "name": "Showcase Row 1",
@@ -477,6 +503,7 @@
         }
       },
       "block_order": [
+        "text_AkU4Px",
         "group_mCmHyQ",
         "group_HjNPLp"
       ],
@@ -505,8 +532,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 50,
+        "padding-block-end": 50
       }
     },
     "section_RfjJDK": {
