@@ -270,6 +270,44 @@
                   },
                   "blocks": {}
                 },
+                "text_ntpGbg": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "{{ closest.product.metafields.full_product.dsc | metafield_tag }}",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "divider_WDnkV7": {
+                  "type": "_divider",
+                  "name": "t:names.divider",
+                  "settings": {
+                    "thickness": 1,
+                    "corner_radius": "square",
+                    "width_percent": 100,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0
+                  },
+                  "blocks": {}
+                },
                 "product_description_8gHdXj": {
                   "type": "product-description",
                   "name": "Product description",
@@ -354,6 +392,8 @@
               "block_order": [
                 "group_xr9GGL",
                 "divider_grFKCP",
+                "text_ntpGbg",
+                "divider_WDnkV7",
                 "product_description_8gHdXj",
                 "variant_picker_nhbWcG",
                 "buy_buttons_B7HMzq"
