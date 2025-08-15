@@ -335,7 +335,7 @@
             "gap": 5,
             "width": "fill",
             "custom_width": 100,
-            "width_mobile": "fit-content",
+            "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fill",
             "custom_height": 100,
@@ -426,7 +426,7 @@
             "gap": 5,
             "width": "fill",
             "custom_width": 100,
-            "width_mobile": "fit-content",
+            "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fill",
             "custom_height": 100,
@@ -507,7 +507,7 @@
         "group_mCmHyQ",
         "group_HjNPLp"
       ],
-      "name": "Content Example Row",
+      "name": "Content Examples",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": false,
