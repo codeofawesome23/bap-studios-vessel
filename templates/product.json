@@ -761,7 +761,7 @@
           "blocks": {
             "image_tNBLzd": {
               "type": "image",
-              "name": "t:names.image",
+              "name": "Action 1",
               "settings": {
                 "link": "",
                 "image_ratio": "adapt",
@@ -783,7 +783,7 @@
             },
             "image_rJEpBK": {
               "type": "image",
-              "name": "Row 1",
+              "name": "Action 2",
               "settings": {
                 "link": "",
                 "image_ratio": "adapt",
