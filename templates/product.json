@@ -662,7 +662,7 @@
         "text_RQGK3H": {
           "type": "text",
           "settings": {
-            "text": "<p></p>{{ closest.product.description }}",
+            "text": "{{ closest.product.description }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
