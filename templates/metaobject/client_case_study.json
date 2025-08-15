@@ -334,7 +334,7 @@
           "blocks": {
             "image_jzfJeM": {
               "type": "image",
-              "name": "Action Photo 1",
+              "name": "Content Piece 1",
               "settings": {
                 "image": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
                 "link": "",
@@ -357,7 +357,7 @@
             },
             "image_cF3nYi": {
               "type": "image",
-              "name": "Action Photo 2",
+              "name": "Content Piece 2",
               "settings": {
                 "image": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
                 "link": "",
@@ -425,7 +425,7 @@
           "blocks": {
             "image_iyCANL": {
               "type": "image",
-              "name": "Action Photo 3",
+              "name": "Content Piece 3",
               "settings": {
                 "image": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
                 "link": "",
@@ -448,7 +448,7 @@
             },
             "image_m8YzzQ": {
               "type": "image",
-              "name": "Action Photo 4",
+              "name": "Content Piece 4",
               "settings": {
                 "image": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
                 "link": "",
