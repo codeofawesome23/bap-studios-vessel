@@ -675,11 +675,11 @@
         "text_RQGK3H": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ closest.product.description }}</p>",
+            "text": "{{ closest.product.description }}",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
-            "type_preset": "paragraph",
+            "type_preset": "h6",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
