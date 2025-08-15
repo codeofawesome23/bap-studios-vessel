@@ -293,7 +293,7 @@
           "blocks": {
             "image_iyCANL": {
               "type": "image",
-              "name": "Action Photo 1",
+              "name": "Action Photo 3",
               "settings": {
                 "image": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
                 "link": "",
@@ -316,7 +316,7 @@
             },
             "image_m8YzzQ": {
               "type": "image",
-              "name": "Action Photo 2",
+              "name": "Action Photo 4",
               "settings": {
                 "image": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
                 "link": "",
