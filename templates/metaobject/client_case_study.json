@@ -158,6 +158,89 @@
         "padding-block-end": 0
       }
     },
+    "section_W9Xjqe": {
+      "type": "section",
+      "blocks": {
+        "jumbo_text_YhXdLU": {
+          "type": "jumbo-text",
+          "name": "Metric 1",
+          "settings": {
+            "text": "Be bold.",
+            "font": "heading",
+            "alignment": "left",
+            "line_height": "0.8",
+            "letter_spacing": "-0.03em",
+            "case": "none",
+            "text_effect": "reveal",
+            "animation_repeat": true
+          },
+          "blocks": {}
+        },
+        "jumbo_text_XWrRcX": {
+          "type": "jumbo-text",
+          "name": "Metric 2",
+          "settings": {
+            "text": "Be bold.",
+            "font": "heading",
+            "alignment": "left",
+            "line_height": "0.8",
+            "letter_spacing": "-0.03em",
+            "case": "none",
+            "text_effect": "reveal",
+            "animation_repeat": true
+          },
+          "blocks": {}
+        },
+        "jumbo_text_BTR89t": {
+          "type": "jumbo-text",
+          "name": "Metric 3",
+          "settings": {
+            "text": "Be bold.",
+            "font": "heading",
+            "alignment": "left",
+            "line_height": "0.8",
+            "letter_spacing": "-0.03em",
+            "case": "none",
+            "text_effect": "reveal",
+            "animation_repeat": true
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "jumbo_text_YhXdLU",
+        "jumbo_text_XWrRcX",
+        "jumbo_text_BTR89t"
+      ],
+      "name": "What We Did",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "section_j4GhRi": {
       "type": "section",
       "blocks": {
@@ -703,6 +786,7 @@
   "order": [
     "hero_kgL7J8",
     "section_cJMfLw",
+    "section_W9Xjqe",
     "section_j4GhRi",
     "section_RfjJDK"
   ]
