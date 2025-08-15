@@ -219,7 +219,7 @@
           "blocks": {
             "image_W9ejXF": {
               "type": "image",
-              "name": "Action Photo 1",
+              "name": "Product Photo 1",
               "settings": {
                 "image": "{{ closest.metaobject.games.product_photo_1.value }}",
                 "link": "",
@@ -242,7 +242,7 @@
             },
             "image_ixmByP": {
               "type": "image",
-              "name": "Action Photo 2",
+              "name": "Product Photo 2",
               "settings": {
                 "image": "{{ closest.metaobject.games.product_photo_2.value }}",
                 "link": "",
@@ -311,7 +311,7 @@
           "blocks": {
             "image_jMzFrc": {
               "type": "image",
-              "name": "Action Photo 3",
+              "name": "Product Photo 3",
               "settings": {
                 "image": "{{ closest.metaobject.games.product_photo_3.value }}",
                 "link": "",
@@ -334,7 +334,7 @@
             },
             "image_Jd7qNy": {
               "type": "image",
-              "name": "Action Photo 4",
+              "name": "Product Photo 4",
               "settings": {
                 "image": "{{ closest.metaobject.games.product_photo_4.value }}",
                 "link": "",
