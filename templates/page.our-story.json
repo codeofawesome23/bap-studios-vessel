@@ -79,7 +79,7 @@
           "type": "jumbo-text",
           "name": "t:names.jumbo_text",
           "settings": {
-            "text": "Be.\nA.\nPerson.",
+            "text": "Be\nA\nPerson.",
             "font": "heading",
             "alignment": "left",
             "line_height": "0.8",
