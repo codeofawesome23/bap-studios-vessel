@@ -161,18 +161,18 @@
     "section_W9Xjqe": {
       "type": "section",
       "blocks": {
-        "jumbo_text_YhXdLU": {
+        "jumbo_text_kd4td3": {
           "type": "jumbo-text",
-          "name": "Intro",
+          "name": "t:names.jumbo_text",
           "settings": {
-            "text": "What\nwe\ndid.",
+            "text": "What we did",
             "font": "heading",
             "alignment": "left",
             "line_height": "0.8",
             "letter_spacing": "-0.03em",
-            "case": "uppercase",
-            "text_effect": "reveal",
-            "animation_repeat": true
+            "case": "none",
+            "text_effect": "blur",
+            "animation_repeat": false
           },
           "blocks": {}
         },
@@ -256,7 +256,7 @@
         }
       },
       "block_order": [
-        "jumbo_text_YhXdLU",
+        "jumbo_text_kd4td3",
         "text_MPRnXQ",
         "text_9mdC3y",
         "text_cDhzcG"
@@ -274,7 +274,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -286,8 +286,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "section_j4GhRi": {
