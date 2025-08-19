@@ -74,7 +74,7 @@
             "border_width": 1,
             "border_radius": 0,
             "input_type_preset": "paragraph",
-            "style_class": "button",
+            "style_class": "button-secondary",
             "display_type": "arrow",
             "label": "Sign Up",
             "integrated_button": true,
