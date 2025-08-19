@@ -89,7 +89,7 @@
           "border": "#1c1e1f",
           "shadow": "#150400",
           "primary_button_background": "#fdf7e8",
-          "primary_button_text": "#fdf7e8",
+          "primary_button_text": "#150400",
           "primary_button_border": "#fdf7e8",
           "primary_button_hover_background": "#cde2ed",
           "primary_button_hover_text": "#fdf7e8",
