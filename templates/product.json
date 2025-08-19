@@ -776,6 +776,7 @@
               "type": "image",
               "name": "Action 1",
               "settings": {
+                "image": "{{ closest.product.metafields.custom.action_photo_1.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -798,6 +799,7 @@
               "type": "image",
               "name": "Action 2",
               "settings": {
+                "image": "{{ closest.product.metafields.custom.action_photo_2.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -865,6 +867,7 @@
               "type": "image",
               "name": "Action 3",
               "settings": {
+                "image": "{{ closest.product.metafields.custom.action_photo_3.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -887,6 +890,7 @@
               "type": "image",
               "name": "Action 4",
               "settings": {
+                "image": "{{ closest.product.metafields.custom.action_photo_4.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
