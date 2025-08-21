@@ -563,7 +563,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Low Commitment Like The Astronomer CEO</h2>",
+                "text": "<h2>{{ closest.page.metafields.custom.header_1.value }}</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -589,7 +589,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<ul><li>Up to 6 Videos</li><li>Performance Based Pricing</li><li>No Add-Ons Available</li></ul>",
+                "text": "<p>{{ closest.page.metafields.custom.tagline_1 | metafield_tag }}</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -767,7 +767,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Hitting Harder than Chris Brown</h2>",
+                "text": "<h2>{{ closest.page.metafields.custom.header_2.value }}</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -793,7 +793,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<ul><li>Up to 24 Videos</li><li>Performance Based Pricing</li><li>Bap Boost™ Eligible </li><li>Whitelisting</li></ul>",
+                "text": "<p>{{ closest.page.metafields.custom.tagline_2 | metafield_tag }}</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
