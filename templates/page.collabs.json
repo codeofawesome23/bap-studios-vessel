@@ -1444,7 +1444,7 @@
                 "text_PggDyq": {
                   "type": "text",
                   "settings": {
-                    "text": "",
+                    "text": "<p>{{ metaobjects.client_case_study[\"case-study-2\"].client.value }}</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "center",
