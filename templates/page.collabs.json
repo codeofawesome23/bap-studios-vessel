@@ -1444,7 +1444,7 @@
                 "text_PggDyq": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{{ metaobjects.client_case_study[\"case-study-2\"].client.value }}</p>",
+                    "text": "<h2>{{ metaobjects.client_case_study[\"case-study-2\"].client.value }}</h2>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "center",
@@ -1469,7 +1469,7 @@
                 "text_e9MKdC": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{{ metaobjects.client_case_study[\"cards-against-humanity\"].product_service.value }}</p>",
+                    "text": "<p>{{ metaobjects.client_case_study[\"case-study-2\"].product_service.value }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1495,7 +1495,7 @@
                   "type": "button",
                   "settings": {
                     "label": "Learn More",
-                    "link": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].link.value }}",
+                    "link": "{{ metaobjects.client_case_study[\"case-study-2\"].link.value }}",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
@@ -1521,7 +1521,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].header_image.value }}",
+            "image_1": "{{ metaobjects.client_case_study[\"case-study-3\"].header_image.value }}",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -1583,7 +1583,7 @@
                 "text_xfc47q": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>{{ metaobjects.client_case_study[\"cards-against-humanity\"].client.value }}</h2>",
+                    "text": "<h2>{{ metaobjects.client_case_study[\"case-study-3\"].client.value }}</h2>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "center",
@@ -1608,7 +1608,7 @@
                 "text_9zWYGU": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{{ metaobjects.client_case_study[\"cards-against-humanity\"].product_service.value }}</p>",
+                    "text": "<p>{{ metaobjects.client_case_study[\"case-study-3\"].product_service.value }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1634,7 +1634,7 @@
                   "type": "button",
                   "settings": {
                     "label": "Learn More",
-                    "link": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].link.value }}",
+                    "link": "{{ metaobjects.client_case_study[\"case-study-3\"].link.value }}",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
