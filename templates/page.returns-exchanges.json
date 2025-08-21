@@ -15,7 +15,7 @@
         "text_FimBK8": {
           "type": "text",
           "settings": {
-            "text": "<h1>Returns + Exchanges</h1>",
+            "text": "<h1>{{ closest.page.title }}</h1>",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -46,7 +46,7 @@
         "link": "",
         "open_in_new_tab": false,
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Returns-Exchanges_-_Header.jpg",
+        "image_1": "{{ page.metafields.custom.header_image.value }}",
         "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
