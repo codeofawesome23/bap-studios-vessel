@@ -120,7 +120,7 @@
         "text_nmaJFW": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ closest.page.metafields.custom.header_1.value }}</p>",
+            "text": "<h1>{{ closest.page.metafields.custom.header_1.value }}</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
