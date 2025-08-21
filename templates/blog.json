@@ -115,7 +115,7 @@
         "border_opacity": 100,
         "border_radius": 0,
         "toggle_overlay": true,
-        "overlay_color": "#fdf7e83f",
+        "overlay_color": "#fdf7e840",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 40,
@@ -128,7 +128,7 @@
         "text_VpRYDC": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</p>",
+            "text": "<p>Welcome to the Baply</p><p>A sporadic blog controlled by a cat providing interesting reads on cat stuff, things reviewed by a cat, or general updates from all things bap.</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",

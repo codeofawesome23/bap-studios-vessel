@@ -1089,7 +1089,7 @@
         "text_RKHhJY": {
           "type": "text",
           "settings": {
-            "text": "<p>Collab Tagline</p>",
+            "text": "<p>Bap Studios + <span style=\"text-decoration:underline\">You</span></p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
