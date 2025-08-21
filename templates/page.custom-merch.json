@@ -859,16 +859,16 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "collabs_form_T6ahHD": {
-              "type": "collabs-form",
-              "name": "Collabs Form",
+            "custom_merch_form_dmtPDj": {
+              "type": "custom-merch-form",
+              "name": "Custom Merch Form",
               "settings": {
                 "width": "custom",
                 "custom_width": 100,
                 "width_mobile": "custom",
                 "custom_width_mobile": 100,
                 "inherit_color_scheme": true,
-                "color_scheme": "scheme-1",
+                "color_scheme": "",
                 "padding_top": 40,
                 "padding_bottom": 40,
                 "padding_left": 20,
@@ -884,7 +884,7 @@
             }
           },
           "block_order": [
-            "collabs_form_T6ahHD"
+            "custom_merch_form_dmtPDj"
           ]
         }
       },
