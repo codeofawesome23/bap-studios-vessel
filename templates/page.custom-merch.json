@@ -858,7 +858,34 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "custom_merch_form_qcXM93": {
+              "type": "custom-merch-form",
+              "name": "Custom Merch Form",
+              "settings": {
+                "width": "custom",
+                "custom_width": 100,
+                "width_mobile": "custom",
+                "custom_width_mobile": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "padding_top": 40,
+                "padding_bottom": 40,
+                "padding_left": 20,
+                "padding_right": 20,
+                "button_text": "Submit",
+                "button_style": "primary",
+                "button_width_desktop": "fit",
+                "button_custom_width_desktop": 50,
+                "button_width_mobile": "custom",
+                "button_custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "custom_merch_form_qcXM93"
+          ]
         }
       },
       "block_order": [
