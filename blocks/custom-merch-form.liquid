@@ -48,6 +48,30 @@
     font-family: inherit;
   }
 
+  .ai-contact-form__currency-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    background-color: #f1ecdf;
+    border-radius: 4px;
+    padding: 0 12px;
+  }
+
+  .ai-contact-form__currency-symbol-{{ ai_gen_id }} {
+    font-size: 14px;
+    margin-right: 4px;
+    color: rgb(var(--color-input-text));
+  }
+
+  .ai-contact-form__input-budget-{{ ai_gen_id }} {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 16px 0;
+    font-size: 14px;
+    font-family: inherit;
+    color: rgb(var(--color-input-text));
+  }
+
   .ai-contact-form__textarea-{{ ai_gen_id }} {
     min-height: 120px;
     resize: vertical;
@@ -146,9 +170,11 @@
           <div class="ai-contact-form__field-{{ ai_gen_id }}">
             <input type="date" name="contact[delivery_date]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="Delivery Date">
           </div>
-          <div class="ai-contact-form__field-{{ ai_gen_id }}">
-            <span class="ai-contact-form__currency-symbol-{{ ai_gen_id }}">$</span>
-            <input type="number" name="contact[budget]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="Budget" step="0.01" min="0">
+          <div class="ai-contact-form__field-{{ ai_gen_id }} ai-contact-form__field-budget-{{ ai_gen_id }}">
+            <div class="ai-contact-form__currency-wrapper-{{ ai_gen_id }}">
+              <span class="ai-contact-form__currency-symbol-{{ ai_gen_id }}">$</span>
+              <input type="number" name="contact[budget]" class="ai-contact-form__input-{{ ai_gen_id }} ai-contact-form__input-budget-{{ ai_gen_id }}" placeholder="Budget" step="0.01" min="0" inputmode="decimal" aria-label="Budget">
+            </div>
           </div>
         </div>
 
