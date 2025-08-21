@@ -1243,7 +1243,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/1.jpg",
+            "image_1": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].header_image.value }}",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
