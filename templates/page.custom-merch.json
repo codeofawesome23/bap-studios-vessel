@@ -761,7 +761,7 @@
           "type": "text",
           "name": "t:names.content",
           "settings": {
-            "text": "<p>If you think your brand might be the right fit for ours, feel free to reach out below and let us know how you think we can work together!</p>",
+            "text": "<p>{{ closest.page.metafields.custom.outro_text | metafield_tag }}</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
