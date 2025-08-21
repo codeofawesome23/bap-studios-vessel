@@ -916,7 +916,7 @@
               "name": "t:names.icon",
               "settings": {
                 "icon": "price_tag",
-                "image_upload": "shopify://shop_images/Partner_aa71377d-3d36-407e-a651-fde4a5ade0e1.png",
+                "image_upload": "shopify://shop_images/Partner.png",
                 "width": 200,
                 "link": "",
                 "open_in_new_tab": false
@@ -1158,7 +1158,6 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Noelle_Walk_1_9599d455-09ac-43a7-8bfe-533c08b6c8e5.png",
                     "link": "",
                     "image_ratio": "square",
                     "width": "custom",
