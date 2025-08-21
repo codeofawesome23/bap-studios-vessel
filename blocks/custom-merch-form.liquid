@@ -1,4 +1,18 @@
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+{% assign currency_symbol = "$" %}
+{% case block.settings.budget_currency %}
+  {% when 'usd' %}{% assign currency_symbol = '$' %}
+  {% when 'eur' %}{% assign currency_symbol = '€' %}
+  {% when 'gbp' %}{% assign currency_symbol = '£' %}
+  {% when 'cad' %}{% assign currency_symbol = '$' %}
+  {% when 'aud' %}{% assign currency_symbol = '$' %}
+  {% when 'jpy' %}{% assign currency_symbol = '¥' %}
+  {% when 'inr' %}{% assign currency_symbol = '₹' %}
+  {% when 'other' %}
+    {% if block.settings.custom_currency_symbol != blank %}
+      {% assign currency_symbol = block.settings.custom_currency_symbol %}
+    {% endif %}
+{% endcase %}
 
 {% style %}
   .ai-contact-form-{{ ai_gen_id }} {
@@ -46,6 +60,27 @@
     border-radius: 4px;
     font-size: 14px;
     font-family: inherit;
+  }
+
+  .ai-contact-form__currency-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    background-color: #f1ecdf;
+    border-radius: 4px;
+    padding: 0 12px;
+  }
+
+  .ai-contact-form__currency-symbol-{{ ai_gen_id }} {
+    font-size: 14px;
+    margin-right: 4px;
+    color: rgb(var(--color-input-text));
+  }
+
+  .ai-contact-form__input-budget-{{ ai_gen_id }} {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 16px 0;
   }
 
   .ai-contact-form__textarea-{{ ai_gen_id }} {
@@ -146,8 +181,11 @@
           <div class="ai-contact-form__field-{{ ai_gen_id }}">
             <input type="date" name="contact[delivery_date]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="Delivery Date">
           </div>
-          <div class="ai-contact-form__field-{{ ai_gen_id }}">
-            <input type="number" name="contact[budget]" class="ai-contact-form__input-{{ ai_gen_id }}" placeholder="Budget" step="0.01" min="0">
+          <div class="ai-contact-form__field-{{ ai_gen_id }} ai-contact-form__field-budget-{{ ai_gen_id }}">
+            <div class="ai-contact-form__currency-wrapper-{{ ai_gen_id }}">
+              <span class="ai-contact-form__currency-symbol-{{ ai_gen_id }}">{{ currency_symbol }}</span>
+              <input type="number" name="contact[budget]" class="ai-contact-form__input-{{ ai_gen_id }} ai-contact-form__input-budget-{{ ai_gen_id }}" placeholder="Budget" step="0.01" min="0">
+            </div>
           </div>
         </div>
 
@@ -192,6 +230,19 @@
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Bottom padding", "default": 40 },
     { "type": "range", "id": "padding_left", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Left padding", "default": 20 },
     { "type": "range", "id": "padding_right", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "Right padding", "default": 20 },
+
+    { "type": "header", "content": "Budget Currency" },
+    { "type": "select", "id": "budget_currency", "label": "Currency", "options": [
+      { "value": "usd", "label": "USD ($)" },
+      { "value": "eur", "label": "EUR (€)" },
+      { "value": "gbp", "label": "GBP (£)" },
+      { "value": "cad", "label": "CAD ($)" },
+      { "value": "aud", "label": "AUD ($)" },
+      { "value": "jpy", "label": "JPY (¥)" },
+      { "value": "inr", "label": "INR (₹)" },
+      { "value": "other", "label": "Other (custom)" }
+    ], "default": "usd" },
+    { "type": "text", "id": "custom_currency_symbol", "label": "Custom currency symbol (used when Currency is Other)", "default": "", "info": "Example: CHF uses ‘CHF’, SEK uses ‘kr’, etc." },
 
     { "type": "header", "content": "Submit Button" },
     { "type": "text", "id": "button_text", "label": "Button text", "default": "Submit" },
