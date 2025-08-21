@@ -971,7 +971,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Together like jet fuel and steel beams</h2>",
+                "text": "<h2>{{ closest.page.metafields.custom.header_3.value }}</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -997,7 +997,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<ul><li>Unlimited Videos</li><li>Performance Based Pricing</li><li>Bap Boost™ Eligible </li><li>Whitelisting</li><li>UGC Eligible</li><li>Bap Approved™ Eligible </li></ul>",
+                "text": "<p>{{ closest.page.metafields.custom.tagline_3 | metafield_tag }}</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
