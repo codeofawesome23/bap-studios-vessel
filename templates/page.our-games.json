@@ -172,7 +172,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "{{ metaobjects.games[\"booze-pets\"].buy_or_support | metafield_text }}",
-            "link": "{{ metaobjects.games[\"booze-pets\"].system.url }}",
+            "link": "{{ metaobjects.games[\"booze-pets\"].buy_support_url.value }}",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -275,7 +275,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Learn More",
-            "link": "{{ metaobjects.games[\"booze-pets\"].system.url }}",
+            "link": "{{ closest.page.metafields.custom.url_2.value }}",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
