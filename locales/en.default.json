@@ -62,7 +62,7 @@
     "clear_all": "Clear all",
     "close": "Close",
     // Continue shopping link on the cart page which takes the user back to a collection page
-    "continue_shopping": "Continue shopping",
+    "continue_shopping": "Continue Shopping",
     "enter_password": "Enter password",
     "log_in_html": "Have an account? <a href=\"{{ link }}\">Log in</a> to check out faster.",
     "log_in": "Sign in",
