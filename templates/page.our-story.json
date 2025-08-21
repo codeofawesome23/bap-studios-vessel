@@ -81,7 +81,7 @@
           "settings": {
             "text": "Be\nA\nPerson.",
             "font": "heading",
-            "alignment": "left",
+            "alignment": "center",
             "line_height": "0.8",
             "letter_spacing": "-0.03em",
             "case": "none",
@@ -304,7 +304,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p></p>{{ closest.page.content }}",
+                "text": "{{ closest.page.content }}",
                 "width": "100%",
                 "max_width": "none",
                 "alignment": "left",
