@@ -114,7 +114,7 @@
           "type": "text",
           "name": "t:names.content",
           "settings": {
-            "text": "<p>It is our commitment to deliver you products you’re satisfied with, so if for whatever reason you’re not happy with your game or merch, you can return your product for a full refund. <br/><br/>Alternatively, if you purchased something which isn’t quite right and would like to exchange for a different size or color, you may do so free of charge.<br/><br/>All orders may be returned/exchanged within 60 days of being delivered. Return labels will be provided free of charge to all domestic customers. International returnees are responsible for paying for return labels unless product is damaged or defective.</p>",
+            "text": "<p>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
