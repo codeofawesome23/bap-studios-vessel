@@ -118,7 +118,7 @@
           {{ form.errors.messages.email }}
         </div>
       {% endif %}
-      <input type="hidden" name="contact[tags]" value="Return/Exchange Request">
+      <input type="hidden" name="contact[tags]" value="Custom Merch Request">
 
       <div class="ai-contact-form__wrapper-{{ ai_gen_id }}">
         <div class="ai-contact-form__row-{{ ai_gen_id }}">
@@ -169,7 +169,7 @@
 
 {% schema %}
 {
-  "name": "Return/Exchange Form",
+  "name": "Custom Merch Form",
   "settings": [
     { "type": "header", "content": "Form Width" },
     { "type": "select", "id": "width", "label": "Desktop width", "options": [
@@ -211,7 +211,7 @@
     { "type": "range", "id": "button_custom_width_mobile", "min": 10, "max": 100, "step": 5, "unit": "%", "label": "Mobile button width", "default": 100 }
   ],
   "presets": [
-    { "name": "Return/Exchange Form" }
+    { "name": "Custom Merch Form" }
   ]
 }
 {% endschema %}
