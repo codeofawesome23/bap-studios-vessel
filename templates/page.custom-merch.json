@@ -15,7 +15,7 @@
         "text_wxg88q": {
           "type": "text",
           "settings": {
-            "text": "<h1>Collabs</h1>",
+            "text": "<h1>Custom Merch</h1>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -103,7 +103,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Consectetur adipiscing elit quisque faucibus ex sapien vitae. Ex sapien vitae pellentesque sem placerat in id. Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</p>",
+            "text": "<p>Have a specific design in mind? Let Noelle and I bring your idea to life we create all of our merch in house. So long as you don't mind a little cat hair in your order... get a quote today and let us bring your vision to life! </p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
