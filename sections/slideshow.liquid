@@ -1,20 +1,3 @@
-
-
-{% if section.blocks.size > 1 %}
-  {% capture controls %}
-    {%- render 'slideshow-controls',
-      style: section.settings.slideshow_controls_style,
-      autoplay: section.settings.autoplay,
-      item_count: section.blocks.size,
-      show_arrows: false,
-      arrows_on_media: true,
-      controls_on_media: true,
-      pagination_position: 'center',
-      icon_style: section.settings.icons_style
-    -%}
-  {% endcapture %}
-{% endif %}
-
 {% capture slides %}
   {% content_for 'blocks' %}
 {% endcapture %}
@@ -37,7 +20,6 @@
 >
   {% render 'slideshow',
     class: slideshow_class,
-    controls: controls,
     show_arrows: show_arrows,
     icon_style: section.settings.icons_style,
     autoplay: section.settings.autoplay,
