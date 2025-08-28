@@ -158,6 +158,7 @@
   {% endif %}
 {% endcapture %}
 
+{% if has_image_1 or has_video_1 %}
 <div
   id="Hero-{{ section.id }}"
   class="hero color-{{ section.settings.color_scheme }}{% if section.blocks.size == 0 and section.settings.section_height == 'auto' %} hero--no-blocks-auto-height{% endif %}"
@@ -236,6 +237,7 @@
     </div>
   </div>
 </div>
+{% endif %}
 
 {% stylesheet %}
   .hero-wrapper {
