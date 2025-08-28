@@ -275,7 +275,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Learn More",
-            "link": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].link.value }}",
+            "link": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].system.url }}",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
