@@ -1,7 +1,18 @@
 
 
+
 {%- assign block_index = section.blocks | find_index: 'id', block.id -%}
 
+{% liquid
+  assign _media_has_content = false
+  if block.settings.media_type_1 == 'image' and block.settings.image_1 != blank
+    assign _media_has_content = true
+  elsif block.settings.media_type_1 == 'video' and block.settings.video_1 != blank
+    assign _media_has_content = true
+  endif
+%}
+
+{% if _media_has_content %}
 {% capture children %}
   {% liquid
     assign preview_image = block.settings.image_1
@@ -89,6 +100,8 @@
   children: children,
   attributes: block.shopify_attributes
 %}
+
+{% endif %}
 
 {% stylesheet %}
   .slide__content {
