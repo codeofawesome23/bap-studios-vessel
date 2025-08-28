@@ -42,6 +42,11 @@
       "block_order": [
         "text_mzDpLP"
       ],
+      "custom_css": [
+        ".gradient {background: transparent !important;}",
+        " #MainContent {top: 0; position: absolute;}",
+        " #template-index #MainContent {position: inherit !important;}"
+      ],
       "name": "Page Header",
       "settings": {
         "content_direction": "column",
