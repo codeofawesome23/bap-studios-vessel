@@ -65,7 +65,7 @@
         "border_opacity": 100,
         "border_radius": 0,
         "toggle_overlay": true,
-        "overlay_color": "#fdf7e874",
+        "overlay_color": "#fdf7e873",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 100,
@@ -275,7 +275,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Learn More",
-            "link": "{{ closest.page.metafields.custom.url_2.value }}",
+            "link": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].link.value }}",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
