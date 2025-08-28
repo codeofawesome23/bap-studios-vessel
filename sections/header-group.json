@@ -57,11 +57,7 @@
           "blocks": {}
         }
       },
-      "custom_css": [
-        ".gradient {background: transparent !important;}",
-        " #MainContent {top: 0; position: absolute;}",
-        " #template-index #MainContent {position: inherit !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "logo_position": "left",
         "menu_position": "right",
