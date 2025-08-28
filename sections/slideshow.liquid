@@ -15,7 +15,7 @@
 %}
 
 <div
-  class="spacing-style section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} disable-section-top-offset"
+  class="spacing-style section section--{{ section.settings.section_width }} color-{{ section.settings.color_scheme }} disable-section-top-offset slideshow--no-pagination"
   style="{% render 'spacing-padding', settings: section.settings %}"
 >
   {% render 'slideshow',
@@ -29,6 +29,18 @@
     slide_size: section.settings.slide_height
   %}
 </div>
+
+{% stylesheet %}
+  /* Hide pagination dots/counter within this section only */
+  .slideshow--no-pagination .splide__pagination,
+  .slideshow--no-pagination .slideshow__pagination,
+  .slideshow--no-pagination .slider__pagination,
+  .slideshow--no-pagination .slider-pagination,
+  .slideshow--no-pagination .slideshow__counter,
+  .slideshow--no-pagination .slider-counter {
+    display: none !important;
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
