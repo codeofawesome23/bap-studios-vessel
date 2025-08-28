@@ -120,7 +120,7 @@
         "text_nmaJFW": {
           "type": "text",
           "settings": {
-            "text": "<h1>{{ closest.page.metafields.custom.header_1.value }}</h1>",
+            "text": "<p>{{ metaobjects.games[\"booze-pets\"].game_title.value }}</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -145,7 +145,7 @@
         "text_QRPLgq": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ closest.page.metafields.custom.tagline_1 | metafield_tag }}</p>",
+            "text": "<p>{{ metaobjects.games[\"booze-pets\"].tagline.value }}</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
