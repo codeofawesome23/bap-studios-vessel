@@ -679,7 +679,7 @@
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
-            "type_preset": "h6",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
