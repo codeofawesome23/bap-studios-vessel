@@ -81,7 +81,7 @@
         "color_scheme_transparent": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
         "enable_transparent_header_home": true,
         "home_color_scheme": "default",
-        "enable_transparent_header_product": true,
+        "enable_transparent_header_product": false,
         "product_color_scheme": "default",
         "enable_transparent_header_collection": true,
         "collection_color_scheme": "default"
