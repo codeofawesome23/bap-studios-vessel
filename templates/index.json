@@ -1588,7 +1588,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Our past Clients</p>",
+            "text": "<p>Who We Work With</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1650,9 +1650,9 @@
           "type": "icon",
           "settings": {
             "icon": "none",
-            "image_upload": "shopify://shop_images/Cards_Against_Humanity.png",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_1.value }}",
             "width": 128,
-            "link": "https://www.cardsagainsthumanity.com/",
+            "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_1.value }}",
             "open_in_new_tab": true
           },
           "blocks": {}
@@ -1661,9 +1661,9 @@
           "type": "icon",
           "settings": {
             "icon": "none",
-            "image_upload": "shopify://shop_images/Relatable.png",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_2.value }}",
             "width": 128,
-            "link": "https://relatable.com/",
+            "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_2.value }}",
             "open_in_new_tab": true
           },
           "blocks": {}
@@ -1672,9 +1672,9 @@
           "type": "icon",
           "settings": {
             "icon": "none",
-            "image_upload": "shopify://shop_images/Dyce.png",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_3.value }}",
             "width": 128,
-            "link": "https://dycegames.com/",
+            "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_3.value }}",
             "open_in_new_tab": true
           },
           "blocks": {}
@@ -1683,9 +1683,9 @@
           "type": "icon",
           "settings": {
             "icon": "none",
-            "image_upload": "shopify://shop_images/Zombie_Ghost.png",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_4.value }}",
             "width": 128,
-            "link": "https://zombieghostgames.com/",
+            "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_4.value }}",
             "open_in_new_tab": true
           },
           "blocks": {}
@@ -1694,9 +1694,9 @@
           "type": "icon",
           "settings": {
             "icon": "none",
-            "image_upload": "shopify://shop_images/Whisker.png",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_5.value }}",
             "width": 128,
-            "link": "https://www.whisker.com/",
+            "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_5.value }}",
             "open_in_new_tab": true
           },
           "blocks": {}
@@ -1705,9 +1705,9 @@
           "type": "icon",
           "settings": {
             "icon": "none",
-            "image_upload": "shopify://shop_images/Catalyst.png",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_6.value }}",
             "width": 128,
-            "link": "https://catalystpet.com/",
+            "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_6.value }}",
             "open_in_new_tab": true
           },
           "blocks": {}
