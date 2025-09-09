@@ -162,7 +162,7 @@
             "product": "{{ closest.product }}",
             "product_card_gap": 12,
             "inherit_color_scheme": true,
-            "color_scheme": "",
+            "color_scheme": "scheme-1",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
