@@ -430,8 +430,8 @@
               "type": "group",
               "name": "t:names.group",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
+                "link": "https://google.com",
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
