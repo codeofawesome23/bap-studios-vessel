@@ -382,7 +382,7 @@
                 "color_scheme": "",
                 "background_media": "video",
                 "video": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
-                "video_position": "cover",
+                "video_position": "contain",
                 "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
@@ -397,7 +397,41 @@
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "spacer_jmBziN": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "pixel",
+                    "percent_size": 100,
+                    "pixel_size": 400,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
+                "button_htLbhh": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Shop now",
+                    "link": "shopify://collections/all",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "spacer_jmBziN",
+                "button_htLbhh"
+              ]
             },
             "group_mFXjGz": {
               "type": "group",
@@ -421,7 +455,8 @@
                 "custom_height": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
-                "background_media": "none",
+                "background_media": "video",
+                "video": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "border": "none",
@@ -437,35 +472,7 @@
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {
-                "video_6iYgAy": {
-                  "type": "video",
-                  "name": "Content Piece 2",
-                  "settings": {
-                    "source": "uploaded",
-                    "video": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
-                    "video_url": "",
-                    "video_autoplay": true,
-                    "video_loop": true,
-                    "alt": "",
-                    "custom_width": 100,
-                    "custom_width_mobile": 100,
-                    "aspect_ratio": "auto",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "video_6iYgAy"
-              ]
+              "blocks": {}
             }
           },
           "block_order": [
