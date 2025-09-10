@@ -387,7 +387,7 @@
               "settings": {
                 "source": "uploaded",
                 "video": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
-                "video_autoplay": false,
+                "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
                 "custom_width": 100,
@@ -478,7 +478,7 @@
               "settings": {
                 "source": "uploaded",
                 "video": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
-                "video_autoplay": false,
+                "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
                 "custom_width": 100,
