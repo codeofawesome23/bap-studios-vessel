@@ -380,7 +380,8 @@
                 "custom_height": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
-                "background_media": "none",
+                "background_media": "video",
+                "video": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "border": "none",
@@ -396,35 +397,7 @@
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {
-                "video_Bei9cD": {
-                  "type": "video",
-                  "name": "Content Piece 1",
-                  "settings": {
-                    "source": "uploaded",
-                    "video": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
-                    "video_url": "",
-                    "video_autoplay": true,
-                    "video_loop": true,
-                    "alt": "",
-                    "custom_width": 100,
-                    "custom_width_mobile": 100,
-                    "aspect_ratio": "auto",
-                    "border": "none",
-                    "border_width": 1,
-                    "border_opacity": 100,
-                    "border_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "video_Bei9cD"
-              ]
+              "blocks": {}
             },
             "group_mFXjGz": {
               "type": "group",
