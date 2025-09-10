@@ -8,10 +8,7 @@
   endif
 %}
 
-{% assign _link = block.settings.link %}
-
 {% if _has_video %}
-{% if _link %}<a href="{{ _link }}" class="video-card-link" aria-label="{{ block.settings.alt | default: 'View video card' }}">{% endif %}
 {% capture video_style %}
   {%  render 'spacing-style', settings: block.settings %}
   {% render 'border-override', settings: block.settings %}
@@ -27,11 +24,7 @@
     video_style: video_style,
     video_preview_image: block.settings.video.preview_image,
     additional_attributes: block.shopify_attributes,
-    section_id: section.id,
-    video_controls: false,
-    show_controls: false,
-    controls: false,
-    hide_controls: true
+    section_id: section.id
   %}
 {% else %}
   {% render 'video',
@@ -43,29 +36,15 @@
     video_alt: block.settings.alt,
     video_preview_image: block.settings.cover_image,
     additional_attributes: block.shopify_attributes,
-    section_id: section.id,
-    video_controls: false,
-    show_controls: false,
-    controls: false,
-    hide_controls: true
+    section_id: section.id
   %}
 {% endif %}
-{% if _link %}</a>{% endif %}
 {% endif %}
 
 {% stylesheet %}
   .placeholder-video {
     aspect-ratio: 5 / 3;
   }
-  /* Make entire card clickable and suppress player controls when linked */
-  .video-card-link { display: block; text-decoration: none; }
-  .video-card-link video,
-  .video-card-link iframe { pointer-events: none; }
-  /* Attempt to hide native controls if any were injected */
-  .video-card-link video::-webkit-media-controls { display: none !important; }
-  .video-card-link .plyr__controls,
-  .video-card-link .media-controls,
-  .video-card-link .video-controls-overlay { display: none !important; }
 {% endstylesheet %}
 
 {% schema %}
@@ -88,12 +67,6 @@
         }
       ],
       "default": "uploaded"
-    },
-    {
-      "type": "url",
-      "id": "link",
-      "label": "t:settings.link",
-      "info": "t:info.link_dynamic"
     },
     {
       "type": "video",
