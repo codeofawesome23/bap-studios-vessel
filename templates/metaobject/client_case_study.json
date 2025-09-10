@@ -360,7 +360,7 @@
           "blocks": {
             "group_edyrEf": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Content Piece 1",
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
@@ -403,7 +403,7 @@
                   "name": "t:names.image",
                   "settings": {
                     "image": "shopify://shop_images/Blank_Tile.png",
-                    "link": "https://google.com",
+                    "link": "{{ closest.metaobject.client_case_study.client_example_link_1.value }}",
                     "image_ratio": "square",
                     "width": "fill",
                     "custom_width": 100,
@@ -428,10 +428,10 @@
             },
             "group_mFXjGz": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Content Piece 2",
               "settings": {
-                "link": "https://google.com",
-                "open_in_new_tab": true,
+                "link": "",
+                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -465,7 +465,34 @@
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "image_iARGLt": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/Blank_Tile.png",
+                    "link": "{{ closest.metaobject.client_case_study.client_example_link_2.value }}",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "image_iARGLt"
+              ]
             }
           },
           "block_order": [
@@ -473,9 +500,9 @@
             "group_mFXjGz"
           ]
         },
-        "group_wFCdVX": {
+        "group_aH6GNP": {
           "type": "group",
-          "name": "Showcase Row 1",
+          "name": "Showcase Row 2",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -512,9 +539,9 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_6WDUHR": {
+            "group_pQ4gEg": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Content Piece 3",
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
@@ -530,12 +557,13 @@
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "height": "fill",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
+                "background_media": "video",
+                "video": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
+                "video_position": "contain",
                 "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
@@ -551,19 +579,18 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_Eccb8T": {
-                  "type": "video",
-                  "name": "Content Piece 3",
+                "image_698jet": {
+                  "type": "image",
+                  "name": "t:names.image",
                   "settings": {
-                    "source": "uploaded",
-                    "video": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
-                    "video_url": "",
-                    "video_autoplay": true,
-                    "video_loop": true,
-                    "alt": "",
+                    "image": "shopify://shop_images/Blank_Tile.png",
+                    "link": "{{ closest.metaobject.client_case_study.client_example_link_3.value }}",
+                    "image_ratio": "square",
+                    "width": "fill",
                     "custom_width": 100,
+                    "width_mobile": "fill",
                     "custom_width_mobile": 100,
-                    "aspect_ratio": "auto",
+                    "height": "fit",
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
@@ -577,12 +604,12 @@
                 }
               },
               "block_order": [
-                "video_Eccb8T"
+                "image_698jet"
               ]
             },
-            "group_WpwcHw": {
+            "group_EQEhKk": {
               "type": "group",
-              "name": "t:names.group",
+              "name": "Content Piece 4",
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
@@ -602,7 +629,8 @@
                 "custom_height": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
-                "background_media": "none",
+                "background_media": "video",
+                "video": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
                 "video_position": "cover",
                 "background_image_position": "cover",
                 "border": "none",
@@ -619,19 +647,18 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "video_gh6mrJ": {
-                  "type": "video",
-                  "name": "Content Piece 4",
+                "image_RxLzzH": {
+                  "type": "image",
+                  "name": "t:names.image",
                   "settings": {
-                    "source": "uploaded",
-                    "video": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
-                    "video_url": "",
-                    "video_autoplay": true,
-                    "video_loop": true,
-                    "alt": "",
+                    "image": "shopify://shop_images/Blank_Tile.png",
+                    "link": "{{ closest.metaobject.client_case_study.client_example_link_4.value }}",
+                    "image_ratio": "adapt",
+                    "width": "fill",
                     "custom_width": 100,
+                    "width_mobile": "fill",
                     "custom_width_mobile": 100,
-                    "aspect_ratio": "auto",
+                    "height": "fit",
                     "border": "none",
                     "border_width": 1,
                     "border_opacity": 100,
@@ -645,20 +672,20 @@
                 }
               },
               "block_order": [
-                "video_gh6mrJ"
+                "image_RxLzzH"
               ]
             }
           },
           "block_order": [
-            "group_6WDUHR",
-            "group_WpwcHw"
+            "group_pQ4gEg",
+            "group_EQEhKk"
           ]
         }
       },
       "block_order": [
         "text_AkU4Px",
         "group_mCmHyQ",
-        "group_wFCdVX"
+        "group_aH6GNP"
       ],
       "name": "Content Examples",
       "settings": {
