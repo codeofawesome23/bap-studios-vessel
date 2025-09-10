@@ -358,18 +358,18 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "image_jzfJeM": {
-              "type": "image",
+            "video_LpAeDF": {
+              "type": "video",
               "name": "Content Piece 1",
               "settings": {
-                "image": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
-                "link": "",
-                "image_ratio": "square",
-                "width": "fill",
+                "source": "uploaded",
+                "video": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
+                "video_autoplay": true,
+                "video_loop": true,
+                "alt": "",
                 "custom_width": 100,
-                "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "aspect_ratio": "auto",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -381,18 +381,18 @@
               },
               "blocks": {}
             },
-            "image_cF3nYi": {
-              "type": "image",
+            "video_mjJUeq": {
+              "type": "video",
               "name": "Content Piece 2",
               "settings": {
-                "image": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
-                "link": "",
-                "image_ratio": "square",
-                "width": "fill",
+                "source": "uploaded",
+                "video": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
+                "video_autoplay": false,
+                "video_loop": true,
+                "alt": "",
                 "custom_width": 100,
-                "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "aspect_ratio": "auto",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -406,13 +406,13 @@
             }
           },
           "block_order": [
-            "image_jzfJeM",
-            "image_cF3nYi"
+            "video_LpAeDF",
+            "video_mjJUeq"
           ]
         },
-        "group_HjNPLp": {
+        "group_wFCdVX": {
           "type": "group",
-          "name": "Showcase Row 2",
+          "name": "Showcase Row 1",
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -449,18 +449,18 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "image_iyCANL": {
-              "type": "image",
+            "video_Uyf3Ky": {
+              "type": "video",
               "name": "Content Piece 3",
               "settings": {
-                "image": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
-                "link": "",
-                "image_ratio": "square",
-                "width": "fill",
+                "source": "uploaded",
+                "video": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
+                "video_autoplay": true,
+                "video_loop": true,
+                "alt": "",
                 "custom_width": 100,
-                "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "aspect_ratio": "auto",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -472,18 +472,18 @@
               },
               "blocks": {}
             },
-            "image_m8YzzQ": {
-              "type": "image",
+            "video_jjhwXf": {
+              "type": "video",
               "name": "Content Piece 4",
               "settings": {
-                "image": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
-                "link": "",
-                "image_ratio": "square",
-                "width": "fill",
+                "source": "uploaded",
+                "video": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
+                "video_autoplay": false,
+                "video_loop": true,
+                "alt": "",
                 "custom_width": 100,
-                "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "aspect_ratio": "auto",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -497,15 +497,15 @@
             }
           },
           "block_order": [
-            "image_iyCANL",
-            "image_m8YzzQ"
+            "video_Uyf3Ky",
+            "video_jjhwXf"
           ]
         }
       },
       "block_order": [
         "text_AkU4Px",
         "group_mCmHyQ",
-        "group_HjNPLp"
+        "group_wFCdVX"
       ],
       "name": "Content Examples",
       "settings": {
