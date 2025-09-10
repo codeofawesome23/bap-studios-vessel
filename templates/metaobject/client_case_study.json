@@ -376,7 +376,7 @@
                 "custom_width": 100,
                 "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "height": "fit",
+                "height": "fill",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
                 "color_scheme": "",
@@ -398,39 +398,32 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "spacer_jmBziN": {
-                  "type": "spacer",
-                  "name": "t:names.spacer",
+                "image_qUfCBX": {
+                  "type": "image",
+                  "name": "t:names.image",
                   "settings": {
-                    "size": "pixel",
-                    "percent_size": 100,
-                    "pixel_size": 400,
-                    "custom_mobile_size": false,
-                    "size_mobile": "percent",
-                    "percent_size_mobile": 100,
-                    "pixel_size_mobile": 120
-                  },
-                  "blocks": {}
-                },
-                "button_htLbhh": {
-                  "type": "button",
-                  "name": "t:names.button",
-                  "settings": {
-                    "label": "Shop now",
-                    "link": "shopify://collections/all",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
-                    "width": "fit-content",
+                    "image": "shopify://shop_images/Blank_Tile.png",
+                    "link": "https://google.com",
+                    "image_ratio": "square",
+                    "width": "fill",
                     "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "spacer_jmBziN",
-                "button_htLbhh"
+                "image_qUfCBX"
               ]
             },
             "group_mFXjGz": {
