@@ -363,7 +363,9 @@
               "name": "Content Piece 1",
               "settings": {
                 "source": "uploaded",
+                "link": "",
                 "video": "{{ closest.metaobject.client_case_study.client_example_1.value }}",
+                "video_url": "",
                 "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
@@ -386,7 +388,9 @@
               "name": "Content Piece 2",
               "settings": {
                 "source": "uploaded",
+                "link": "",
                 "video": "{{ closest.metaobject.client_case_study.client_example_2.value }}",
+                "video_url": "",
                 "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
@@ -454,7 +458,9 @@
               "name": "Content Piece 3",
               "settings": {
                 "source": "uploaded",
+                "link": "https://google.com",
                 "video": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
+                "video_url": "",
                 "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
@@ -477,7 +483,9 @@
               "name": "Content Piece 4",
               "settings": {
                 "source": "uploaded",
+                "link": "",
                 "video": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
+                "video_url": "",
                 "video_autoplay": true,
                 "video_loop": true,
                 "alt": "",
