@@ -539,58 +539,146 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "video_Uyf3Ky": {
-              "type": "video",
-              "name": "Content Piece 3",
+            "group_6WDUHR": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "source": "uploaded",
-                "video": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
-                "video_url": "",
-                "video_autoplay": true,
-                "video_loop": true,
-                "alt": "",
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
                 "custom_width": 100,
+                "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "aspect_ratio": "auto",
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "video_Eccb8T": {
+                  "type": "video",
+                  "name": "Content Piece 3",
+                  "settings": {
+                    "source": "uploaded",
+                    "video": "{{ closest.metaobject.client_case_study.client_example_3.value }}",
+                    "video_url": "",
+                    "video_autoplay": true,
+                    "video_loop": true,
+                    "alt": "",
+                    "custom_width": 100,
+                    "custom_width_mobile": 100,
+                    "aspect_ratio": "auto",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "video_Eccb8T"
+              ]
             },
-            "video_jjhwXf": {
-              "type": "video",
-              "name": "Content Piece 4",
+            "group_WpwcHw": {
+              "type": "group",
+              "name": "t:names.group",
               "settings": {
-                "source": "uploaded",
-                "video": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
-                "video_url": "",
-                "video_autoplay": true,
-                "video_loop": true,
-                "alt": "",
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
                 "custom_width": 100,
+                "width_mobile": "fill",
                 "custom_width_mobile": 100,
-                "aspect_ratio": "auto",
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "video_gh6mrJ": {
+                  "type": "video",
+                  "name": "Content Piece 4",
+                  "settings": {
+                    "source": "uploaded",
+                    "video": "{{ closest.metaobject.client_case_study.client_example_4.value }}",
+                    "video_url": "",
+                    "video_autoplay": true,
+                    "video_loop": true,
+                    "alt": "",
+                    "custom_width": 100,
+                    "custom_width_mobile": 100,
+                    "aspect_ratio": "auto",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "video_gh6mrJ"
+              ]
             }
           },
           "block_order": [
-            "video_Uyf3Ky",
-            "video_jjhwXf"
+            "group_6WDUHR",
+            "group_WpwcHw"
           ]
         }
       },
