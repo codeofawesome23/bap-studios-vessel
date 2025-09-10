@@ -362,8 +362,8 @@
               "type": "group",
               "name": "Content Piece 1",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
+                "link": "{{ closest.metaobject.client_case_study.client_example_link_1.value }}",
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -403,7 +403,7 @@
                   "name": "t:names.image",
                   "settings": {
                     "image": "shopify://shop_images/Blank_Tile.png",
-                    "link": "{{ closest.metaobject.client_case_study.client_example_link_1.value }}",
+                    "link": "",
                     "image_ratio": "square",
                     "width": "fill",
                     "custom_width": 100,
