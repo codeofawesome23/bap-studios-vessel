@@ -1,5 +1,14 @@
+{% liquid
+  assign _has_video = false
+  if block.settings.source == 'uploaded' and block.settings.video != blank
+    assign _has_video = true
+  elsif block.settings.source == 'url' and block.settings.video_url != blank
+    # For external sources, consider it present when a URL/ID exists
+    assign _has_video = true
+  endif
+%}
 
-
+{% if _has_video %}
 {% capture video_style %}
   {%  render 'spacing-style', settings: block.settings %}
   {% render 'border-override', settings: block.settings %}
@@ -29,6 +38,7 @@
     additional_attributes: block.shopify_attributes,
     section_id: section.id
   %}
+{% endif %}
 {% endif %}
 
 {% stylesheet %}
