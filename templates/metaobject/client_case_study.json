@@ -323,7 +323,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Click on the video to view the content</p>",
+            "text": "<p>Click on the video to see more</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
