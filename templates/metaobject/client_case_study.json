@@ -803,7 +803,7 @@
                   "settings": {
                     "text": "<p>{{ closest.metaobject.client_case_study.answer_1 | metafield_tag }}</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -840,7 +840,7 @@
                   "settings": {
                     "text": "<p>{{ closest.metaobject.client_case_study.answer_2 | metafield_tag }}</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -879,7 +879,7 @@
                   "settings": {
                     "text": "<p>{{ closest.metaobject.client_case_study.answer_3 | metafield_tag }}</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -918,7 +918,7 @@
                   "settings": {
                     "text": "<p>{{ closest.metaobject.client_case_study.answer_4 | metafield_tag }}</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -957,7 +957,7 @@
                   "settings": {
                     "text": "<p>{{ closest.metaobject.client_case_study.answer_5 | metafield_tag }}</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -996,7 +996,7 @@
                   "settings": {
                     "text": "<p>{{ closest.metaobject.client_case_study.answer_6 | metafield_tag }}</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
