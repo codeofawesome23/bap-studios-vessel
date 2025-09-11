@@ -914,11 +914,24 @@
             "image_Griycf",
             "image_UKpF9K"
           ]
+        },
+        "divider_CzPJpk": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 4,
+            "corner_radius": "square",
+            "width_percent": 75,
+            "padding-block-start": 40,
+            "padding-block-end": 40
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "group_YWhfCz",
-        "group_KMyDe9"
+        "group_KMyDe9",
+        "divider_CzPJpk"
       ],
       "name": "t:names.custom_section",
       "settings": {
