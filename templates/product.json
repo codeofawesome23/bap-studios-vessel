@@ -1309,7 +1309,7 @@
         "section_width": "page-width",
         "section_height": "large",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-3",
         "background_media": "image",
         "video_position": "cover",
         "background_image": "{{ product.metafields.custom.heading_image.value }}",
