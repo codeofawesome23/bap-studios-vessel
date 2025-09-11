@@ -62,23 +62,25 @@
   {%- endif -%}
 {% endcapture %}
 
-{% if block.settings.link == blank %}
-  <div
-    class="{{ class }}"
-    style="{{ style }}"
-    {{ block.shopify_attributes }}
-  >
-    {{ image }}
-  </div>
-{% else %}
-  <a
-    href="{{ block.settings.link }}"
-    class="{{ class }}"
-    style="{{ style }}"
-    {{ block.shopify_attributes }}
-  >
-    {{ image }}
-  </a>
+{% if block.settings.image != blank %}
+  {% if block.settings.link == blank %}
+    <div
+      class="{{ class }}"
+      style="{{ style }}"
+      {{ block.shopify_attributes }}
+    >
+      {{ image }}
+    </div>
+  {% else %}
+    <a
+      href="{{ block.settings.link }}"
+      class="{{ class }}"
+      style="{{ style }}"
+      {{ block.shopify_attributes }}
+    >
+      {{ image }}
+    </a>
+  {% endif %}
 {% endif %}
 
 {% stylesheet %}
