@@ -26,8 +26,8 @@
   elsif template.name == 'page' or template.name == 'blog' or template.name == 'article' or template.name == 'metaobject'
     # Make the header transparent on selected handles across Pages, Blogs, Blog Posts, and Metaobjects.
     # Handles are derived from titles via `handleize`.
-    # Current list provided: Our Story, Our Games, News, Contact, Returns + Exchanges, Collaborations, Custom
-    assign transparent_pages = 'our-story,our-games,news,contact,returns-exchanges,collaborations,custom' | split: ','
+    # Current list provided: Our Story, Our Games, News, Contact, Returns + Exchanges, Collabs, Custom
+    assign transparent_pages = 'our-story,our-games,news,contact,returns-exchanges,collabs,custom' | split: ','
 
     if page
       if transparent_pages contains page.handle
