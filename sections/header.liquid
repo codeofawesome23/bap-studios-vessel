@@ -29,7 +29,16 @@
     # Current list provided: Our Story, Our Games, Newsletter, General Inquiries, Returns + Exchanges, Collaborations, Custom Merch
     assign transparent_pages = 'our-story,our-games,newsletter,general-inquiries,returns-exchanges,collaborations,custom-merch' | split: ','
 
-    if (page and transparent_pages contains page.handle) or (blog and transparent_pages contains blog.handle) or (article and transparent_pages contains article.handle) or (metaobject and transparent_pages contains metaobject.handle)
+    if page and (transparent_pages contains page.handle)
+      assign transparent = 'always'
+      assign transparent_color_scheme = 'inverse'
+    elsif blog and (transparent_pages contains blog.handle)
+      assign transparent = 'always'
+      assign transparent_color_scheme = 'inverse'
+    elsif article and (transparent_pages contains article.handle)
+      assign transparent = 'always'
+      assign transparent_color_scheme = 'inverse'
+    elsif metaobject and (transparent_pages contains metaobject.handle)
       assign transparent = 'always'
       assign transparent_color_scheme = 'inverse'
     endif
