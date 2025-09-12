@@ -560,6 +560,11 @@
     margin-top: var(--header-height);
   }
 
+  /* If the header is explicitly transparent (overlay), do NOT push the next section down */
+  .header-section:has(> #header-component[transparent='always']) + .shopify-section {
+    margin-top: 0;
+  }
+
   /* When the header is transparent, and when there is no header-section below it, offset the first main-section with
    * the height of the header
    */
