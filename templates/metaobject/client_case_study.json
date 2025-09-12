@@ -167,7 +167,7 @@
           "settings": {
             "link": "",
             "open_in_new_tab": false,
-            "content_direction": "column",
+            "content_direction": "row",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
@@ -204,6 +204,7 @@
               "type": "image",
               "name": "Product Image 1",
               "settings": {
+                "image": "{{ closest.metaobject.client_case_study.product_1.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -226,6 +227,7 @@
               "type": "image",
               "name": "Product Image 2",
               "settings": {
+                "image": "{{ closest.metaobject.client_case_study.product_2.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -256,7 +258,7 @@
           "settings": {
             "link": "",
             "open_in_new_tab": false,
-            "content_direction": "column",
+            "content_direction": "row",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
@@ -293,6 +295,7 @@
               "type": "image",
               "name": "Product Image 3",
               "settings": {
+                "image": "{{ closest.metaobject.client_case_study.product_3.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
@@ -315,6 +318,7 @@
               "type": "image",
               "name": "Product Image 4",
               "settings": {
+                "image": "{{ closest.metaobject.client_case_study.product_4.value }}",
                 "link": "",
                 "image_ratio": "adapt",
                 "width": "fill",
