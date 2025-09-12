@@ -24,11 +24,9 @@
     assign transparent = 'always'
     assign transparent_color_scheme = section.settings.collection_color_scheme
   elsif template.name == 'page' or template.name == 'blog' or template.name == 'article' or template.name == 'metaobject'
-    {% comment %}
-      Make the header transparent on selected handles across Pages, Blogs, Blog Posts, and Metaobjects.
-      Handles are derived from titles via `handleize`.
-      Current list provided: Our Story, Our Games, Newsletter, General Inquiries, Returns + Exchanges, Collaborations, Custom Merch
-    {% endcomment %}
+    # Make the header transparent on selected handles across Pages, Blogs, Blog Posts, and Metaobjects.
+    # Handles are derived from titles via `handleize`.
+    # Current list provided: Our Story, Our Games, Newsletter, General Inquiries, Returns + Exchanges, Collaborations, Custom Merch
     assign transparent_pages = 'our-story,our-games,newsletter,general-inquiries,returns-exchanges,collaborations,custom-merch' | split: ','
 
     if (page and transparent_pages contains page.handle) or (blog and transparent_pages contains blog.handle) or (article and transparent_pages contains article.handle) or (metaobject and transparent_pages contains metaobject.handle)
