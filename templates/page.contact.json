@@ -208,7 +208,7 @@
       "block_order": [
         "contact_form_UwiCkQ"
       ],
-      "name": "t:names.contact_form",
+      "name": "Contact Form",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
