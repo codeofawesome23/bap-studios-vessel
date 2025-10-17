@@ -173,8 +173,76 @@
     "form": {
       "type": "section",
       "blocks": {
+        "group_i3YArB": {
+          "type": "group",
+          "name": "Form Style",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "general_form_kaiPWY": {
+              "type": "general-form",
+              "name": "General Form",
+              "settings": {
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "padding_top": 40,
+                "padding_bottom": 40,
+                "padding_left": 20,
+                "padding_right": 20,
+                "button_text": "Submit",
+                "button_style": "primary",
+                "button_width_desktop": "fit",
+                "button_custom_width_desktop": 50,
+                "button_width_mobile": "custom",
+                "button_custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "general_form_kaiPWY"
+          ]
+        },
         "contact_form_UwiCkQ": {
           "type": "contact-form",
+          "disabled": true,
           "settings": {
             "width": "custom",
             "custom_width": 50,
@@ -206,6 +274,7 @@
         }
       },
       "block_order": [
+        "group_i3YArB",
         "contact_form_UwiCkQ"
       ],
       "name": "Contact Form",
