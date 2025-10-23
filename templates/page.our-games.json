@@ -172,7 +172,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Learn More",
-            "link": "{{ closest.page.url }}",
+            "link": "shopify://metaobjects/games/booze-pets",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
