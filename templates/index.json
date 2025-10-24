@@ -1185,7 +1185,7 @@
       },
       "name": "Featured Games",
       "settings": {
-        "collection": "featured-games",
+        "collection": "bap-games",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 3,
@@ -1460,7 +1460,7 @@
       },
       "name": "Featured Merch",
       "settings": {
-        "collection": "featured-apparel",
+        "collection": "bap-clothing-accesories",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 3,
