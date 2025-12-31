@@ -86,40 +86,9 @@
         "enable_transparent_header_collection": true,
         "collection_color_scheme": "default"
       }
-    },
-    "header_announcements_GBfRXf": {
-      "type": "header-announcements",
-      "blocks": {
-        "announcement_Q6y7rF": {
-          "type": "_announcement",
-          "settings": {
-            "text": "Shop BOGO FREE Playing Cards",
-            "link": "shopify://products/bap-playing-cards",
-            "font": "var(--font-heading--family)",
-            "font_size": "2.5rem",
-            "weight": "700",
-            "letter_spacing": "loose",
-            "case": "none"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "announcement_Q6y7rF"
-      ],
-      "name": "t:names.announcement_bar",
-      "settings": {
-        "speed": 5,
-        "section_width": "page-width",
-        "color_scheme": "",
-        "divider_width": 0,
-        "padding-block-start": 15,
-        "padding-block-end": 15
-      }
     }
   },
   "order": [
-    "header_section",
-    "header_announcements_GBfRXf"
+    "header_section"
   ]
 }
