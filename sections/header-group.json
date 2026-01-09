@@ -11,6 +11,36 @@
   "type": "header",
   "name": "t:names.header",
   "sections": {
+    "header_announcements_bFe8Nm": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_pPmL7N": {
+          "type": "_announcement",
+          "settings": {
+            "text": "<strong>WE MAKE CUSTOM MERCH • </strong><a href=\"/pages/custom\" title=\"Custom Merch\"><strong>LEARN MORE</strong></a>",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "0.75rem",
+            "weight": "400",
+            "letter_spacing": "tight",
+            "case": "uppercase"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_pPmL7N"
+      ],
+      "name": "t:names.announcement_bar",
+      "settings": {
+        "speed": 5,
+        "section_width": "page-width",
+        "color_scheme": "",
+        "divider_width": 0,
+        "padding-block-start": 15,
+        "padding-block-end": 15
+      }
+    },
     "header_section": {
       "type": "header",
       "blocks": {
@@ -89,6 +119,7 @@
     }
   },
   "order": [
+    "header_announcements_bFe8Nm",
     "header_section"
   ]
 }
