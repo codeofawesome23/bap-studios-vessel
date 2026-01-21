@@ -336,7 +336,7 @@
                   "type": "_social-link",
                   "name": "Instagram",
                   "settings": {
-                    "link": "http://instagram.com/shopify"
+                    "link": "https://www.instagram.com/bap.kat/?fbclid=IwY2xjawPeMqZleHRuA2FlbQIxMQBicmlkETA1UmQ4UGVrWDU3eFVXREs5c3J0YwZhcHBfaWQBMAABHrPV1HDzmXdS9TO0wi2To5U_a4F6QAhNBBVq4QA0BX4KjQiGdGhpxpuhslmI_aem_Xeyr-mRZ4olDvIRzE0dqIw"
                   },
                   "blocks": {}
                 },
@@ -344,7 +344,7 @@
                   "type": "_social-link",
                   "name": "TikTok",
                   "settings": {
-                    "link": "https://tiktok.com/@shopify"
+                    "link": "https://www.tiktok.com/@bap.kat?lang=en"
                   },
                   "blocks": {}
                 },
@@ -352,7 +352,7 @@
                   "type": "_social-link",
                   "name": "Youtube",
                   "settings": {
-                    "link": "https://www.youtube.com/shopify"
+                    "link": "https://www.youtube.com/@bapkat"
                   },
                   "blocks": {}
                 }
