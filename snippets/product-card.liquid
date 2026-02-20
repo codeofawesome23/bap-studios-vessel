@@ -100,7 +100,9 @@
       {% if block.settings.padding-block-start > 0 %}--zoom-out-padding-block-start: min(var(--padding-xs), {{ block.settings.padding-block-start | times: 0.7}}px);{% endif %}
       {% if block.settings.padding-block-end > 0 %}--zoom-out-padding-block-end: min(var(--padding-xs), {{ block.settings.padding-block-end | times: 0.7}}px);{% endif %}
     "
-  >
+  >{% if product.tags contains 'spring-sale-50' %}
+  <span class="spring-sale-badge">50% OFF</span>
+{% endif %}
     {{ children }}
   </div>
 </product-card>
