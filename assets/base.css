@@ -4169,3 +4169,20 @@ text-component {
   height: 20px;
   fill: currentColor;
 }
+.product-card {
+  position: relative;
+}
+
+.spring-sale-badge{
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 50;
+  background: #e60023;
+  color: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  line-height: 1;
+}
