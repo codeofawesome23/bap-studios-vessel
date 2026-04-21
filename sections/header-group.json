@@ -50,7 +50,7 @@
           "static": true,
           "settings": {
             "hide_logo_on_home_page": false,
-            "custom_height": 40,
+            "custom_height": 70,
             "custom_height_mobile": 40,
             "padding-block-start": 0,
             "padding-block-end": 0,
