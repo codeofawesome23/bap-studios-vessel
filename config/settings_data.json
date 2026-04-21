@@ -76,6 +76,11 @@
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": true,
         "settings": {}
+      },
+      "13598578658827771839": {
+        "type": "shopify://apps/auto-add-to-cart-gifts/blocks/script/019bffb9-228d-73ed-9def-2ffde353b324",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
