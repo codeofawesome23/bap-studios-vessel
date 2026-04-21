@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Logo_Dark.png",
-    "logo_inverse": "shopify://shop_images/Logo_Light.png",
+    "logo": "shopify://shop_images/Default_logo_dark_version_1.png",
+    "logo_inverse": "shopify://shop_images/Inverse_logo_light_version.png",
     "favicon": "shopify://shop_images/Favicon.png",
     "type_body_font": "montserrat_n7",
     "type_subheading_font": "montserrat_n4",
@@ -403,7 +403,7 @@
       },
       "scheme-6c2867b8-e5cd-42c8-871b-320945fb425f": {
         "settings": {
-          "background": "#1c1e1f00",
+          "background": "rgba(0,0,0,0)",
           "foreground_heading": "#1c1e1f",
           "foreground": "#1c1e1f",
           "primary": "#150400",
@@ -412,10 +412,10 @@
           "shadow": "#150400",
           "primary_button_background": "#fdf7e8",
           "primary_button_text": "#1c1e1f",
-          "primary_button_border": "#1c1e1f00",
+          "primary_button_border": "rgba(0,0,0,0)",
           "primary_button_hover_background": "#cde2ed",
           "primary_button_hover_text": "#fdf7e8",
-          "primary_button_hover_border": "#1c1e1f00",
+          "primary_button_hover_border": "rgba(0,0,0,0)",
           "secondary_button_background": "#fdf7e8",
           "secondary_button_text": "#1c1e1f",
           "secondary_button_border": "rgba(0,0,0,0)",
