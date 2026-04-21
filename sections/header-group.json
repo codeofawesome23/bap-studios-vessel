@@ -14,22 +14,23 @@
     "header_announcements_bFe8Nm": {
       "type": "header-announcements",
       "blocks": {
-        "announcement_pPmL7N": {
+        "announcement_AgEgTL": {
           "type": "_announcement",
+          "name": "t:names.announcement",
           "settings": {
-            "text": "<strong>WE MAKE CUSTOM MERCH • </strong><a href=\"/pages/custom\" title=\"Custom Merch\"><strong>LEARN MORE</strong></a>",
-            "link": "",
+            "text": "THIS WEEK ONLY: Free deck of playing cards with every Booze & Pets order automatically added to your cart",
+            "link": "shopify://metaobjects/games/booze-pets",
             "font": "var(--font-body--family)",
-            "font_size": "0.75rem",
-            "weight": "400",
-            "letter_spacing": "tight",
-            "case": "uppercase"
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "announcement_pPmL7N"
+        "announcement_AgEgTL"
       ],
       "name": "t:names.announcement_bar",
       "settings": {
