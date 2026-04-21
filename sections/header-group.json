@@ -19,7 +19,7 @@
           "name": "t:names.announcement",
           "settings": {
             "text": "THIS WEEK ONLY: Free deck of playing cards with every Booze & Pets order automatically added to your cart",
-            "link": "shopify://metaobjects/games/booze-pets",
+            "link": "https://bapstudios.com/products/booze-pets?variant=50669179863318",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "weight": "",
