@@ -81,6 +81,11 @@
         "type": "shopify://apps/auto-add-to-cart-gifts/blocks/script/019bffb9-228d-73ed-9def-2ffde353b324",
         "disabled": false,
         "settings": {}
+      },
+      "9388344762370057067": {
+        "type": "shopify://apps/essential-slide-cart-drawer/blocks/app-embed/824bb1f9-5f36-4608-a60c-1f2b6a6f8834",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
