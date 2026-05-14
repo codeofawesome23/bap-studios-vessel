@@ -1711,6 +1711,29 @@
             "open_in_new_tab": true
           },
           "blocks": {}
+        },
+        "image_6Jd87p": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/Exploding_Kittens_Logo.webp",
+            "link": "https://www.explodingkittens.com/collections/games",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
@@ -1719,7 +1742,8 @@
         "icon_VY6Lxh",
         "icon_KVtV8W",
         "icon_rcLiHK",
-        "icon_BzhMxU"
+        "icon_BzhMxU",
+        "image_6Jd87p"
       ],
       "name": "t:names.icons_with_text",
       "settings": {
