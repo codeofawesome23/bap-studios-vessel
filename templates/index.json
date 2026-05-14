@@ -1717,7 +1717,7 @@
           "name": "t:names.image",
           "settings": {
             "image": "shopify://shop_images/Exploding_Kittens_Logo.webp",
-            "link": "https://www.explodingkittens.com/collections/games",
+            "link": "https://www.explodingkittens.com/",
             "image_ratio": "adapt",
             "width": "fit-content",
             "custom_width": 100,
