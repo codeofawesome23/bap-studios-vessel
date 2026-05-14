@@ -590,9 +590,10 @@
         },
         "slide_niGbi6": {
           "type": "_slide",
+          "name": "Slide - ZGG ",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/IMG_1938.jpg",
+            "image_1": "shopify://shop_images/Email_Campaigns_1920_x_830_px_2.png",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -654,7 +655,7 @@
                 "text_NNJ9eD": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>{{ metaobjects.client_case_study[\"cards-against-humanity\"].client.value }}</h2>",
+                    "text": "<h2>Zombie Ghost Games</h2>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "center",
@@ -705,7 +706,7 @@
                   "type": "button",
                   "settings": {
                     "label": "Learn More",
-                    "link": "{{ metaobjects.client_case_study[\"cards-against-humanity\"].system.url }}",
+                    "link": "https://zombieghostgames.com/?srsltid=AfmBOorEwpTyiZRDpiRy3oVlhtUC0DpjORFMCPwBv_19DH9k6bCT8RrV",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
