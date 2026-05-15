@@ -51,23 +51,11 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "icon_qwmUTV": {
-              "type": "icon",
-              "name": "t:names.icon",
-              "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/favicon_star_black_png-01.png",
-                "width": 120,
-                "link": "",
-                "open_in_new_tab": false
-              },
-              "blocks": {}
-            },
             "text_eVAQha": {
               "type": "text",
               "name": "Title",
               "settings": {
-                "text": "<h2>{{ closest.collection.title }}</h2>",
+                "text": "<h2>*{{ closest.collection.title }}*</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -91,7 +79,6 @@
             }
           },
           "block_order": [
-            "icon_qwmUTV",
             "text_eVAQha"
           ]
         }
@@ -115,7 +102,7 @@
         "color_scheme": "scheme-1",
         "background_media": "image",
         "video_position": "cover",
-        "background_image": "shopify://shop_images/CMS_Products_-_Kat_GR_ASS_Photo_4.jpg",
+        "background_image": "shopify://shop_images/Email_Campaigns_1920_x_830_px_8.png",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
