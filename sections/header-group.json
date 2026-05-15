@@ -19,7 +19,7 @@
           "name": "t:names.announcement",
           "settings": {
             "text": "{{ metaobjects.announcement_bar[\"this-week-only-free-deck-of-playing-cards-with-every-booze-pets-order-automatically-added-to-your-cart\"].content.value }}",
-            "link": "shopify://collections/all",
+            "link": "https://bapstudios.com/collections/bap-all-products",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "weight": "",
