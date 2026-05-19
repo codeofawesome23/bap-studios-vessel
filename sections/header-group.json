@@ -14,6 +14,20 @@
     "header_announcements_bFe8Nm": {
       "type": "header-announcements",
       "blocks": {
+        "announcement_ak47aa": {
+          "type": "_announcement",
+          "name": "t:names.announcement",
+          "settings": {
+            "text": "FREE SHIPPING on domestic orders of booze and pets!",
+            "link": "shopify://products/booze-pets",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "normal",
+            "case": "none"
+          },
+          "blocks": {}
+        },
         "announcement_AgEgTL": {
           "type": "_announcement",
           "name": "t:names.announcement",
@@ -30,6 +44,7 @@
         }
       },
       "block_order": [
+        "announcement_ak47aa",
         "announcement_AgEgTL"
       ],
       "name": "t:names.announcement_bar",
