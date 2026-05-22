@@ -309,7 +309,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p><a href=\"mailto:general@bapstudios.com\" title=\"mailto:general@bapstudios.com\">general@bapstudios.com</a></p>",
+                "text": "<p><a href=\"mailto:general@bapstudios.com\" title=\"mailto:general@bapstudios.com\">support@bapstudios.com</a></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
