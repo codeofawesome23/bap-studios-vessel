@@ -32,7 +32,7 @@
           "type": "_announcement",
           "name": "t:names.announcement",
           "settings": {
-            "text": "Get the Booze & Pets Party Bundle! All 3 for $35",
+            "text": "Get the BOOZE & PETS PARTY BUNDLE - all 3 for just $35 with free shipping!",
             "link": "shopify://products/booze-pets-party-bundle",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
