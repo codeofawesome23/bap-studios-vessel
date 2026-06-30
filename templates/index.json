@@ -1588,7 +1588,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Who We Work With</p>",
+            "text": "<p>Who We've Worked With</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1646,6 +1646,18 @@
     "section_xyY6Pc": {
       "type": "section",
       "blocks": {
+        "icon_KAQEP7": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Booze_Pets.png",
+            "width": 128,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
         "icon_TNk383": {
           "type": "icon",
           "settings": {
@@ -1736,6 +1748,7 @@
         }
       },
       "block_order": [
+        "icon_KAQEP7",
         "icon_TNk383",
         "icon_XRtxnL",
         "icon_VY6Lxh",
