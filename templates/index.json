@@ -1646,18 +1646,6 @@
     "section_xyY6Pc": {
       "type": "section",
       "blocks": {
-        "icon_KAQEP7": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Booze_Pets.png",
-            "width": 128,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
         "icon_TNk383": {
           "type": "icon",
           "settings": {
@@ -1677,6 +1665,18 @@
             "width": 128,
             "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_2.value }}",
             "open_in_new_tab": true
+          },
+          "blocks": {}
+        },
+        "icon_KAQEP7": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/exploding_kittens_logo.webp",
+            "width": 128,
+            "link": "",
+            "open_in_new_tab": false
           },
           "blocks": {}
         },
@@ -1748,9 +1748,9 @@
         }
       },
       "block_order": [
-        "icon_KAQEP7",
         "icon_TNk383",
         "icon_XRtxnL",
+        "icon_KAQEP7",
         "icon_VY6Lxh",
         "icon_KVtV8W",
         "icon_rcLiHK",
