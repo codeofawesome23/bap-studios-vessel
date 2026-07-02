@@ -28,20 +28,6 @@
           },
           "blocks": {}
         },
-        "announcement_czeFBi": {
-          "type": "_announcement",
-          "name": "t:names.announcement",
-          "settings": {
-            "text": "Get the BOOZE & PETS PARTY BUNDLE - all 3 for just $35 with free shipping!",
-            "link": "shopify://products/booze-pets-party-bundle",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "weight": "",
-            "letter_spacing": "normal",
-            "case": "none"
-          },
-          "blocks": {}
-        },
         "announcement_AgEgTL": {
           "type": "_announcement",
           "name": "t:names.announcement",
@@ -59,7 +45,6 @@
       },
       "block_order": [
         "announcement_ak47aa",
-        "announcement_czeFBi",
         "announcement_AgEgTL"
       ],
       "name": "t:names.announcement_bar",
