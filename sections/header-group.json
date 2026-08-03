@@ -11,52 +11,6 @@
   "type": "header",
   "name": "t:names.header",
   "sections": {
-    "header_announcements_bFe8Nm": {
-      "type": "header-announcements",
-      "blocks": {
-        "announcement_ak47aa": {
-          "type": "_announcement",
-          "name": "t:names.announcement",
-          "settings": {
-            "text": "FREE SHIPPING on domestic orders of booze and pets!",
-            "link": "shopify://products/booze-pets",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "weight": "",
-            "letter_spacing": "normal",
-            "case": "none"
-          },
-          "blocks": {}
-        },
-        "announcement_AgEgTL": {
-          "type": "_announcement",
-          "name": "t:names.announcement",
-          "settings": {
-            "text": "{{ metaobjects.announcement_bar[\"this-week-only-free-deck-of-playing-cards-with-every-booze-pets-order-automatically-added-to-your-cart\"].content.value }}",
-            "link": "https://bapstudios.com/collections/bap-all-products",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "weight": "",
-            "letter_spacing": "normal",
-            "case": "none"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "announcement_ak47aa",
-        "announcement_AgEgTL"
-      ],
-      "name": "t:names.announcement_bar",
-      "settings": {
-        "speed": 5,
-        "section_width": "page-width",
-        "color_scheme": "",
-        "divider_width": 0,
-        "padding-block-start": 15,
-        "padding-block-end": 15
-      }
-    },
     "header_section": {
       "type": "header",
       "blocks": {
@@ -135,7 +89,6 @@
     }
   },
   "order": [
-    "header_announcements_bFe8Nm",
     "header_section"
   ]
 }
