@@ -40,7 +40,7 @@
             "group_cKEwfB": {
               "type": "group",
               "settings": {
-                "link": "",
+                "link": "shopify://products/booze-pets",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
