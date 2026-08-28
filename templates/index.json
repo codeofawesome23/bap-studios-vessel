@@ -868,6 +868,47 @@
         "padding-block-end": 0
       }
     },
+    "marquee_XnKjMt": {
+      "type": "marquee",
+      "blocks": {
+        "text_336iiW": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/collections/new-arrivals\" title=\"New Arrivals\">NEW FALL MERCH IS HERE! 🍂 With even more coming soon. Check it out & stay tuned. </a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_336iiW"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "section_t8Y4E4": {
       "type": "section",
       "blocks": {
@@ -1789,6 +1830,7 @@
   },
   "order": [
     "slideshow_Nz7Dx8",
+    "marquee_XnKjMt",
     "section_t8Y4E4",
     "product_list_zrTeqn",
     "product_list_VBkJk4",
