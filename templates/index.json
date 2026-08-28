@@ -874,7 +874,7 @@
         "text_336iiW": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"/collections/new-arrivals\" title=\"New Arrivals\">NEW FALL MERCH IS HERE! 🍂 With even more coming soon. Check it out & stay tuned. </a></p>",
+            "text": "<p><a href=\"/collections/new-arrivals\" title=\"New Arrivals\"><strong>NEW FALL MERCH IS HERE! 🍂 With even more coming soon. Check it out & stay tuned. </strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
