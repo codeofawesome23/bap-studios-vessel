@@ -352,7 +352,7 @@
                 "letter_spacing": "-0.03em",
                 "case": "none",
                 "text_effect": "reveal",
-                "animation_repeat": false
+                "animation_repeat": true
               },
               "blocks": {}
             }
@@ -366,6 +366,7 @@
       "block_order": [
         "group_LBaECC"
       ],
+      "custom_css": [],
       "name": "Our Clients: Header",
       "settings": {
         "content_direction": "column",
@@ -680,7 +681,6 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "{{ metaobjects.client_case_study[\"case-study-3\"].header_image.value }}",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
