@@ -310,7 +310,6 @@
             },
             "policy_list": {
               "type": "_footer-policy-list",
-              "disabled": true,
               "static": true,
               "settings": {
                 "font_size": "0.75rem",
@@ -324,14 +323,6 @@
               "static": true,
               "settings": {},
               "blocks": {
-                "social_link_XedgRX": {
-                  "type": "_social-link",
-                  "name": "t:names.social_link",
-                  "settings": {
-                    "link": "https://beacons.page/bap.kat"
-                  },
-                  "blocks": {}
-                },
                 "social_link_gB9Jj7": {
                   "type": "_social-link",
                   "name": "Facebook",
@@ -366,7 +357,6 @@
                 }
               },
               "block_order": [
-                "social_link_XedgRX",
                 "social_link_gB9Jj7",
                 "social_link_MkYhVa",
                 "social_link_DFWGmQ",
