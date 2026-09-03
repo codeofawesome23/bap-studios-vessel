@@ -332,6 +332,14 @@
                   },
                   "blocks": {}
                 },
+                "social_link_aW87My": {
+                  "type": "_social-link",
+                  "name": "t:names.social_link",
+                  "settings": {
+                    "link": ""
+                  },
+                  "blocks": {}
+                },
                 "social_link_MkYhVa": {
                   "type": "_social-link",
                   "name": "Instagram",
@@ -359,6 +367,7 @@
               },
               "block_order": [
                 "social_link_gB9Jj7",
+                "social_link_aW87My",
                 "social_link_MkYhVa",
                 "social_link_DFWGmQ",
                 "social_link_r9Bcfb"
