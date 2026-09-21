@@ -47,7 +47,7 @@
         "open_in_new_tab": false,
         "media_type_1": "video",
         "image_1": "{{ page.metafields.custom.header_image.value }}",
-        "video_1": "shopify://files/videos/Boutique.mp4",
+        "video_1": "shopify://files/videos/MVI_3994.MP4",
         "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
