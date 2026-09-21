@@ -255,11 +255,11 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": false,
+                    "background": true,
                     "background_color": "#00000026",
-                    "corner_radius": 0,
+                    "corner_radius": 10,
                     "padding-block-start": 0,
-                    "padding-block-end": 20,
+                    "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -269,7 +269,7 @@
                   "type": "button",
                   "settings": {
                     "label": "{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].button_text.value }}",
-                    "link": "{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].link.value }}",
+                    "link": "shopify://products/booze-pets",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
