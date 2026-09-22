@@ -198,7 +198,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"https://www.pdxnm.com/\" target=\"_blank\"><strong>[Portland Night Market - Portland OR - OCT 2-3rd]</strong></a></p>",
+            "text": "<p><a href=\"https://www.pdxnm.com/\" target=\"_blank\"><strong>[Portland Night Market - Portland, OR - OCT 2-3rd]</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -224,7 +224,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"https://www.catconworldwide.com/\" target=\"_blank\" title=\"https://www.catconworldwide.com/\"><strong>[Cat Con Pasadena CA - OCT 10-11th]</strong></a></p>",
+            "text": "<p><a href=\"https://www.catconworldwide.com/\" target=\"_blank\" title=\"https://www.catconworldwide.com/\"><strong>[Cat Con - Pasadena, CA - OCT 10-11th]</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
