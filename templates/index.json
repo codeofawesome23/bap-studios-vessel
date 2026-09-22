@@ -1014,6 +1014,58 @@
     "marquee_W7cahP": {
       "type": "marquee",
       "blocks": {
+        "text_6rk8kF": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><a href=\"https://levoit.com/pages/vital-pet-pro?transaction_id=10266067b542bd6b7f7aa4ddb85d16&utm_source=multi&utm_medium=kol&utm_campaign=Levoit_US_IG_Views_Launch_BrandMKT_VitalPetPro_tofu&utm_content=CTL_Launch_AirP_05042026&utm_term=bap.kat\" target=\"_blank\" title=\"https://levoit.com/pages/vital-pet-pro?transaction_id=10266067b542bd6b7f7aa4ddb85d16&utm_source=multi&utm_medium=kol&utm_campaign=Levoit_US_IG_Views_Launch_BrandMKT_VitalPetPro_tofu&utm_content=CTL_Launch_AirP_05042026&utm_term=bap.kat\">Get your Vital Pet Pro here!</a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_YE3iCi": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Special thanks to: </p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "icon_wr9PzT": {
           "type": "icon",
           "name": "t:names.icon",
@@ -1026,11 +1078,11 @@
           },
           "blocks": {}
         },
-        "text_YE3iCi": {
+        "text_U7XxMW": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Noelles newest sponsor: </p>",
+            "text": "<p><a href=\"https://levoit.com/pages/vital-pet-pro?transaction_id=10266067b542bd6b7f7aa4ddb85d16&utm_source=multi&utm_medium=kol&utm_campaign=Levoit_US_IG_Views_Launch_BrandMKT_VitalPetPro_tofu&utm_content=CTL_Launch_AirP_05042026&utm_term=bap.kat\" target=\"_blank\" title=\"https://levoit.com/pages/vital-pet-pro?transaction_id=10266067b542bd6b7f7aa4ddb85d16&utm_source=multi&utm_medium=kol&utm_campaign=Levoit_US_IG_Views_Launch_BrandMKT_VitalPetPro_tofu&utm_content=CTL_Launch_AirP_05042026&utm_term=bap.kat\">For helping Noelle breathe happy and be less insane.</a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -1054,8 +1106,10 @@
         }
       },
       "block_order": [
+        "text_6rk8kF",
+        "text_YE3iCi",
         "icon_wr9PzT",
-        "text_YE3iCi"
+        "text_U7XxMW"
       ],
       "name": "t:names.marquee_section",
       "settings": {
