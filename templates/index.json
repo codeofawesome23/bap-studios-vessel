@@ -1126,7 +1126,7 @@
         "text_gEMUVq": {
           "type": "text",
           "settings": {
-            "text": "<p>It started with <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bap.kat</a>, it's evolving to more...</p>",
+            "text": "<p>It started with -&gt; <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bap.kat </a>&lt;-it's evolving to more...</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
