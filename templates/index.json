@@ -1079,7 +1079,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"/pages/our-games\" title=\"Projects & Events\"><strong>We're on tour! Come see us.</strong></a></p>",
+            "text": "<p><a href=\"/pages/our-games\" title=\"Projects & Events\"><strong>WE'RE ON TOUR! - Click to see our next events!</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
