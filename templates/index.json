@@ -815,7 +815,7 @@
                     "color": "var(--color-foreground)",
                     "background": true,
                     "background_color": "#d3aa8482",
-                    "corner_radius": 0,
+                    "corner_radius": 10,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
