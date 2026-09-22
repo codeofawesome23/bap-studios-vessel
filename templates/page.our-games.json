@@ -117,6 +117,32 @@
     "marquee_Bhjknt": {
       "type": "marquee",
       "blocks": {
+        "text_FzcrH9": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><a href=\"https://www.bgdknx.com/\" target=\"_blank\" title=\"https://www.bgdknx.com/\"><strong>[Board Game Days - Knoxville, TN OCT 16-18th]</strong></a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "text_6aeFy3": {
           "type": "text",
           "name": "t:names.text",
@@ -146,7 +172,7 @@
         "text_FQ9ymE": {
           "type": "text",
           "settings": {
-            "text": "<p>[<a href=\"https://www.seattlesouthside.com/directory/the-seattle-boss-market/\" target=\"_blank\" title=\"https://www.seattlesouthside.com/directory/the-seattle-boss-market/\">Boss Babe market - Seattle WA - 9/27]</a></p>",
+            "text": "<p>[<a href=\"https://www.seattlesouthside.com/directory/the-seattle-boss-market/\" target=\"_blank\" title=\"https://www.seattlesouthside.com/directory/the-seattle-boss-market/\">Boss Babe market - Seattle, WA - 9/27]</a></p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -222,6 +248,7 @@
         }
       },
       "block_order": [
+        "text_FzcrH9",
         "text_6aeFy3",
         "text_FQ9ymE",
         "text_LdeRmr",
