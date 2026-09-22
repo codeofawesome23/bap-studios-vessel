@@ -1966,6 +1966,18 @@
     "section_xyY6Pc": {
       "type": "section",
       "blocks": {
+        "icon_igmwd3": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_8.value }}",
+            "width": 128,
+            "link": "",
+            "open_in_new_tab": true
+          },
+          "blocks": {}
+        },
         "icon_TNk383": {
           "type": "icon",
           "settings": {
@@ -2068,6 +2080,7 @@
         }
       },
       "block_order": [
+        "icon_igmwd3",
         "icon_TNk383",
         "icon_XRtxnL",
         "icon_KAQEP7",
