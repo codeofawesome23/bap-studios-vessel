@@ -1004,7 +1004,7 @@
         "slideshow_controls_style": "dots",
         "color_scheme": "scheme-1",
         "autoplay": true,
-        "autoplay_speed": 4,
+        "autoplay_speed": 5,
         "section_width": "full-width",
         "slide_height": "medium",
         "padding-block-start": 0,
