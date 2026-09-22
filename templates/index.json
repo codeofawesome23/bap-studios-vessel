@@ -1126,7 +1126,7 @@
         "text_gEMUVq": {
           "type": "text",
           "settings": {
-            "text": "<p>It started with:</p><p>-&gt; <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bap.kat </a>&lt;- </p><p>It's evolving to more...</p>",
+            "text": "<p>It started with:</p><p>-&gt; <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bapkat </a>&lt;- </p><p>It's evolving to more...</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -1780,7 +1780,7 @@
       },
       "name": "Featured Merch",
       "settings": {
-        "collection": "bap-clothing-accesories",
+        "collection": "new-arrivals",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 3,
