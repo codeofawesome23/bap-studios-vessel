@@ -16,8 +16,9 @@
           "type": "_slide",
           "name": "t:names.slide",
           "settings": {
-            "media_type_1": "image",
+            "media_type_1": "video",
             "image_1": "shopify://shop_images/DSC08016.jpg",
+            "video_1": "shopify://files/videos/EVENTS.mp4",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
