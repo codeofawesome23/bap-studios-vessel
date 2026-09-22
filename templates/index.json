@@ -1011,6 +1011,61 @@
         "padding-block-end": 0
       }
     },
+    "marquee_W7cahP": {
+      "type": "marquee",
+      "blocks": {
+        "icon_wr9PzT": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_8.value }}",
+            "width": 70,
+            "link": "{{ metaobjects.who_we_work_with[\"who-we-work-with-qwquwdgf\"].client_website_8.value }}",
+            "open_in_new_tab": true
+          },
+          "blocks": {}
+        },
+        "text_YE3iCi": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Noelles newest sponsor: </p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_wr9PzT",
+        "text_YE3iCi"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "section_t8Y4E4": {
       "type": "section",
       "blocks": {
@@ -2000,6 +2055,7 @@
   },
   "order": [
     "slideshow_Nz7Dx8",
+    "marquee_W7cahP",
     "section_t8Y4E4",
     "marquee_XnKjMt",
     "product_list_zrTeqn",
