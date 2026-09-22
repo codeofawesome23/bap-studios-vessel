@@ -114,6 +114,128 @@
         "padding-block-end": 80
       }
     },
+    "marquee_Bhjknt": {
+      "type": "marquee",
+      "blocks": {
+        "text_6aeFy3": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Upcoming events:</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_FQ9ymE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>[<a href=\"https://www.seattlesouthside.com/directory/the-seattle-boss-market/\" target=\"_blank\" title=\"https://www.seattlesouthside.com/directory/the-seattle-boss-market/\">Boss Babe market - Seattle WA - 9/27]</a></p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_LdeRmr": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><a href=\"https://www.pdxnm.com/\" target=\"_blank\"><strong>[Portland Night Market - Portland OR - OCT 2-3rd]</strong></a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_6mhDKj": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><a href=\"https://www.catconworldwide.com/\" target=\"_blank\" title=\"https://www.catconworldwide.com/\"><strong>[Cat Con Pasadena CA - OCT 10-11th]</strong></a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_6aeFy3",
+        "text_FQ9ymE",
+        "text_LdeRmr",
+        "text_6mhDKj"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "hero_XCgk8q": {
       "type": "hero",
       "blocks": {
@@ -582,6 +704,7 @@
   "order": [
     "section_Geg46n",
     "main",
+    "marquee_Bhjknt",
     "hero_XCgk8q",
     "hero_naiFg7",
     "product_list_cAdBUw"
