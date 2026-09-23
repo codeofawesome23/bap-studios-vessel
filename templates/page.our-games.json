@@ -106,7 +106,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"https://www.facebook.com/253nightmarket/\" target=\"_blank\" title=\"https://www.facebook.com/253nightmarket/\"><strong>[Ghrram Block Party - Graham</strong></a><a href=\"https://www.facebook.com/253nightmarket/\" target=\"_blank\" title=\"https://www.facebook.com/253nightmarket/\"><strong> WA 9/26]</strong></a></p>",
+            "text": "<p><a href=\"https://www.facebook.com/253nightmarket/\" target=\"_blank\" title=\"https://www.facebook.com/253nightmarket/\"><strong>[Graham Block Party - Graham WA 9/26]</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
