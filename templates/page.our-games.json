@@ -73,56 +73,14 @@
         "padding-block-end": 100
       }
     },
-    "main": {
-      "type": "main-page",
-      "blocks": {
-        "text_KMwtTr": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_KMwtTr"
-      ],
-      "name": "Intro",
-      "settings": {
-        "content_direction": "column",
-        "gap": 32,
-        "color_scheme": "",
-        "padding-block-start": 40,
-        "padding-block-end": 80
-      }
-    },
     "marquee_Bhjknt": {
       "type": "marquee",
       "blocks": {
-        "text_FzcrH9": {
+        "text_6aeFy3": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"https://www.bgdknx.com/\" target=\"_blank\" title=\"https://www.bgdknx.com/\"><strong>[Board Game Days - Knoxville, TN OCT 16-18th]</strong></a></p>",
+            "text": "<p>Upcoming events:</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -144,11 +102,11 @@
           },
           "blocks": {}
         },
-        "text_6aeFy3": {
+        "text_p6pwRC": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Upcoming events:</p>",
+            "text": "<p><a href=\"https://www.facebook.com/253nightmarket/\" target=\"_blank\" title=\"https://www.facebook.com/253nightmarket/\"><strong>[253 Night Market - Bonney Lake, WA 9/26]</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -246,14 +204,41 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_FzcrH9": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><a href=\"https://www.bgdknx.com/\" target=\"_blank\" title=\"https://www.bgdknx.com/\"><strong>[Board Game Days - Knoxville, TN OCT 16-18th]</strong></a></p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_FzcrH9",
         "text_6aeFy3",
+        "text_p6pwRC",
         "text_FQ9ymE",
         "text_LdeRmr",
-        "text_6mhDKj"
+        "text_6mhDKj",
+        "text_FzcrH9"
       ],
       "name": "t:names.marquee_section",
       "settings": {
@@ -262,6 +247,48 @@
         "padding-block-start": 24,
         "padding-block-end": 24,
         "gap_between_elements": 24
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "text_KMwtTr": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>{{ closest.page.metafields.our_story.intro_paragraph | metafield_tag }}</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_KMwtTr"
+      ],
+      "name": "Intro",
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 80
       }
     },
     "hero_XCgk8q": {
@@ -731,8 +758,8 @@
   },
   "order": [
     "section_Geg46n",
-    "main",
     "marquee_Bhjknt",
+    "main",
     "hero_XCgk8q",
     "hero_naiFg7",
     "product_list_cAdBUw"
