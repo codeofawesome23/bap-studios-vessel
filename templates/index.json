@@ -1011,67 +1011,6 @@
         "padding-block-end": 0
       }
     },
-    "section_t8Y4E4": {
-      "type": "section",
-      "blocks": {
-        "text_gEMUVq": {
-          "type": "text",
-          "settings": {
-            "text": "<p>It started with:</p><p>-&gt; <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bapkat </a>&lt;- </p><p>It's evolving to more...</p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 12,
-            "padding-block-end": 12,
-            "padding-inline-start": 12,
-            "padding-inline-end": 12
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_gEMUVq"
-      ],
-      "name": "Introduction",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 50,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 80,
-        "padding-block-end": 80
-      }
-    },
     "marquee_XnKjMt": {
       "type": "marquee",
       "blocks": {
@@ -1138,6 +1077,67 @@
         "padding-block-start": 24,
         "padding-block-end": 24,
         "gap_between_elements": 24
+      }
+    },
+    "section_t8Y4E4": {
+      "type": "section",
+      "blocks": {
+        "text_gEMUVq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It started with:</p><p>-&gt; <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bapkat </a>&lt;- </p><p>It's evolving to more...</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 12,
+            "padding-block-end": 12,
+            "padding-inline-start": 12,
+            "padding-inline-end": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_gEMUVq"
+      ],
+      "name": "Introduction",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 50,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 80,
+        "padding-block-end": 80
       }
     },
     "product_list_zrTeqn": {
@@ -2013,8 +2013,8 @@
   },
   "order": [
     "slideshow_Nz7Dx8",
-    "section_t8Y4E4",
     "marquee_XnKjMt",
+    "section_t8Y4E4",
     "product_list_zrTeqn",
     "product_list_VBkJk4",
     "hero_3wgcFw",
