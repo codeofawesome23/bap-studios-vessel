@@ -349,7 +349,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Learn More",
-            "link": "shopify://metaobjects/games/booze-pets",
+            "link": "shopify://metaobjects/client_case_study/case-study-2",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
