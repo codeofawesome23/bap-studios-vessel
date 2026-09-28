@@ -9,6 +9,70 @@
  */
 {
   "sections": {
+    "section_Geg46n": {
+      "type": "section",
+      "blocks": {
+        "text_mzDpLP": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_mzDpLP"
+      ],
+      "name": "Page Header",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "full-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "image",
+        "video": "{{ page.metafields.custom.header_image.value }}",
+        "video_position": "cover",
+        "background_image": "{{ page.metafields.custom.header_image.value }}",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": true,
+        "overlay_color": "#fdf7e873",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
     "marquee_Bhjknt": {
       "type": "marquee",
       "blocks": {
@@ -185,70 +249,6 @@
         "gap_between_elements": 24
       }
     },
-    "section_Geg46n": {
-      "type": "section",
-      "blocks": {
-        "text_mzDpLP": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h1>{{ closest.page.title }}</h1>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_mzDpLP"
-      ],
-      "name": "Page Header",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "full-width",
-        "section_height": "small",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "background_media": "image",
-        "video": "{{ page.metafields.custom.header_image.value }}",
-        "video_position": "cover",
-        "background_image": "{{ page.metafields.custom.header_image.value }}",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": true,
-        "overlay_color": "#fdf7e873",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 100,
-        "padding-block-end": 100
-      }
-    },
     "main": {
       "type": "main-page",
       "blocks": {
@@ -371,6 +371,109 @@
         "open_in_new_tab": false,
         "media_type_1": "image",
         "image_1": "{{ metaobjects.games[\"booze-pets\"].header_image.value }}",
+        "media_type_2": "image",
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "full-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "toggle_overlay": true,
+        "overlay_color": "#fdf7e89c",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 100,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "hero_Hjbc7N": {
+      "type": "hero",
+      "blocks": {
+        "text_8DNftf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>{{ metaobjects.client_case_study[\"case-study-2\"].client.value }}</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h1",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_4K66LM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Promotional video creation</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 32,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_zkyqgx": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Learn More",
+            "link": "shopify://metaobjects/games/booze-pets",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_8DNftf",
+        "text_4K66LM",
+        "button_zkyqgx"
+      ],
+      "name": "Nogg'n Joggin [Hero]",
+      "settings": {
+        "link": "shopify://metaobjects/client_case_study/case-study-2",
+        "open_in_new_tab": true,
+        "media_type_1": "image",
+        "image_1": "{{ metaobjects.client_case_study[\"case-study-2\"].header_image.value }}",
         "media_type_2": "image",
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -761,6 +864,7 @@
     "marquee_Bhjknt",
     "main",
     "hero_XCgk8q",
+    "hero_Hjbc7N",
     "hero_naiFg7",
     "product_list_cAdBUw"
   ]
