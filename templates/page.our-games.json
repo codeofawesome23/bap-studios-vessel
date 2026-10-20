@@ -106,7 +106,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\"><strong>Spooky Streets [OCT 23rd]</strong></a></p>",
+            "text": "<p><strong>[</strong><a href=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\"><strong>Spooky Streets Knoxville TN, OCT 23rd]</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
