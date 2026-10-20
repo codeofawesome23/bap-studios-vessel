@@ -106,33 +106,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>[</strong><a href=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\"><strong>Spooky Streets Knoxville TN, OCT 23rd]</strong></a></p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_6mhDKj": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p><a href=\"https://www.catconworldwide.com/\" target=\"_blank\" title=\"https://www.catconworldwide.com/\"><strong>[Cat Con - Pasadena, CA - OCT 10-11th]</strong></a></p>",
+            "text": "<p><strong>[</strong><a href=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\"><strong>Spooky Streets - Knoxville TN, OCT 23rd]</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -158,7 +132,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"https://www.bgdknx.com/\" target=\"_blank\" title=\"https://www.bgdknx.com/\"><strong>[Board Game Days - Knoxville, TN OCT 16-18th]</strong></a></p>",
+            "text": "<p><a href=\"https://xulbeer.com/event/kill-the-lights-beer-fest-2026/\" target=\"_blank\" title=\"https://xulbeer.com/event/kill-the-lights-beer-fest-2026/\"><strong>[Kill The Lights beer fest &nbsp;- Knoxville, TN OCT 24th]</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -184,7 +158,6 @@
       "block_order": [
         "text_6aeFy3",
         "text_LdeRmr",
-        "text_6mhDKj",
         "text_FzcrH9"
       ],
       "name": "t:names.marquee_section",
