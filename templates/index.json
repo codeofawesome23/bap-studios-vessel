@@ -42,7 +42,7 @@
             "group_mULnaP": {
               "type": "group",
               "settings": {
-                "link": "shopify://pages/our-games",
+                "link": "shopify://pages/projects-and-events",
                 "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -131,7 +131,7 @@
                   "type": "button",
                   "settings": {
                     "label": "See More",
-                    "link": "shopify://pages/our-games",
+                    "link": "shopify://pages/projects-and-events",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
