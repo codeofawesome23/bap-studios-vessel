@@ -1018,7 +1018,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>-&gt; CLICK HERE FOR OUR NEWEST YOUTUBE VIDEO &lt;-</strong></p>",
+            "text": "<p><a href=\"https://youtu.be/X8xaE_nSFKU\" title=\"https://youtu.be/X8xaE_nSFKU\"><strong>-&gt; CLICK HERE TO SEE OUR NEWEST YOUTUBE VIDEO &lt;-</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
