@@ -80,59 +80,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Upcoming events:</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_LdeRmr": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p><strong>[</strong><a href=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\" target=\"_blank\" title=\"https://www.instagram.com/p/Dee_w9qls0T/?obrf=MWlxbGQ3NGhvMjg1dQ==\"><strong>Spooky Streets - Knoxville TN, OCT 23rd]</strong></a></p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_FzcrH9": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p><a href=\"https://xulbeer.com/event/kill-the-lights-beer-fest-2026/\" target=\"_blank\" title=\"https://xulbeer.com/event/kill-the-lights-beer-fest-2026/\"><strong>[Kill The Lights beer fest &nbsp;- Knoxville, TN OCT 24th]</strong></a></p>",
+            "text": "<p>No events at the moment. More events coming soon.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -156,9 +104,7 @@
         }
       },
       "block_order": [
-        "text_6aeFy3",
-        "text_LdeRmr",
-        "text_FzcrH9"
+        "text_6aeFy3"
       ],
       "name": "t:names.marquee_section",
       "settings": {
