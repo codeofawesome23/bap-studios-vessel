@@ -1974,6 +1974,17 @@
           },
           "blocks": {}
         },
+        "icon_a3dtpB": {
+          "type": "icon",
+          "settings": {
+            "icon": "none",
+            "image_upload": "shopify://shop_images/images.png",
+            "width": 70,
+            "link": "https://theop.games/?srsltid=AYCX9vJ9WKsnnzLt1zbcM5ERMbeRnJKsFR6ZCE--_IhEjSn7nLyI3hwe",
+            "open_in_new_tab": true
+          },
+          "blocks": {}
+        },
         "image_6Jd87p": {
           "type": "image",
           "name": "t:names.image",
@@ -2006,6 +2017,7 @@
         "icon_KVtV8W",
         "icon_rcLiHK",
         "icon_BzhMxU",
+        "icon_a3dtpB",
         "image_6Jd87p"
       ],
       "name": "t:names.icons_with_text",
