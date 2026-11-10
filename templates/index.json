@@ -131,7 +131,7 @@
                   "type": "button",
                   "settings": {
                     "label": "{{ metaobjects.homepage_slide[\"slide-1\"].button_text.value }}",
-                    "link": "shopify://pages/projects-and-events",
+                    "link": "{{ metaobjects.homepage_slide[\"slide-1\"].link.value }}",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
