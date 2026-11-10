@@ -12,12 +12,154 @@
     "slideshow_Nz7Dx8": {
       "type": "slideshow",
       "blocks": {
-        "slide_HD7aCq": {
+        "slide_DAfBCE": {
           "type": "_slide",
           "name": "t:names.slide",
           "settings": {
             "media_type_1": "image",
             "image_1": "{{ metaobjects.homepage_slide[\"slide-1\"].slide_image.value }}",
+            "video_1": "shopify://files/videos/EVENTS.mp4",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_bdEYDp": {
+              "type": "group",
+              "settings": {
+                "link": "shopify://pages/projects-and-events",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 50,
+                "width_mobile": "custom",
+                "custom_width_mobile": 85,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "scheme-6",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 48,
+                "padding-block-end": 48,
+                "padding-inline-start": 48,
+                "padding-inline-end": 48
+              },
+              "blocks": {
+                "text_wCMq7X": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2><a href=\"https://www.youtooz.com/products/noelle-plush-9-inch\" target=\"_blank\" title=\"https://www.youtooz.com/products/noelle-plush-9-inch\">{{ metaobjects.homepage_slide[\"slide-1\"].title_text.value }}</a></h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": true,
+                    "background_color": "#d3aa8482",
+                    "corner_radius": 10,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_ThiAiK": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><a href=\"https://www.youtooz.com/products/noelle-plush-9-inch\" target=\"_blank\" title=\"https://www.youtooz.com/products/noelle-plush-9-inch\">{{ metaobjects.homepage_slide[\"slide-1\"].tagline.value }}</a></p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": true,
+                    "background_color": "#d3aa8482",
+                    "corner_radius": 10,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "button_hafnAx": {
+                  "type": "button",
+                  "settings": {
+                    "label": "{{ metaobjects.homepage_slide[\"slide-1\"].button_text.value }}",
+                    "link": "shopify://pages/projects-and-events",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_wCMq7X",
+                "text_ThiAiK",
+                "button_hafnAx"
+              ]
+            }
+          },
+          "block_order": [
+            "group_bdEYDp"
+          ]
+        },
+        "slide_HD7aCq": {
+          "type": "_slide",
+          "name": "t:names.slide",
+          "settings": {
+            "media_type_1": "video",
+            "image_1": "shopify://shop_images/DSC08016.jpg",
+            "video_1": "shopify://files/videos/EVENTS.mp4",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -79,7 +221,7 @@
                 "text_ieiPDi": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>{{ metaobjects.homepage_slide[\"slide-1\"].title_text.value }}</h2>",
+                    "text": "<h2>Projects & Events</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -104,7 +246,7 @@
                 "text_tVkDAT": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>{{ metaobjects.homepage_slide[\"slide-1\"].tagline.value }}</p>",
+                    "text": "<p>Where we'll be and what we're doing </p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -129,7 +271,7 @@
                 "button_PVTH7c": {
                   "type": "button",
                   "settings": {
-                    "label": "See More{{ metaobjects.homepage_slide[\"slide-1\"].button_text.value }}",
+                    "label": "See More",
                     "link": "shopify://pages/projects-and-events",
                     "open_in_new_tab": false,
                     "style_class": "button",
@@ -150,287 +292,6 @@
           },
           "block_order": [
             "group_mULnaP"
-          ]
-        },
-        "slide_nVxcJU": {
-          "type": "_slide",
-          "name": "t:names.slide",
-          "settings": {
-            "media_type_1": "video",
-            "image_1": "shopify://shop_images/DSC08016.jpg",
-            "video_1": "{{ metaobjects.homepage_slide[\"slide-1\"].slide_image.value }}",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_jkyanb": {
-              "type": "group",
-              "settings": {
-                "link": "shopify://pages/projects-and-events",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "custom",
-                "custom_width": 50,
-                "width_mobile": "custom",
-                "custom_width_mobile": 85,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "scheme-6",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 48,
-                "padding-block-end": 48,
-                "padding-inline-start": 48,
-                "padding-inline-end": 48
-              },
-              "blocks": {
-                "text_rPtFyG": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2>Projects & Events</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#d3aa8482",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_MCAAE6": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Where we'll be and what we're doing </p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": true,
-                    "background_color": "#d3aa8482",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "button_y4Ce9D": {
-                  "type": "button",
-                  "settings": {
-                    "label": "See More",
-                    "link": "shopify://pages/projects-and-events",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_rPtFyG",
-                "text_MCAAE6",
-                "button_y4Ce9D"
-              ]
-            }
-          },
-          "block_order": [
-            "group_jkyanb"
-          ]
-        },
-        "slide_QfhEWE": {
-          "type": "_slide",
-          "settings": {
-            "media_type_1": "video",
-            "image_1": "{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].slide_image.value }}",
-            "video_1": "{{ metaobjects.games[\"booze-pets\"].header_image.value }}",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": true,
-            "overlay_color": "#fdf7e873",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_cKEwfB": {
-              "type": "group",
-              "settings": {
-                "link": "shopify://products/booze-pets",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "custom",
-                "custom_width": 50,
-                "width_mobile": "custom",
-                "custom_width_mobile": 85,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "scheme-6",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 48,
-                "padding-block-end": 48,
-                "padding-inline-start": 48,
-                "padding-inline-end": 48
-              },
-              "blocks": {
-                "text_WyqT9b": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2>{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].title_text.value }}</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_arNMy9": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].tagline.value }}</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": true,
-                    "background_color": "#d3aa8482",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "button_zjNkNf": {
-                  "type": "button",
-                  "settings": {
-                    "label": "{{ metaobjects.homepage_slide[\"homepage-slide-ostst6nt\"].button_text.value }}",
-                    "link": "shopify://products/booze-pets",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_WyqT9b",
-                "text_arNMy9",
-                "button_zjNkNf"
-              ]
-            }
-          },
-          "block_order": [
-            "group_cKEwfB"
           ]
         },
         "slide_AKUbxD": {
@@ -1130,9 +991,8 @@
         }
       },
       "block_order": [
+        "slide_DAfBCE",
         "slide_HD7aCq",
-        "slide_nVxcJU",
-        "slide_QfhEWE",
         "slide_AKUbxD",
         "slide_TCVYHM",
         "slide_TWpxy4",
