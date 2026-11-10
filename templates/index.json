@@ -42,8 +42,8 @@
             "group_bdEYDp": {
               "type": "group",
               "settings": {
-                "link": "shopify://pages/projects-and-events",
-                "open_in_new_tab": false,
+                "link": "https://www.youtooz.com/products/noelle-plush-9-inch",
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
