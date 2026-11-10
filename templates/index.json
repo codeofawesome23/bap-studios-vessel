@@ -102,31 +102,6 @@
                   },
                   "blocks": {}
                 },
-                "text_ThiAiK": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p><a href=\"https://www.youtooz.com/products/noelle-plush-9-inch\" target=\"_blank\" title=\"https://www.youtooz.com/products/noelle-plush-9-inch\">{{ metaobjects.homepage_slide[\"slide-1\"].tagline.value }}</a></p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": true,
-                    "background_color": "#d3aa8482",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
                 "button_hafnAx": {
                   "type": "button",
                   "settings": {
@@ -144,7 +119,6 @@
               },
               "block_order": [
                 "text_wCMq7X",
-                "text_ThiAiK",
                 "button_hafnAx"
               ]
             }
@@ -233,31 +207,6 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#d3aa8482",
-                    "corner_radius": 10,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_tVkDAT": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Where we'll be and what we're doing </p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
                     "background": true,
                     "background_color": "#d3aa8482",
                     "corner_radius": 10,
@@ -285,7 +234,6 @@
               },
               "block_order": [
                 "text_ieiPDi",
-                "text_tVkDAT",
                 "button_PVTH7c"
               ]
             }
@@ -511,33 +459,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_xXQzct": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.homepage_slide[\"slide-3\"].tagline.value }}</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
                     "background": true,
-                    "background_color": "#d3aa8482",
+                    "background_color": "#D3AA8482",
                     "corner_radius": 10,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -563,7 +486,6 @@
               },
               "block_order": [
                 "text_9Epbea",
-                "text_xXQzct",
                 "button_E4Q9t8"
               ]
             }
@@ -650,33 +572,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_rPQiUP": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.homepage_slide[\"slide-4\"].tagline.value }}</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
                     "background": true,
-                    "background_color": "#d3aa8482",
+                    "background_color": "#D3AA8482",
                     "corner_radius": 10,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -702,7 +599,6 @@
               },
               "block_order": [
                 "text_NwCQJK",
-                "text_rPQiUP",
                 "button_HabDwd"
               ]
             }
@@ -789,33 +685,8 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_WLXVcM": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>{{ metaobjects.homepage_slide[\"slide-5\"].tagline.value }}</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
                     "background": true,
-                    "background_color": "#d3aa8482",
+                    "background_color": "#D3AA8482",
                     "corner_radius": 10,
                     "padding-block-start": 0,
                     "padding-block-end": 0,
@@ -841,7 +712,6 @@
               },
               "block_order": [
                 "text_TzXcey",
-                "text_WLXVcM",
                 "button_qjhaYw"
               ]
             }
