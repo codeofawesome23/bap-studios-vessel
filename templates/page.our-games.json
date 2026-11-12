@@ -132,7 +132,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"https://www.facebook.com/events/worlds-fair-park-knoxville/the-mystical-fair-at-enchanted-hollow/2188909691516434/\" target=\"_blank\" title=\"https://www.facebook.com/events/worlds-fair-park-knoxville/the-mystical-fair-at-enchanted-hollow/2188909691516434/\"><strong>The Mystical fair - Knoxville TN - 11/14</strong></a></p>",
+            "text": "<p><a href=\"https://www.facebook.com/events/worlds-fair-park-knoxville/the-mystical-fair-at-enchanted-hollow/2188909691516434/\" target=\"_blank\" title=\"https://www.facebook.com/events/worlds-fair-park-knoxville/the-mystical-fair-at-enchanted-hollow/2188909691516434/\"><strong>The Mystical fair - Knoxville, TN - 11/14</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
