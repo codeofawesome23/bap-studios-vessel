@@ -1,0 +1,101 @@
+{% doc %}
+  @prompt
+    Create a customizable cat-paw mouse cursor for desktop visitors. Use a small, clearly visible paw with editable color and size, and an on/off setting. Keep normal text-selection cursors in text fields and preserve usability on links and buttons. Do not affect touch devices. Avoid trails or animations.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-paw-cursor-settings-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+{% endstyle %}
+
+<cat-paw-cursor-{{ ai_gen_id }}
+  class="ai-paw-cursor-settings-{{ ai_gen_id }}"
+  data-enabled="{{ block.settings.enabled }}"
+  data-color="{{ block.settings.paw_color }}"
+  data-size="{{ block.settings.paw_size }}"
+  {{ block.shopify_attributes }}
+></cat-paw-cursor-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    const tagName = 'cat-paw-cursor-{{ ai_gen_id }}';
+    if (customElements.get(tagName)) return;
+
+    class CatPawCursor{{ ai_gen_id }} extends HTMLElement {
+      connectedCallback() {
+        this.applyCursor();
+      }
+
+      disconnectedCallback() {
+        if (this.cursorStyle) this.cursorStyle.remove();
+      }
+
+      applyCursor() {
+        if (this.dataset.enabled !== 'true' || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+
+        const size = Number(this.dataset.size) || 24;
+        const color = (this.dataset.color || '#1c1e1f').replace('#', '%23');
+        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 32 32"><g fill="${color}" stroke="%23ffffff" stroke-width="1.5" stroke-linejoin="round"><ellipse cx="16" cy="20" rx="8" ry="6.5"/><ellipse cx="6.5" cy="12" rx="3.5" ry="5"/><ellipse cx="13" cy="7.5" rx="3.5" ry="5"/><ellipse cx="20" cy="7.5" rx="3.5" ry="5"/><ellipse cx="26" cy="12" rx="3.5" ry="5"/></g></svg>`;
+        const cursor = `url("data:image/svg+xml,${svg.replace(/#/g, '%23').replace(/</g, '%3C').replace(/>/g, '%3E').replace(/"/g, "'")}") 6 6, auto`;
+        this.cursorStyle = document.createElement('style');
+        this.cursorStyle.textContent = `@media (hover: hover) and (pointer: fine) { html body { cursor: ${cursor}; } html body a, html body button, html body [role="button"], html body input[type="submit"], html body input[type="button"], html body select, html body summary, html body label[for] { cursor: pointer; } html body input, html body textarea, html body [contenteditable="true"], html body [contenteditable=""] { cursor: text; } }`;
+        document.head.appendChild(this.cursorStyle);
+      }
+    }
+
+    customElements.define(tagName, CatPawCursor{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Cat paw cursor",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enabled",
+      "label": "Enable paw cursor",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "paw_color",
+      "label": "Paw color",
+      "default": "#1C1E1F"
+    },
+    {
+      "type": "range",
+      "id": "paw_size",
+      "label": "Paw size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cat paw cursor"
+    }
+  ],
+  "tag": null,
+  "class": "cat-paw-cursor-block"
+}
+{% endschema %}
