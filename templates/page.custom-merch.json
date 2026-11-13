@@ -2085,8 +2085,11 @@
             "desktop_width_percent": 100,
             "image_ratio": "1 / 1",
             "gallery_image_1": "shopify://shop_images/Photo_Nov_12_2026_17_31_50.jpg",
-            "gallery_image_2": "shopify://shop_images/Digitized_Noelle_4.png",
-            "gallery_image_3": "shopify://shop_images/Photo_Nov_13_2026_11_41_01.jpg"
+            "gallery_image_2": "shopify://shop_images/Photo_Nov_12_2026_17_23_10.jpg",
+            "gallery_image_3": "shopify://shop_images/IMG_3353.heic",
+            "gallery_image_4": "shopify://shop_images/IMG_4106.jpg",
+            "gallery_image_5": "shopify://shop_images/IMG_4344.heic",
+            "gallery_image_6": "shopify://shop_images/IMG_2501.heic"
           },
           "blocks": {}
         }
