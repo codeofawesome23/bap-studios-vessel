@@ -235,7 +235,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>{{ closest.metaobject.client_case_study.case_introduction | metafield_tag }}</p><p><a href=\"https://www.kickstarter.com/projects/1770899942/noggn-joggin\" target=\"_blank\" title=\"https://www.kickstarter.com/projects/1770899942/noggn-joggin\"><strong>Click here to watch.</strong></a></p>",
+            "text": "<p>{{ closest.metaobject.client_case_study.case_introduction | metafield_tag }}</p><p><a href=\"https://www.pussypack.lol/\" target=\"_blank\" title=\"https://www.pussypack.lol/\"><strong>Click here to watch.</strong></a></p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
