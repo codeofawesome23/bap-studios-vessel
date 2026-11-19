@@ -915,7 +915,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>SEE US IN PERSON<a href=\"/pages/our-games\" title=\"Projects & Events\"><strong>! - Click to see our next events!</strong></a></p>",
+            "text": "<p><a href=\"https://bapstudios.com/pages/projects-and-events\" title=\"https://bapstudios.com/pages/projects-and-events\"><strong>SEE US IN PERSON</strong></a><a href=\"/pages/our-games\" title=\"Projects & Events\"><strong>! - Click to see our next events!</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
