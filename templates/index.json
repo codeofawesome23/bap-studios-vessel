@@ -915,7 +915,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"/pages/our-games\" title=\"Projects & Events\"><strong>WE'RE ON TOUR! - Click to see our next events!</strong></a></p>",
+            "text": "<p>SEE US IN PERSON<a href=\"/pages/our-games\" title=\"Projects & Events\"><strong>! - Click to see our next events!</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -1927,7 +1927,7 @@
           "type": "ai_gen_block_2a06332",
           "settings": {
             "enabled": true,
-            "paw_color": "#1C1E1F",
+            "paw_color": "#1c1e1f",
             "paw_size": 24,
             "desktop_width_percent": 100
           },
