@@ -101,7 +101,7 @@
         "section_height_custom": 40,
         "color_scheme": "scheme-1",
         "background_media": "video",
-        "video": "shopify://files/videos/MVI_3875.MP4",
+        "video": "shopify://files/videos/MVI_3994.MP4",
         "video_position": "cover",
         "background_image": "{{ collection.image }}",
         "background_image_position": "cover",
