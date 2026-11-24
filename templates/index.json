@@ -107,7 +107,7 @@
                   "settings": {
                     "label": "{{ metaobjects.homepage_slide[\"slide-1\"].button_text.value }}",
                     "link": "{{ metaobjects.homepage_slide[\"slide-1\"].link.value }}",
-                    "open_in_new_tab": false,
+                    "open_in_new_tab": true,
                     "style_class": "button",
                     "width": "fit-content",
                     "custom_width": 100,
