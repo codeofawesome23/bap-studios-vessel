@@ -80,7 +80,7 @@
                 "text_wCMq7X": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Up to 69% off select items!</p>",
+                    "text": "<p><strong>Up to 69% off select items!</strong></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
