@@ -42,7 +42,7 @@
             "group_bdEYDp": {
               "type": "group",
               "settings": {
-                "link": "https://www.youtooz.com/products/noelle-plush-9-inch",
+                "link": "shopify://collections/spring-sale",
                 "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -80,7 +80,7 @@
                 "text_wCMq7X": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2><a href=\"https://www.youtooz.com/products/noelle-plush-9-inch\" target=\"_blank\" title=\"https://www.youtooz.com/products/noelle-plush-9-inch\">{{ metaobjects.homepage_slide[\"slide-1\"].title_text.value }}</a></h2>",
+                    "text": "<p>Up to 69% off select items!</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -106,7 +106,7 @@
                   "type": "button",
                   "settings": {
                     "label": "{{ metaobjects.homepage_slide[\"slide-1\"].button_text.value }}",
-                    "link": "{{ metaobjects.homepage_slide[\"slide-1\"].link.value }}",
+                    "link": "shopify://collections/spring-sale",
                     "open_in_new_tab": true,
                     "style_class": "button",
                     "width": "fit-content",
@@ -983,7 +983,7 @@
         "text_gEMUVq": {
           "type": "text",
           "settings": {
-            "text": "<p>It started with:</p><p>-&gt; <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bapkat </a>&lt;- </p><p>It's evolving to more...</p>",
+            "text": "<p>It started with:</p><p>-&gt; <a href=\"https://beacons.page/bap.kat\" target=\"_blank\" title=\"https://beacons.page/bap.kat\">bapkat </a>&lt;-&nbsp;</p><p>It's evolving to more...</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
